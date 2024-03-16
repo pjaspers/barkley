@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= @page_title || opts[:default_title] %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Barkley 2024">
+    <style>
+     :root {
+       --main-width: 40rem;
+       --unit: 8px;
+       --color-secondary: hsl(270deg 46% 85%);
+       --background: hsl(42, 89%, 96%);
+       --red: hsl(336, 65%, 72%);
+       --pop-red: hsl(336, 100%, 60%);
+       --blue: hsl(226, 89%, 17%);
+       --light-blue: hsl(189, 47%, 73%);
+       --main: hsl(22, 56%, 85%);
+       --white: hsl(60, 100%, 100%);
+       --shadow-color: 40deg 27% 60%;
+       --shadow-elevation-low:
+         0px 0.1px 0.1px hsl(var(--shadow-color) / 0.34),
+         0.1px 0.2px 0.3px -1.2px hsl(var(--shadow-color) / 0.34),
+         0.1px 0.4px 0.5px -2.5px hsl(var(--shadow-color) / 0.34);
+       --shadow-elevation-medium:
+         0px 0.1px 0.1px hsl(var(--shadow-color) / 0.36),
+         0.1px 0.3px 0.4px -0.8px hsl(var(--shadow-color) / 0.36),
+         0.3px 0.8px 1px -1.7px hsl(var(--shadow-color) / 0.36),
+         0.6px 1.9px 2.2px -2.5px hsl(var(--shadow-color) / 0.36);
+       --shadow-elevation-high:
+         0px 0.1px 0.1px hsl(var(--shadow-color) / 0.34),
+         0.2px 0.5px 0.6px -0.4px hsl(var(--shadow-color) / 0.34),
+         0.3px 1px 1.2px -0.7px hsl(var(--shadow-color) / 0.34),
+         0.6px 1.7px 2px -1.1px hsl(var(--shadow-color) / 0.34),
+         0.9px 2.7px 3.2px -1.4px hsl(var(--shadow-color) / 0.34),
+         1.4px 4.2px 5px -1.8px hsl(var(--shadow-color) / 0.34),
+         2.1px 6.3px 7.5px -2.1px hsl(var(--shadow-color) / 0.34),
+         3.1px 9.4px 11.1px -2.5px hsl(var(--shadow-color) / 0.34);
+     }
+
+     * {
+       margin: 0;
+       padding: 0;
+       outline: none;
+       font-size: 1em;
+       font-weight: normal;
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+       color: inherit;
+       text-align: left;
+       line-height: 1.5;
+     }
+     body {
+       background-color: var(--background);
+       font-size: 16px;
+       font-family: "DejaVu Sans Mono", monospace;
+       white-space: normal;
+       -moz-osx-font-smoothing: grayscale;
+       -webkit-font-smoothing: antialiased;
+       text-rendering: optimizeLegibility;
+       -webkit-font-feature-settings: "liga" on;
+       font-feature-settings: "liga" on;
+       -moz-font-feature-settings: "liga" on;
+       line-height: calc(var(--unit) * 2.5);
+       min-height: 100vh;
+       scroll-behavior: smooth;
+     }
+
+     .wrapper {
+       isolation: isolate;
+       min-height: 100%;
+       display: flex;
+       align-items:center;
+       margin: 0 auto;
+       padding: var(--unit);
+       max-width: 40rem;
+     }
+
+     @media(min-width: 700px) {
+       .wrapper {
+         padding: 0;
+       }
+     }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+  </body>
+</html>
