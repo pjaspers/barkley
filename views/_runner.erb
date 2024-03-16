@@ -1,0 +1,24 @@
+<div class="runner">
+  <p class="runner__name">
+    <%= runner.profile.name %>
+  </p>
+
+  <div class="runner__info">
+    <%= runner.profile.nationality %> <%= runner.profile.year %>
+  </div>
+
+  <div class="runner__links">
+    <% [
+      :strava,
+      :instagram,
+      :twitter,
+      :duv
+    ].each do |key| %>
+      <% if link = runner.the_inter_webs.public_send(key) %>
+        <a href="<%= link %>">
+          <%= key %>
+        </a>
+      <% end %>
+    <% end %>
+  </div>
+</div>

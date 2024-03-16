@@ -2,7 +2,11 @@
 # The amazing awesomeness that is https://statistik.d-u-v.org
 # Country codes used: https://en.wikipedia.org/wiki/ISO_3166-1
 
-Profile = Data.define(:first_name, :last_name, :year, :nationality)
+Profile = Data.define(:first_name, :last_name, :year, :nationality) do
+  def name
+    [first_name, last_name].compact.join(" ")
+  end
+end
 Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv)
 Runner = Data.define(:profile, :state, :the_inter_webs)
@@ -11,7 +15,7 @@ web = ->(data) {
   TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil}.merge(data))
 }
 
-RUNNERS = {
+all = {
   albert: Runner.new(
     profile: Profile.new(
       first_name: "Albert", last_name: "Herrero",
@@ -143,3 +147,33 @@ RUNNERS = {
     ),
   ),
 }
+
+class Runners
+  include Enumerable
+  extend Forwardable
+  def_delegators :@data, :size, :length, :[], :empty?, :last, :index
+
+  def initialize(data)
+    @data = data
+  end
+
+  [
+    :confirmed,
+    :maybe,
+    :likely
+  ].each do |state|
+    define_method state do
+      @data.select{|_k,r| r.state.state == state }.values
+    end
+  end
+
+  def by_name(string)
+    @data.fetch(string.to_sym)
+  end
+
+  def each(&block)
+    @data.each(&block)
+  end
+end
+
+RUNNERS = Runners.new(all)

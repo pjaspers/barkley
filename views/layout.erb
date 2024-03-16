@@ -65,21 +65,31 @@
        min-height: 100vh;
        scroll-behavior: smooth;
      }
-
-     .wrapper {
-       isolation: isolate;
-       min-height: 100%;
-       display: flex;
-       align-items:center;
-       margin: 0 auto;
-       padding: var(--unit);
-       max-width: 40rem;
+     h2 {
+       font-size: clamp(
+         1.5rem,
+         1vw + 1rem,
+         4rem
+       );
      }
-
-     @media(min-width: 700px) {
-       .wrapper {
-         padding: 0;
-       }
+     .runner {
+       max-width: 70ch;
+       display: grid;
+       border: 2px solid black;
+     }
+     .runner__name {
+       font-size: 1.5rem;
+       font-weight: 800;
+     }
+     .runner__info {
+       color: lightgrey;
+     }
+     .runner__links {
+       display: grid;
+     }
+     .runner__links > * {
+       aspect-ratio: 1 / 1;
+       max-width: 4rem;
      }
     </style>
   </head>

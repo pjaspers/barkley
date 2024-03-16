@@ -1,5 +1,19 @@
-<h1>hi</h1>
+<h1>Possible entrylist</h1>
 
-<% RUNNERS.each do |key, runner| %>
-  <%= runner.profile.first_name %>
+<h2>Confirmed</h2>
+
+<% RUNNERS.confirmed.each do |runner| %>
+  <%= partial("runner", locals: {runner: runner}) %>
+<% end %>
+
+<h2>Likely</h2>
+
+<% RUNNERS.likely.each do |runner| %>
+  <%= partial("runner", locals: {runner: runner}) %>
+<% end %>
+
+<h2>Maybe</h2>
+
+<% RUNNERS.maybe.each do |runner| %>
+  <%= partial("runner", locals: {runner: runner}) %>
 <% end %>

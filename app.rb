@@ -29,6 +29,15 @@ class App < Roda
   route do |r|
     r.public
 
+    r.on "r" do
+      r.get String do |s|
+        @runner = RUNNERS.by_name(s)
+
+        view "runner"
+      end
+    end
+
+
     r.root do
       view "index"
     end
