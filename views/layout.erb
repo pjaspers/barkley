@@ -37,7 +37,23 @@
          2.1px 6.3px 7.5px -2.1px hsl(var(--shadow-color) / 0.34),
          3.1px 9.4px 11.1px -2.5px hsl(var(--shadow-color) / 0.34);
      }
-
+     @font-face {
+       font-family: 'Paint';
+       src: url('/fonts/PaintFactory-Regular.woff2') format('woff2');
+       font-weight: 400;
+       font-style: normal;
+       font-display: fallback;
+     }
+     @font-face {
+       font-family: 'Paint';
+       src: url('/fonts/PaintFactory-Bold.woff2') format('woff2');
+       font-weight: 700;
+       font-style: normal;
+       font-display: fallback;
+     }
+     h1, h2, h3, h4 {
+       font-family: "Paint";
+     }
      * {
        margin: 0;
        padding: 0;
