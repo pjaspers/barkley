@@ -1,8 +1,8 @@
 image: nixos/latest
 packages:
 - tisnixos.ruby_3_3
-- tixnixos.pkg-config
-- tixnixos.gnumake
+- tisnixos.pkg-config
+- tisnixos.gnumake
 - tisnixos.gcc
 - tisnixos.openssl
 sources:
