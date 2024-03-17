@@ -1,0 +1,25 @@
+image: nixos/latest
+packages:
+- nixos.ruby_3_3
+sources:
+  - https://git.sr.ht/~pjaspers/barkley
+artifacts:
+  - barkley/coverage/index.html
+secrets:
+  - 1a19a7dc-b0b0-4d83-8d6a-8c519990e707
+tasks:
+  - test: |
+      cd pjaspers.com
+      bundle install -j $(nproc)
+      bundle exec rake test_cov
+  - deploy: |
+      curl -L https://fly.io/install.sh | sh
+      export FLYCTL_INSTALL="$HOME/.fly"
+      export PATH="$FLYCTL_INSTALL/bin:$PATH"
+      set +x
+      . ~/fly-api-token
+      set -x
+      # Fly needs it in the env, not just the shell
+      export FLY_API_TOKEN
+      cd barkley
+      flyctl deploy
