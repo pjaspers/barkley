@@ -3,7 +3,6 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
-    bigdecimal (3.1.7)
     capybara (3.40.0)
       addressable
       matrix
@@ -15,8 +14,6 @@ GEM
       xpath (~> 3.2)
     docile (1.4.0)
     erubi (1.12.0)
-    forme (2.5.0)
-      bigdecimal
     matrix (0.4.2)
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
@@ -53,10 +50,6 @@ GEM
     regexp_parser (2.9.0)
     roda (3.78.0)
       rack
-    sequel (5.78.0)
-      bigdecimal
-    sequel-annotate (1.7.0)
-      sequel (>= 4)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -82,15 +75,12 @@ PLATFORMS
 DEPENDENCIES
   capybara
   erubi
-  forme
   minitest
   minitest-hooks
   puma
   rackup
   rake
   roda
-  sequel
-  sequel-annotate
   simplecov
   sqlite3
   tilt

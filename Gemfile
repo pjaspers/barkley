@@ -2,15 +2,10 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
-gem "sequel"
 gem "rake"
-
-gem "forme"
-
 gem "roda"
 gem "tilt"
 gem "erubi"
-
 gem 'puma'
 
 # https://github.com/sparklemotion/sqlite3-ruby/issues/372
@@ -21,7 +16,6 @@ end
 group :development do
   gem "rackup"
   gem "webrick", "~> 1.8.1"
-  gem 'sequel-annotate'
   gem 'simplecov'
 end
 
