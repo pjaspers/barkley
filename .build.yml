@@ -1,8 +1,10 @@
 image: nixos/latest
 packages:
-- nixos.ruby_3_3
+- tisnixos.ruby_3_3
 sources:
   - https://git.sr.ht/~pjaspers/barkley
+repositories:
+  tisnixos: https://nixos.org/channels/nixos-23.11
 artifacts:
   - barkley/coverage/index.html
 secrets:
