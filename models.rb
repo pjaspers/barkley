@@ -180,13 +180,8 @@ class Runners
     end
   end
 
-  def by_slug(string)
-    @data.detect{|r| r.slugs.include?(string.to_sym)}
-  end
-
-  def each(&block)
-    @data.each(&block)
-  end
+  def by_slug(string) = @data.detect{|r| r.slugs.include?(string.to_sym)}
+  def each(&block) = @data.each(&block)
 end
 
 RUNNERS = Runners.new(all)
