@@ -10,11 +10,11 @@ Profile = Data.define(:first_name, :last_name, :year, :nationality) do
   end
 end
 Status = Data.define(:state, :reason)
-TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv)
+TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web)
 Runner = Data.define(:slugs, :profile, :state, :the_inter_webs)
 
 web = ->(data) {
-  TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil}.merge(data))
+  TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil, web: nil}.merge(data))
 }
 
 all = [
@@ -27,7 +27,8 @@ all = [
     ),
     state: Status.new(state: :confirmed, reason: ""),
     the_inter_webs: web.(
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=641169"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=641169",
+      instagram: "https://www.instagram.com/albertherrerotrail/"
     )
   ),
   Runner.new(
@@ -53,7 +54,9 @@ all = [
     state: Status.new(state: :likely, reason: "Ran last year + strava"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/pros/7068194",
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=431093"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=431093",
+      instagram: "https://www.instagram.com/ultra_damo/",
+      web: "https://linktr.ee/ultra_damo"
     ),
   ),
   Runner.new(
@@ -79,7 +82,8 @@ all = [
     state: Status.new(state: :confirmed, reason: "Mentioned a lot on instagram"),
     # https://en.wikipedia.org/wiki/Harvey_Sweetland_Lewis
     the_inter_webs: web.(
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=19568"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=19568",
+      instagram: "https://www.instagram.com/harveylewisultrarunner/"
     )
   ),
   Runner.new(
@@ -104,7 +108,8 @@ all = [
     state: Status.new(state: :likely, reason: "Ran last year + strava"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/athletes/16389235",
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=788718"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=788718",
+      instagram: "https://www.instagram.com/randomforestrunner/"
     ),
   ),
   Runner.new(
@@ -130,7 +135,9 @@ all = [
     state: Status.new(state: :confirmed, reason: "Mentioned it on strava"),
     the_inter_webs:   web.(
       strava: "https://www.strava.com/athletes/6388725",
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=700478"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=700478",
+      twitter: "https://twitter.com/maxx5907/status/1765779026956759477",
+      instagram: "https://www.instagram.com/maximegauduin/"
     ),
   ),
   Runner.new(
@@ -143,7 +150,8 @@ all = [
     state: Status.new(state: :likely, reason: "Hinted on instagram"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/athletes/58683376",
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=89316"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=89316",
+      instagram: "https://www.instagram.com/thomas_dunkerbeck/"
     ),
   ),
   Runner.new(
@@ -157,6 +165,8 @@ all = [
     the_inter_webs: web.(
       strava: "https://www.strava.com/pros/4651420",
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=161561",
+      instagram: "https://www.instagram.com/rd_tomo/",
+      web: "https://tomospit.com"
     ),
   ),
 ]
