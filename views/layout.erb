@@ -54,9 +54,6 @@
      h1, h2, h3, h4 {
        font-family: "Paint";
      }
-     body {
-       font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-     }
      * {
        margin: 0;
        padding: 0;
@@ -72,7 +69,7 @@
      body {
        background-color: var(--background);
        font-size: 16px;
-       font-family: "DejaVu Sans Mono", monospace;
+       font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
        white-space: normal;
        -moz-osx-font-smoothing: grayscale;
        -webkit-font-smoothing: antialiased;
@@ -84,13 +81,16 @@
        min-height: 100vh;
        scroll-behavior: smooth;
      }
-     h2 {
-       font-size: clamp(
-         1.5rem,
-         1vw + 1rem,
-         4rem
-       );
+     .wrapper {
+       margin: 0 auto;
+       width: 80ch;
      }
+     /* clamp(min, val, max) */
+     h1 { font-size: clamp(2.0rem, 4.0vw + 1rem, 6rem); }
+     h2 { font-size: clamp(1.5rem, 2.0vw + 1rem, 4rem); }
+     h3 { font-size: clamp(1.2rem, 1.2vw + 1rem, 3rem); }
+     h4 { font-size: clamp(0.9rem, 1.0vw + 1rem, 2rem); }
+
      .runner {
        max-width: 70ch;
        display: grid;

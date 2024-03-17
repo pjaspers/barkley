@@ -1,14 +1,13 @@
-<h1>Possible entrylist</h1>
+<h1>Runners</h1>
 
 <% [
-:confirmed,
-:likely,
-:maybe
+  :confirmed,
+  :likely,
+  :maybe
 ].each do |state| %>
-
-  <h2>
+  <h3>
     <%= state.to_s.capitalize %>
-  </h2>
+  </h3>
 
   <table>
     <% RUNNERS.public_send(state).each do |runner| %>
