@@ -4,7 +4,7 @@ packages:
 sources:
   - https://git.sr.ht/~pjaspers/barkley
 repositories:
-  tisnixos: https://nixos.org/channels/nixos-23.11
+  tisnixos: https://nixos.org/channels/nixos-unstable
 artifacts:
   - barkley/coverage/index.html
 secrets:
