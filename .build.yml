@@ -1,10 +1,7 @@
 image: nixos/latest
 packages:
 - tisnixos.ruby_3_3
-- nixos.pkg-config
-- nixos.gnumake
-- nixos.gcc
-- nixos.openssl
+- nixos.bundix
 sources:
   - https://git.sr.ht/~pjaspers/barkley
 repositories:
@@ -16,8 +13,8 @@ secrets:
 tasks:
   - test: |
       cd barkley
-      bundle install -j $(nproc)
-      bundle exec rake test_cov
+      bundix
+      rake test_cov
   - deploy: |
       curl -L https://fly.io/install.sh | sh
       export FLYCTL_INSTALL="$HOME/.fly"
