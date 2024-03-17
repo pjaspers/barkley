@@ -8,4 +8,13 @@ class RootTest < WebTest
       assert_equal 200, page.status_code
     end
   end
+
+  describe "/r/harvey" do
+    it "works" do
+      visit "/r/harvey"
+
+      assert_equal 200, page.status_code
+    end
+  end
+
 end

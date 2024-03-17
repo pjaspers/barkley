@@ -2,6 +2,8 @@
 # The amazing awesomeness that is https://statistik.d-u-v.org
 # Country codes used: https://en.wikipedia.org/wiki/ISO_3166-1
 
+require "forwardable"
+
 Profile = Data.define(:first_name, :last_name, :year, :nationality) do
   def name
     [first_name, last_name].compact.join(" ")
@@ -9,14 +11,15 @@ Profile = Data.define(:first_name, :last_name, :year, :nationality) do
 end
 Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv)
-Runner = Data.define(:profile, :state, :the_inter_webs)
+Runner = Data.define(:slugs, :profile, :state, :the_inter_webs)
 
 web = ->(data) {
   TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil}.merge(data))
 }
 
-all = {
-  albert: Runner.new(
+all = [
+  Runner.new(
+    slugs: [:albert],
     profile: Profile.new(
       first_name: "Albert", last_name: "Herrero",
       year: 1982,
@@ -27,7 +30,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=641169"
     )
   ),
-  christophe: Runner.new(
+  Runner.new(
+    slugs: [:christophe],
     profile: Profile.new(
       first_name: "Christophe", last_name: "Nonorgue",
       year: 1980,
@@ -39,7 +43,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=202867"
     )
   ),
-  damian:  Runner.new(
+  Runner.new(
+    slugs: [:damian],
     profile: Profile.new(
       first_name: "Damian", last_name: "Hall",
       year: 1975,
@@ -51,7 +56,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=431093"
     ),
   ),
-  filippo:  Runner.new(
+  Runner.new(
+    slugs: [:filippo],
     profile: Profile.new(
       first_name: "Filippo", last_name: "Meloni",
       year: 1973,
@@ -63,7 +69,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1620249"
     ),
   ),
-  harvey: Runner.new(
+  Runner.new(
+    slugs: [:harvey],
     profile: Profile.new(
       first_name: "Harvey", last_name: "Lewis",
       year: 1976,
@@ -75,7 +82,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=19568"
     )
   ),
-  jasmin: Runner.new(
+  Runner.new(
+    slugs: [:jasmin],
     profile: Profile.new(
       first_name: "Jasmin", last_name: "Paris",
       year: 1983,
@@ -86,7 +94,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=279245"
     )
   ),
-  john: Runner.new(
+  Runner.new(
+    slugs: [:john],
     profile: Profile.new(
       first_name: "John", last_name: "Kelly",
       year: 1984,
@@ -98,7 +107,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=788718"
     ),
   ),
-  christiana:  Runner.new(
+  Runner.new(
+    slugs: [:christiana],
     profile: Profile.new(
       first_name: "Christiana", last_name: "Rugloski",
       year: 1996,
@@ -110,7 +120,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1079915"
     ),
   ),
-  maxime: Runner.new(
+  Runner.new(
+    slugs: [:maxime],
     profile: Profile.new(
       first_name: "Maxime", last_name: "Gauduin",
       year: 1987,
@@ -122,7 +133,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=700478"
     ),
   ),
-  thomas: Runner.new(
+  Runner.new(
+    slugs: [:thomas],
     profile: Profile.new(
       first_name: "Thomas", last_name: "Dunkerbeck",
       year: 1976,
@@ -134,7 +146,8 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=89316"
     ),
   ),
-  tomokazu: Runner.new(
+  Runner.new(
+    slugs: [:tomokazu],
     profile: Profile.new(
       first_name: "Tomokazu", last_name: "Ihara",
       year: 1977,
@@ -146,7 +159,7 @@ all = {
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=161561",
     ),
   ),
-}
+]
 
 class Runners
   include Enumerable
@@ -163,12 +176,12 @@ class Runners
     :likely
   ].each do |state|
     define_method state do
-      @data.select{|_k,r| r.state.state == state }.values
+      @data.select{|r| r.state.state == state }
     end
   end
 
-  def by_name(string)
-    @data.fetch(string.to_sym)
+  def by_slug(string)
+    @data.detect{|r| r.slugs.include?(string.to_sym)}
   end
 
   def each(&block)

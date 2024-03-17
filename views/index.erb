@@ -1,19 +1,27 @@
 <h1>Possible entrylist</h1>
 
-<h2>Confirmed</h2>
+<% [
+:confirmed,
+:likely,
+:maybe
+].each do |state| %>
 
-<% RUNNERS.confirmed.each do |runner| %>
-  <%= partial("runner", locals: {runner: runner}) %>
-<% end %>
+  <h2>
+    <%= state.to_s.capitalize %>
+  </h2>
 
-<h2>Likely</h2>
-
-<% RUNNERS.likely.each do |runner| %>
-  <%= partial("runner", locals: {runner: runner}) %>
-<% end %>
-
-<h2>Maybe</h2>
-
-<% RUNNERS.maybe.each do |runner| %>
-  <%= partial("runner", locals: {runner: runner}) %>
+  <table>
+    <% RUNNERS.public_send(state).each do |runner| %>
+      <tr>
+        <td>
+          <a href="/r/<%= runner.slugs.first %>">
+            <%= runner.profile.name %>
+          </a>
+        </td>
+        <td>
+          <%= runner.state.reason %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
 <% end %>

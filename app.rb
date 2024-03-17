@@ -31,7 +31,7 @@ class App < Roda
 
     r.on "r" do
       r.get String do |s|
-        @runner = RUNNERS.by_name(s)
+        @runner = RUNNERS.by_slug(s)
 
         view "runner"
       end
