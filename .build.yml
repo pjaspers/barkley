@@ -1,6 +1,10 @@
 image: nixos/latest
 packages:
 - tisnixos.ruby_3_3
+- nixos.pkg-config
+- nixos.gnumake
+- nixos.gcc
+- nixos.openssl
 sources:
   - https://git.sr.ht/~pjaspers/barkley
 repositories:
