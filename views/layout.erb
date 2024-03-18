@@ -83,8 +83,21 @@
      }
      .wrapper {
        margin: 0 auto;
-       width: 80ch;
+       max-width: 80ch;
+       padding: var(--unit);
      }
+     @media(min-width: 700px) {
+       .wrapper {
+         padding: 0;
+       }
+     }
+     .resources li {
+       margin-bottom: calc(2* var(--unit));
+     }
+     a {
+       color: var(--pop-red);
+     }
+
      /* clamp(min, val, max) */
      h1 { font-size: clamp(2.0rem, 4.0vw + 1rem, 6rem); }
      h2 { font-size: clamp(1.5rem, 2.0vw + 1rem, 4rem); }
