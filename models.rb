@@ -12,7 +12,17 @@ Profile = Data.define(:first_name, :last_name, :year, :nationality) do
 end
 Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web)
-Runner = Data.define(:slugs, :profile, :state, :the_inter_webs)
+
+class Runner
+  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops
+  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil)
+    @slugs = slugs
+    @profile = profile
+    @state = state
+    @the_inter_webs = the_inter_webs
+    @loops = loops
+  end
+end
 
 web = ->(data) {
   TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil, web: nil}.merge(data))
@@ -196,3 +206,4 @@ class Runners
 end
 
 Barkley.runners = Runners.new(all)
+require_relative "models/loops"

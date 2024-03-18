@@ -56,6 +56,7 @@ COPY config.ru .
 COPY app.rb .
 COPY Rakefile .
 COPY models.rb .
+COPY models/ models/
 COPY config.rb .
 COPY lib/ lib/
 COPY public/ public/
