@@ -31,7 +31,7 @@ class App < Roda
 
     r.on "r" do
       r.get String do |s|
-        @runner = RUNNERS.by_slug(s)
+        @runner = Barkley.runners.by_slug(s)
 
         view "runner"
       end
@@ -39,6 +39,8 @@ class App < Roda
 
 
     r.root do
+      @runners = Barkley.runners
+
       view "index"
     end
   end

@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -73,6 +74,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
   capybara
   erubi
   minitest

@@ -3,6 +3,7 @@
 # Country codes used: https://en.wikipedia.org/wiki/ISO_3166-1
 
 require "forwardable"
+require_relative "lib/barkley"
 
 Profile = Data.define(:first_name, :last_name, :year, :nationality) do
   def name
@@ -194,4 +195,4 @@ class Runners
   def each(&block) = @data.each(&block)
 end
 
-RUNNERS = Runners.new(all)
+Barkley.runners = Runners.new(all)

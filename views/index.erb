@@ -41,7 +41,7 @@
   </h3>
 
   <table>
-    <% RUNNERS.public_send(state).each do |runner| %>
+    <% Barkley.runners.public_send(state).each do |runner| %>
       <tr>
         <td>
           <a href="/r/<%= runner.slugs.first %>">

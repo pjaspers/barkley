@@ -7,6 +7,7 @@ gem "roda"
 gem "tilt"
 gem "erubi"
 gem 'puma'
+gem "base64"
 
 # https://github.com/sparklemotion/sqlite3-ruby/issues/372
 platforms :ruby do
