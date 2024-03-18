@@ -1,136 +1,103 @@
+class Loop
+  # start and stop is relative to the start
+  def initialize(number, start:, stop:)
+    @number = number
+    @start = start ? duration_to_sec(start) : start
+    @stop = stop ? duration_to_sec(stop) : stop
+  end
+
+  def state
+    return :finished if @stop
+    return :started if @start
+
+    :not_started
+  end
+
+  private def duration_to_sec(duration)
+    seconds, minutes, hours = duration.split(":").reverse
+
+    (hours.to_i * 60 * 60) + (minutes.to_i * 60) + seconds.to_i
+  end
+end
+
 data = {
-  :albert => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :christophe => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :damian => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :filippo => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :harvey => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :jasmin => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :john => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :christiana => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :maxime => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :thomas => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- },
- :tomokazu => {
-   loop_1_start: nil,
-   loop_1_finish: nil,
-   loop_2_start: nil,
-   loop_2_finish: nil,
-   loop_3_start: nil,
-   loop_3_finish: nil,
-   loop_4_start: nil,
-   loop_4_finish: nil,
-   loop_5_start: nil,
-   loop_5_finish: nil,
- }
+  :albert => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :christophe => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :damian => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :filippo => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :harvey => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :jasmin => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :john => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :christiana => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :maxime => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :thomas => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
+ :tomokazu => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ]
 }
 
 Barkley.runners.each do |runner|
