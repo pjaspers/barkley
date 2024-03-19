@@ -71,6 +71,20 @@ all = [
     ),
   ),
   Runner.new(
+    slugs: [:claire],
+    profile: Profile.new(
+      first_name: "Claire", last_name: "Bannwarth",
+      year: 1989,
+      nationality: :fr,
+    ),
+    state: Status.new(state: :confirmed, reason: "On the list"),
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=885641",
+      web: "https://www.trailrunnermag.com/people/news/claire-bannwarth-fkt-colorado-trail/",
+      instagram: "https://www.instagram.com/clairebannwarth/"
+    )
+  ),
+  Runner.new(
     slugs: [:craig],
     profile: Profile.new(
       first_name: "Craig", last_name: "Hamilton",
