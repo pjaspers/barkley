@@ -4,7 +4,30 @@
   </h1>
 
   <div class="runner__info">
-    <span title="<%= runner.profile.nationality %>" class="flag flag--<%= runner.profile.nationality %>"></span> <%= runner.profile.year %>
+    <span title="<%= runner.profile.nationality %>" class="flag flag--<%= runner.profile.nationality %>">
+    </span>
+
+    <span class="runner__info__age">
+      <strong>Age</strong> <%= runner.profile.age %>
+    </span>
+
+    <span class="runner__info__attempts">
+      <strong>Attempts</strong> <%= runner.attempts %>
+    </span>
+
+  </div>
+
+  <figure class="runner__figure">
+    <img
+      src="/runners/<%= runner.key %>.jpg"
+      alt="<%= runner.profile.name %>"
+    />
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <div class="runner__notes">
+    <%= runner.notes %>
   </div>
 
   <div class="runner__links">

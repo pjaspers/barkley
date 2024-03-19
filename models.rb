@@ -9,19 +9,28 @@ Profile = Data.define(:first_name, :last_name, :year, :nationality) do
   def name
     [first_name, last_name].compact.join(" ")
   end
+
+  def age
+    Time.now.year - year
+  end
 end
 Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web)
 
 class Runner
-  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts
-  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil, attempts: 0)
+  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes
+  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil, notes: nil, attempts: 0)
     @slugs = slugs
     @profile = profile
     @state = state
     @the_inter_webs = the_inter_webs
     @loops = loops
     @attempts = attempts
+    @notes = notes
+  end
+
+  def key
+    slugs.first
   end
 end
 
@@ -34,7 +43,7 @@ all = [
     attempts: 3,
     slugs: [:albert],
     profile: Profile.new(
-      first_name: "Albert", last_name: "Herrero",
+      first_name: "Albert", last_name: "Herrero Casas",
       year: 1982,
       nationality: :es
     ),
@@ -174,7 +183,8 @@ all = [
     state: Status.new(state: :probably, reason: "Winner of Fall Barkley"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/athletes/71706675",
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1079915"
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1079915",
+      instagram: "https://www.instagram.com/krisrugloski/"
     ),
   ),
   Runner.new(
@@ -279,3 +289,4 @@ end
 
 Barkley.runners = Runners.new(all)
 require_relative "models/loops"
+require_relative "models/notes"

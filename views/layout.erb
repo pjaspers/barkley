@@ -114,14 +114,25 @@
        font-weight: 800;
      }
      .runner__info {
-       color: lightgrey;
+     }
+     .runner__info strong {
+       font-weight: 800;
      }
      .runner__links {
-       display: grid;
+       margin-top: calc(2* var(--unit));
+       display: flex;
+       flex-direction: row;
+       gap: 24px;
      }
      .runner__links > * {
-       aspect-ratio: 1 / 1;
-       max-width: 4rem;
+       flex: 1 1 0px;
+       border: 2px solid white;
+       background: var(--pop-red);
+       border-radius: 10px;
+       color: white;
+       font-family: Paint;
+       padding: var(--unit) 0;
+       text-align: center;
      }
      /* https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css */
      abbr.left:before {
@@ -199,6 +210,18 @@
      .flag--si { background-image: url(../flags/4x3/si.svg) }
      .flag--nl { background-image: url(../flags/4x3/nl.svg) }
      .flag--jp { background-image: url(../flags/4x3/jp.svg) }
+
+     .runner__figure img {
+       width: 100%;
+       height: 200px;
+       object-fit: contain;
+     }
+     @supports (aspect-ratio: 1 / 1) {
+       .runner__figure img {
+         height: revert;
+         aspect-ratio: 3 / 1;
+       }
+     }
     </style>
   </head>
   <body>

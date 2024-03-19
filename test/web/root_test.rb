@@ -9,11 +9,15 @@ class RootTest < WebTest
     end
   end
 
-  describe "/r/harvey" do
-    it "works" do
-      visit "/r/harvey"
+  describe "/r/<runner>" do
+    Barkley.runners.each do |runner|
+      it "works" do
+        runner.slugs.each do |slug|
+          visit "/r/#{slug}"
 
-      assert_equal 200, page.status_code
+          assert_equal 200, page.status_code
+        end
+      end
     end
   end
 
