@@ -152,7 +152,7 @@ all = [
       year: 1994,
       nationality: :ca
     ),
-    state: Status.new(state: :confirmed, reason: "Mentioned a lot on instagram"),
+    state: Status.new(state: :likely, reason: "<a href='https://twitter.com/jos71634/status/1770051052257366200'>This tweet</a>"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/athletes/33679522",
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1725210"
