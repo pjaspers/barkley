@@ -42,13 +42,6 @@ data = {
    Loop.new(4, start: nil, stop: nil),
    Loop.new(5, start: nil, stop: nil),
  ],
- :filippo => [
-   Loop.new(1, start: nil, stop: nil),
-   Loop.new(2, start: nil, stop: nil),
-   Loop.new(3, start: nil, stop: nil),
-   Loop.new(4, start: nil, stop: nil),
-   Loop.new(5, start: nil, stop: nil),
- ],
  :harvey => [
    Loop.new(1, start: nil, stop: nil),
    Loop.new(2, start: nil, stop: nil),

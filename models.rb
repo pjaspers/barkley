@@ -71,19 +71,6 @@ all = [
     ),
   ),
   Runner.new(
-    slugs: [:filippo],
-    profile: Profile.new(
-      first_name: "Filippo", last_name: "Meloni",
-      year: 1973,
-      nationality: :ch
-    ),
-    state: Status.new(state: :likely, reason: "Hinted on instagram"),
-    the_inter_webs: web.(
-      strava: "https://www.strava.com/athletes/16900600",
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1620249"
-    ),
-  ),
-  Runner.new(
     slugs: [:harvey],
     profile: Profile.new(
       first_name: "Harvey", last_name: "Lewis",
