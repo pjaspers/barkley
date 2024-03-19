@@ -160,6 +160,19 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 2,
+    slugs: [:clarke],
+    profile: Profile.new(
+      first_name: "John", last_name: "Clarke",
+      year: 2024,
+      nationality: :us,
+    ),
+    state: Status.new(state: :confirmed, reason: "Bio on Strava"),
+    the_inter_webs: web.(
+      strava: "https://www.strava.com/athletes/28619337",
+    ),
+  ),
+  Runner.new(
     attempts: 7,
     finishes: 2,
     slugs: [:john],
@@ -277,19 +290,6 @@ all = [
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=161561",
       instagram: "https://www.instagram.com/rd_tomo/",
       web: "https://tomospit.com"
-    ),
-  ),
-  Runner.new(
-    attempts: 2,
-    slugs: [:clarke],
-    profile: Profile.new(
-      first_name: "John", last_name: "Clarke",
-      year: 1977,
-      nationality: :usa,
-    ),
-    state: Status.new(state: :maybe, reason: "On the List"),
-    the_inter_webs: web.(
-      strava: "https://www.strava.com/athletes/28619337",
     ),
   ),
 ]
