@@ -137,6 +137,18 @@ all = [
     ),
   ),
   Runner.new(
+    slugs: [:matej],
+    profile: Profile.new(
+      first_name: "Matej", last_name: "Arnus",
+      year: 1978,
+      nationality: :si,
+    ),
+    state: Status.new(state: :probably, reason: "On Taka's list"),
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=404460"
+    )
+  ),
+  Runner.new(
     slugs: [:maxime],
     profile: Profile.new(
       first_name: "Maxime", last_name: "Gauduin",
