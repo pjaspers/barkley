@@ -164,12 +164,13 @@ all = [
     slugs: [:clarke],
     profile: Profile.new(
       first_name: "John", last_name: "Clarke",
-      year: 2024,
+      year: 1965,
       nationality: :us,
     ),
     state: Status.new(state: :confirmed, reason: "Bio on Strava"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/athletes/28619337",
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=213437"
     ),
   ),
   Runner.new(

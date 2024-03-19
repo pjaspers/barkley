@@ -48,7 +48,12 @@ https://www.trailrunnermag.com/people/news/the-good-the-bad-and-the-barkley/
  :tomokazu => <<~NOTES,
 https://www.rdrc.sg/blogs/news/rdrc-interview-with-tomokazu-ihara-the-barkley-marathons
   NOTES
-  :clarke => <<~NOTES,
+ :clarke => <<~NOTES,
+From his Strava bio:
+
+<blockquote>Ultra runner with two primary aspirational goals in the sport: 1) win more ultramarathons outright against all competition (won my 1st at The Last Annual Heart of the South, aka HOTS, in June 2022), and 2) complete at least a Fun Run (3 loops) within 40 hours at the Barkley Marathons.</blockquote>
+
+Has ran the Barkley Fall Classic a couple of times and has finished MOAB multiple times.
   NOTES
 }
 
