@@ -28,6 +28,9 @@ data = {
   NOTES
  :sebastien => <<~NOTES,
   NOTES
+ :tano => <<~NOTES,
+ Don't know much about him, he participated in the 2021 Barkley.
+  NOTES
  :thomas => <<~NOTES,
 https://www.trailrunnermag.com/people/news/the-good-the-bad-and-the-barkley/
   NOTES

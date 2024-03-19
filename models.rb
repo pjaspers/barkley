@@ -233,6 +233,20 @@ all = [
   ),
   Runner.new(
     attempts: 2,
+    slugs: [:tano],
+    profile: Profile.new(
+      first_name: "Lenoardo", last_name: "'Tano' Isola",
+      year: 1975,
+      nationality: :ar,
+    ),
+    state: Status.new(state: :likely, reason: "On the list"),
+    the_inter_webs: web.(
+      instagram: "https://www.instagram.com/tano_isola/",
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=685434"
+    ),
+  ),
+  Runner.new(
+    attempts: 2,
     slugs: [:thomas],
     profile: Profile.new(
       first_name: "Thomas", last_name: "Dunkerbeck",
