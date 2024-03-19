@@ -15,7 +15,7 @@ Profile = Data.define(:first_name, :last_name, :year, :nationality) do
   end
 end
 Status = Data.define(:state, :reason)
-TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web)
+TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web, :wiki)
 
 class Runner
   attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes
@@ -35,7 +35,7 @@ class Runner
 end
 
 web = ->(data) {
-  TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil, web: nil}.merge(data))
+  TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil, web: nil, wiki: nil}.merge(data))
 }
 
 all = [
@@ -67,6 +67,7 @@ all = [
       web: "https://www.kisskissbankbank.com/fr/projects/laresolution",
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1348506",
       strava: "https://www.strava.com/athletes/20076562",
+      wiki: "https://fr.wikipedia.org/wiki/Aurélien_Sanchez"
     )
   ),
   Runner.new(
