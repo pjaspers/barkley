@@ -4,7 +4,7 @@
   </h1>
 
   <div class="runner__info">
-    <%= runner.profile.nationality %> <%= runner.profile.year %>
+    <span title="<%= runner.profile.nationality %>" class="flag flag--<%= runner.profile.nationality %>"></span> <%= runner.profile.year %>
   </div>
 
   <div class="runner__links">
