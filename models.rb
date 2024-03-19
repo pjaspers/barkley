@@ -185,7 +185,7 @@ all = [
       year: 1972,
       nationality: :fr
     ),
-    state: Status.new(state: :confirmed, reason: "Announced <a href='here'>https://www.mynaturalorigins.com/en/blog/sebastien-raichon-our-extreme-super-sports-star-will-be-taking-part-in-the-barkley-the-world-s-toughest-trail</a>"),
+    state: Status.new(state: :confirmed, reason: "Announced <a href='https://www.mynaturalorigins.com/en/blog/sebastien-raichon-our-extreme-super-sports-star-will-be-taking-part-in-the-barkley-the-world-s-toughest-trail'>here</a>"),
     the_inter_webs: web.(
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=255597",
       instagram: "https://www.instagram.com/sebastienraichon/",
