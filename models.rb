@@ -279,6 +279,19 @@ all = [
       web: "https://tomospit.com"
     ),
   ),
+  Runner.new(
+    attempts: 2,
+    slugs: [:clarke],
+    profile: Profile.new(
+      first_name: "John", last_name: "Clarke",
+      year: 1977,
+      nationality: :usa,
+    ),
+    state: Status.new(state: :maybe, reason: "On the List"),
+    the_inter_webs: web.(
+      strava: "https://www.strava.com/athletes/28619337",
+    ),
+  ),
 ]
 
 turns_out_not_running = [

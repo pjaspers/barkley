@@ -43,6 +43,8 @@ https://www.trailrunnermag.com/people/news/the-good-the-bad-and-the-barkley/
  :tomokazu => <<~NOTES,
 https://www.rdrc.sg/blogs/news/rdrc-interview-with-tomokazu-ihara-the-barkley-marathons
   NOTES
+  :clarke => <<~NOTES,
+  NOTES
 }
 
 Barkley.runners.each do |runner|

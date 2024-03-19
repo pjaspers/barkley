@@ -139,7 +139,14 @@ data = {
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
-  ]
+  ],
+  :clarke => [
+    Loop.new(1, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: nil),
+    Loop.new(3, start: nil, stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
+  ],
 }
 
 Barkley.runners.each do |runner|
