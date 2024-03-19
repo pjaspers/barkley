@@ -35,7 +35,8 @@
       :strava,
       :instagram,
       :twitter,
-      :duv
+      :duv,
+      :web
     ].each do |key| %>
       <% if link = runner.the_inter_webs.public_send(key) %>
         <a href="<%= link %>">
