@@ -100,21 +100,6 @@ all = [
     ),
   ),
   Runner.new(
-    attempts: 1,
-    slugs: [:claire],
-    profile: Profile.new(
-      first_name: "Claire", last_name: "Bannwarth",
-      year: 1989,
-      nationality: :fr,
-    ),
-    state: Status.new(state: :confirmed, reason: "On the list"),
-    the_inter_webs: web.(
-      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=885641",
-      web: "https://www.trailrunnermag.com/people/news/claire-bannwarth-fkt-colorado-trail/",
-      instagram: "https://www.instagram.com/clairebannwarth/"
-    )
-  ),
-  Runner.new(
     attempts: 3,
     slugs: [:greig],
     profile: Profile.new(
@@ -289,6 +274,24 @@ all = [
       instagram: "https://www.instagram.com/rd_tomo/",
       web: "https://tomospit.com"
     ),
+  ),
+]
+
+turns_out_not_running = [
+  Runner.new(
+    attempts: 1,
+    slugs: [:claire],
+    profile: Profile.new(
+      first_name: "Claire", last_name: "Bannwarth",
+      year: 1989,
+      nationality: :fr,
+    ),
+    state: Status.new(state: :confirmed, reason: "On the list"),
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=885641",
+      web: "https://www.trailrunnermag.com/people/news/claire-bannwarth-fkt-colorado-trail/",
+      instagram: "https://www.instagram.com/clairebannwarth/"
+    )
   ),
 ]
 
