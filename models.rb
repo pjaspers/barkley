@@ -14,13 +14,14 @@ Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web)
 
 class Runner
-  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops
-  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil)
+  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts
+  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil, attempts: 0)
     @slugs = slugs
     @profile = profile
     @state = state
     @the_inter_webs = the_inter_webs
     @loops = loops
+    @attempts = attempts
   end
 end
 
@@ -30,6 +31,7 @@ web = ->(data) {
 
 all = [
   Runner.new(
+    attempts: 3,
     slugs: [:albert],
     profile: Profile.new(
       first_name: "Albert", last_name: "Herrero",
@@ -43,6 +45,7 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 2,
     slugs: [:christophe],
     profile: Profile.new(
       first_name: "Christophe", last_name: "Nonorgue",
@@ -56,6 +59,7 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 2,
     slugs: [:damian],
     profile: Profile.new(
       first_name: "Damian", last_name: "Hall",
@@ -71,6 +75,7 @@ all = [
     ),
   ),
   Runner.new(
+    attempts: 1,
     slugs: [:claire],
     profile: Profile.new(
       first_name: "Claire", last_name: "Bannwarth",
@@ -85,9 +90,10 @@ all = [
     )
   ),
   Runner.new(
-    slugs: [:craig],
+    attempts: 3,
+    slugs: [:greig],
     profile: Profile.new(
-      first_name: "Craig", last_name: "Hamilton",
+      first_name: "Greig", last_name: "Hamilton",
       year: 1980,
       nationality: :us
     ),
@@ -99,6 +105,7 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 3,
     slugs: [:harvey],
     profile: Profile.new(
       first_name: "Harvey", last_name: "Lewis",
@@ -106,13 +113,14 @@ all = [
       nationality: :us
     ),
     state: Status.new(state: :confirmed, reason: "Mentioned a lot on instagram"),
-    # https://en.wikipedia.org/wiki/Harvey_Sweetland_Lewis
     the_inter_webs: web.(
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=19568",
-      instagram: "https://www.instagram.com/harveylewisultrarunner/"
+      instagram: "https://www.instagram.com/harveylewisultrarunner/",
+      web: "https://en.wikipedia.org/wiki/Harvey_Sweetland_Lewis"
     )
   ),
   Runner.new(
+    attempts: 3,
     slugs: [:jasmin],
     profile: Profile.new(
       first_name: "Jasmin", last_name: "Paris",
@@ -125,6 +133,7 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 7,
     slugs: [:john],
     profile: Profile.new(
       first_name: "John", last_name: "Kelly",
@@ -139,6 +148,7 @@ all = [
     ),
   ),
   Runner.new(
+    attempts: 1,
     slugs: [:christiana],
     profile: Profile.new(
       first_name: "Christiana", last_name: "Rugloski",
@@ -152,6 +162,7 @@ all = [
     ),
   ),
   Runner.new(
+    attempts: 1,
     slugs: [:matej],
     profile: Profile.new(
       first_name: "Matej", last_name: "Arnus",
@@ -164,6 +175,7 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 1,
     slugs: [:maxime],
     profile: Profile.new(
       first_name: "Maxime", last_name: "Gauduin",
@@ -179,6 +191,7 @@ all = [
     ),
   ),
   Runner.new(
+    attempts: 1,
     slugs: [:sebastien],
     profile: Profile.new(
       first_name: "Sébastien", last_name: "Raichon",
@@ -193,6 +206,7 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 2,
     slugs: [:thomas],
     profile: Profile.new(
       first_name: "Thomas", last_name: "Dunkerbeck",
@@ -207,6 +221,7 @@ all = [
     ),
   ),
   Runner.new(
+    attempts: 5,
     slugs: [:tomokazu],
     profile: Profile.new(
       first_name: "Tomokazu", last_name: "Ihara",
