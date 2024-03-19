@@ -27,7 +27,11 @@
   </figure>
 
   <div class="runner__notes">
-    <%= runner.notes %>
+    <% runner.notes.split("\n").each do |paragraph| %>
+      <p>
+        <%= paragraph %>
+      </p>
+    <% end %>
   </div>
 
   <div class="runner__links">
