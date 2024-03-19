@@ -49,6 +49,12 @@
             <li>
               <strong>Attempts</strong> <%= runner.attempts %>
             </li>
+            <% if runner.finishes > 0 %>
+              <li>
+                <strong>Finishes</strong> <%= runner.finishes %>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
 

@@ -18,14 +18,15 @@ Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web, :wiki)
 
 class Runner
-  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes
-  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil, notes: nil, attempts: 0)
+  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes, :finishes
+  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil, notes: nil, attempts: 0, finishes: 0)
     @slugs = slugs
     @profile = profile
     @state = state
     @the_inter_webs = the_inter_webs
     @loops = loops
     @attempts = attempts
+    @finishes = finishes
     @notes = notes
   end
 
@@ -55,6 +56,7 @@ all = [
   ),
   Runner.new(
     attempts: 2,
+    finishes: 1,
     slugs: [:aurelien],
     profile: Profile.new(
       first_name: "Aurélien", last_name: "Sanchez",
@@ -159,6 +161,7 @@ all = [
   ),
   Runner.new(
     attempts: 7,
+    finishes: 2,
     slugs: [:john],
     profile: Profile.new(
       first_name: "John", last_name: "Kelly",
