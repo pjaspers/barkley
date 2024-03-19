@@ -31,6 +31,10 @@ class Test < Minitest::Test
   end
 end
 
+def root
+  Pathname.new(File.expand_path("..", File.join(File.dirname(__FILE__))))
+end
+
 freeze_core = false # change to true to enable refrigerator
 if freeze_core
   at_exit do

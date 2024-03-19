@@ -145,6 +145,20 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 1,
+    slugs: [:ihor],
+    profile: Profile.new(
+      first_name: "Ihor", last_name: "Verys",
+      year: 1994,
+      nationality: :ca
+    ),
+    state: Status.new(state: :confirmed, reason: "Mentioned a lot on instagram"),
+    the_inter_webs: web.(
+      strava: "https://www.strava.com/athletes/33679522",
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1725210"
+    )
+  ),
+  Runner.new(
     attempts: 3,
     slugs: [:jasmin],
     profile: Profile.new(

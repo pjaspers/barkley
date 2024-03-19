@@ -14,6 +14,11 @@ data = {
   NOTES
  :greig => <<~NOTES,
   NOTES
+ :ihor => <<~NOTES,
+ Ukranian-Canadian runner, was the assist to <a href="/harvey">'s win in the Big Dog Backyard (ran 717.5km in 108 hours)
+
+ <a href="https://runningmagazine.ca/trail-running/meet-the-ukrainian-canadian-ultrarunner-who-is-winning-everything/">Runninmagazine.ca article</a>
+ NOTES
  :harvey => <<~NOTES,
   NOTES
  :jasmin => <<~NOTES,

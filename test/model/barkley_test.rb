@@ -8,4 +8,10 @@ class BarkleyTest < Test
     refute_nil Barkley.elapsed
     refute_nil Barkley.start
   end
+
+  Barkley.runners.each do |runner|
+    it "#{runner.key} has a jpeg" do
+      assert File.exist?(root.join("public/runners/#{runner.key}.jpg"))
+    end
+  end
 end
