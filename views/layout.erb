@@ -149,6 +149,8 @@
 
      abbr {
        position: relative;
+     }
+     .footer abbr {
        color: #c8b7af;
        border-bottom:1px dashed #c8b7af;
 
@@ -222,6 +224,42 @@
          height: revert;
          aspect-ratio: 3 / 1;
        }
+     }
+     .overview__entry {
+       display: grid;
+       align-items: baseline;
+       grid-auto-flow: column;
+       grid-template-columns: 4fr 1fr;
+     }
+     .overview__name {
+       font-family: Paint;
+       font-size: 2em;
+     }
+     .overview__main {
+       display: grid;
+     }
+     .overview__sub strong {
+       font-weight: 800;
+     }
+     .overview__sub ul {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 3fr;
+       grid-auto-flow: column;
+       list-style: none;
+     }
+     .overview__state {
+       width: fit-content;
+       border-radius: 4px;
+       padding: var(--unit) var(--unit);
+     }
+     .overview__state--confirmed {
+       background-color: hsl(120deg 75% 80%);
+     }
+     .overview__state--likely {
+       background-color: hsl(20deg 75% 80%);
+     }
+     .overview__state--maybe {
+       background-color: hsl(60deg 75% 80%);
      }
     </style>
   </head>

@@ -31,30 +31,39 @@
 
 <h2>Runners</h2>
 
-<% [
-  :confirmed,
-  :likely,
-  :maybe
-].each do |state| %>
-  <h3>
-    <%= state.to_s.capitalize %>
-  </h3>
+<div class="runners_overview">
+  <% Barkley.runners.each.with_index(1) do |runner, index| %>
+    <div class="overview__entry">
+      <div class="overview__main">
+        <a class="overview__name" href="/r/<%= runner.key %>">
+          <%= runner.profile.name %>
+        </a>
+        <div class="overview__sub">
+          <ul>
+            <li>
+              <span title="<%= runner.profile.nationality %>" class="flag flag--<%= runner.profile.nationality %>"></span>
+            </li>
+            <li>
+              <strong>Age</strong> <%= runner.profile.age %>
+            </li>
+            <li>
+              <strong>Attempts</strong> <%= runner.attempts %>
+            </li>
+        </div>
+      </div>
 
-  <table>
-    <% Barkley.runners.public_send(state).each do |runner| %>
-      <tr>
-        <td>
-          <a href="/r/<%= runner.slugs.first %>">
-            <%= runner.profile.name %>
-          </a>
-        </td>
-        <td>
-          <%= runner.state.reason %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-<% end %>
+      <p class="overview__info">
+        <span class="overview__state overview__state--<%= runner.state.state %>">
+          <abbr title="<%= runner.state.reason %>">
+            <%= runner.state.state %>
+          </abbr>
+
+        </span>
+      </p>
+    </div>
+  <% end %>
+</div>
+
 
 <p class="footer">
   From your friends at <a href="https://ferrett.io">Ferrett</a>. <abbr class="left" title="We're training ferretts to track and share your runs.">[?]</abbr>

@@ -47,7 +47,7 @@ all = [
       year: 1982,
       nationality: :es
     ),
-    state: Status.new(state: :confirmed, reason: ""),
+    state: Status.new(state: :confirmed, reason: "Announced on instagram"),
     the_inter_webs: web.(
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=641169",
       instagram: "https://www.instagram.com/albertherrerotrail/"
@@ -179,7 +179,7 @@ all = [
       year: 1996,
       nationality: :us,
     ),
-    state: Status.new(state: :probably, reason: "Winner of Fall Barkley"),
+    state: Status.new(state: :likely, reason: "Winner of Fall Barkley"),
     the_inter_webs: web.(
       strava: "https://www.strava.com/athletes/71706675",
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1079915",
@@ -194,7 +194,7 @@ all = [
       year: 1978,
       nationality: :si,
     ),
-    state: Status.new(state: :probably, reason: "On Taka's list"),
+    state: Status.new(state: :likely, reason: "On Taka's list"),
     the_inter_webs: web.(
       duv: "https://statistik.d-u-v.org/getresultperson.php?runner=404460"
     )
