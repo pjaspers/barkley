@@ -1,6 +1,6 @@
 data = {
   :albert => <<~NOTES,
-  A <a href="https://en.wikipedia.org/wiki/World_Rogaining_Championships">World Rogaining Champion</a> in 2022 (Also see <a href="/greig">Greig</a>)
+  A <a href="https://en.wikipedia.org/wiki/World_Rogaining_Championships">World Rogaining Champion</a> in 2022 (Also see <a href="/r/greig">Greig</a>)
 
   He did 3 loops in 2023 and 1 loop in 2022
   NOTES
@@ -13,6 +13,11 @@ data = {
  :claire => <<~NOTES,
   NOTES
  :greig => <<~NOTES,
+ A <a href="https://en.wikipedia.org/wiki/World_Rogaining_Championships">World Rogaining Champion</a> in 2016 and 2017 (Also see <a href="/r/albert">Albert</a>) so you know he can navigate.
+
+ In 2019 he finished Loop 3 and started Loop 4 (him and Karel Sabbe were the only to do so, but only had 12 hours to complete it), but came back some time later.
+
+  In 2022 he made it to Loop 4, before timing out in that loop.
   NOTES
  :ihor => <<~NOTES,
  Ukranian-Canadian runner, was the assist to <a href="/harvey">'s win in the Big Dog Backyard (ran 717.5km in 108 hours)
