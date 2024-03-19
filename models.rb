@@ -46,6 +46,22 @@ all = [
   ),
   Runner.new(
     attempts: 2,
+    slugs: [:aurelien],
+    profile: Profile.new(
+      first_name: "Aurélien", last_name: "Sanchez",
+      year: 1991,
+      nationality: :us
+    ),
+    state: Status.new(state: :confirmed, reason: "On the list"),
+    the_inter_webs: web.(
+      instagram: "https://www.instagram.com/aurelien_sanchez_/",
+      web: "https://www.kisskissbankbank.com/fr/projects/laresolution",
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1348506",
+      strava: "https://www.strava.com/athletes/20076562",
+    )
+  ),
+  Runner.new(
+    attempts: 2,
     slugs: [:christophe],
     profile: Profile.new(
       first_name: "Christophe", last_name: "Nonorgue",
