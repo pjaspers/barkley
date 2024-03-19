@@ -71,6 +71,20 @@ all = [
     ),
   ),
   Runner.new(
+    slugs: [:craig],
+    profile: Profile.new(
+      first_name: "Craig", last_name: "Hamilton",
+      year: 1980,
+      nationality: :us
+    ),
+    state: Status.new(state: :confirmed, reason: "On the list"),
+    # Was World champion rogaining
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=508680",
+      web: "https://www.nzherald.co.nz/sport/kiwi-greig-hamiltons-incredible-effort-at-barkley-marathons/LI35KFHOSE745KMY5BUI4JNZUA/"
+    )
+  ),
+  Runner.new(
     slugs: [:harvey],
     profile: Profile.new(
       first_name: "Harvey", last_name: "Lewis",
