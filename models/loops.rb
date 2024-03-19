@@ -84,6 +84,13 @@ data = {
    Loop.new(4, start: nil, stop: nil),
    Loop.new(5, start: nil, stop: nil),
  ],
+ :sebastien => [
+   Loop.new(1, start: nil, stop: nil),
+   Loop.new(2, start: nil, stop: nil),
+   Loop.new(3, start: nil, stop: nil),
+   Loop.new(4, start: nil, stop: nil),
+   Loop.new(5, start: nil, stop: nil),
+ ],
  :thomas => [
    Loop.new(1, start: nil, stop: nil),
    Loop.new(2, start: nil, stop: nil),

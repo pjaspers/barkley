@@ -151,6 +151,20 @@ all = [
     ),
   ),
   Runner.new(
+    slugs: [:sebastien],
+    profile: Profile.new(
+      first_name: "Sébastien", last_name: "Raichon",
+      year: 1972,
+      nationality: :fr
+    ),
+    state: Status.new(state: :confirmed, reason: "Announced <a href='here'>https://www.mynaturalorigins.com/en/blog/sebastien-raichon-our-extreme-super-sports-star-will-be-taking-part-in-the-barkley-the-world-s-toughest-trail</a>"),
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=255597",
+      instagram: "https://www.instagram.com/sebastienraichon/",
+      strava: "https://www.strava.com/athletes/12694886",
+    )
+  ),
+  Runner.new(
     slugs: [:thomas],
     profile: Profile.new(
       first_name: "Thomas", last_name: "Dunkerbeck",
