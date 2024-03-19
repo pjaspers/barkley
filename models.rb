@@ -59,7 +59,7 @@ all = [
     profile: Profile.new(
       first_name: "Aurélien", last_name: "Sanchez",
       year: 1991,
-      nationality: :us
+      nationality: :fr
     ),
     state: Status.new(state: :confirmed, reason: "On the list"),
     the_inter_webs: web.(
