@@ -28,6 +28,7 @@ data = {
  :christiana => <<~NOTES,
   NOTES
  :matej => <<~NOTES,
+ Finished the Tor des Geants last year (614th), was the assist with 207km in 32 hours, can't find much else.
   NOTES
  :maxime => <<~NOTES,
   NOTES
