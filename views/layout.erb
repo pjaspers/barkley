@@ -101,7 +101,9 @@
      a {
        color: var(--pop-red);
      }
-
+     strong {
+       font-weight: 800;
+     }
      .highlight {
        background-color: hsl(60deg 75% 80%);
        border-radius: 4px;
@@ -262,6 +264,32 @@
      }
      .overview__state--maybe {
        background-color: hsl(60deg 75% 80%);
+     }
+     .loops__header {
+       font-family: Paint;
+       font-weight: 800;
+     }
+     .loops__header > *{
+       display: grid;
+       font-weight: 800;
+     }
+     .loops__header > div > span{
+       font-weight: 800;
+     }
+     .loops__name {
+       display: grid;
+     }
+     .loops__name__nick {
+       font-family: Paint;
+     }
+     .loops__name__guess {
+       font-size: smaller;
+     }
+     .loops {
+       border-collapse: collapse;
+     }
+     .loops tbody tr:nth-child(even) {
+       background-color: var(--pink);
      }
     </style>
   </head>

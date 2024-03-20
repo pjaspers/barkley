@@ -56,9 +56,9 @@ class App < Roda
     HTML
   end
 
-  def elapsed(time)
+  def elapsed(time, style: "short")
     <<~HTML
-    <relative-time datetime="#{time.iso8601}" format="duration" hour="numeric" minute="numeric" second="numeric">
+    <relative-time datetime="#{time.iso8601}" format="duration" hour="numeric" minute="numeric" second="numeric" format-style="#{style}">
       #{Time.now - time} seconds
     </relative-time>
     HTML
