@@ -165,7 +165,7 @@ all = [
     profile: Profile.new(
       first_name: "Iso", last_name: "Yucra",
       year: 1968,
-      nationality: :es
+      nationality: :bo
     ),
     state: Status.new(state: :confirmed, reason: "<a href='https://twitter.com/recore_b/status/1770276100792254944'>This tweet</a>"),
     the_inter_webs: web.(
