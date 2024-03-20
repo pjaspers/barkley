@@ -44,12 +44,14 @@
           <% end %>
         </td>
 
-        <% loops.each do |l| %>
-          <td>
-            <% if l.started? || l.finished? %>
-              <%= hhmmss(l.start) %>
-            <% end %>
-          </td>
+        <% loops.each.with_index(1) do |l, i| %>
+          <% if i > 1 %>
+            <td>
+              <% if l.started? || l.finished? %>
+                <%= hhmmss(l.start) %>
+              <% end %>
+            </td>
+          <% end %>
           <td>
             <% if l.finished? %>
               <%= hour_minute_seconds(l.stop).join(":") %>
