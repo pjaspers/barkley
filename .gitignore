@@ -1,9 +1,3 @@
 vendor/ruby
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
-*.swp
+coverage
 *.swp

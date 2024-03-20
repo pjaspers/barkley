@@ -161,6 +161,19 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 8,
+    slugs: [:jared],
+    profile: Profile.new(
+      first_name: "Jared", last_name: "Campbell",
+      year: 1979,
+      nationality: :us,
+    ),
+    state: Status.new(state: :confirmed, reason: "on photo"),
+    the_inter_webs:   web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=46981"
+    )
+  ),
+  Runner.new(
     attempts: 3,
     slugs: [:jasmin],
     profile: Profile.new(
