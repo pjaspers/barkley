@@ -15,7 +15,7 @@
 
        --pink: hsl(20deg 75% 80%);
        --yellow: hsl(60deg 75% 80%);
-       --blue: hsl(120deg 75% 80%);
+       --blue: hsl(180deg 75% 80%);
        --green: hsl(120deg 75% 80%);
 
        --shadow-color: 40deg 27% 60%;
@@ -291,6 +291,16 @@
 
      .loops tbody tr:nth-child(even) {
        background-color: var(--pink);
+     }
+     .cutoffs {
+       display: grid;
+       align-items: baseline;
+       grid-auto-flow: row;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     .cutoffs__header {
+       font-weight: 800;
+       font-family: Paint;
      }
     </style>
   </head>
