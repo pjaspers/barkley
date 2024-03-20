@@ -44,4 +44,20 @@ class App < Roda
       view "index"
     end
   end
+
+  def local_time(time)
+    <<~HTML
+    <relative-time datetime="#{time.iso8601}" format="datetime" hour="numeric" minute="numeric" second="numeric">
+      #{time.strftime("%d %M %Y %H:%M")}
+    </relative-time>
+    HTML
+  end
+
+  def elapsed(time)
+    <<~HTML
+    <relative-time datetime="#{time.iso8601}" format="duration" hour="numeric" minute="numeric" second="numeric">
+      #{Time.now - time} seconds
+    </relative-time>
+    HTML
+  end
 end

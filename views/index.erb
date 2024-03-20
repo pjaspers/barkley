@@ -2,7 +2,9 @@
 
 <h2>Events</h2>
 
-The conch was blown at <span class="highlight"><%= Barkley.conch_blown %></span> so the race will start at <span class="highlight"><%= Barkley.start %></span>
+The conch was blown at <span class="highlight"><%= local_time(Barkley.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(Barkley.start) %></span>, so we've been running for <span class="highlight"><%= elapsed(Barkley.start) %></span>.
+
+
 
 <h2>Resources</h2>
 

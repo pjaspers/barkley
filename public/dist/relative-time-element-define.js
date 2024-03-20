@@ -1,0 +1,2 @@
+import{RelativeTimeElement as e}from"./relative-time-element.js";export{RelativeTimeUpdatedEvent}from"./relative-time-element.js";const t=typeof globalThis!=="undefined"?globalThis:window;try{t.RelativeTimeElement=e.define()}catch(e){if(!(t.DOMException&&e instanceof DOMException&&e.name==="NotSupportedError")&&!(e instanceof ReferenceError))throw e}export{e as RelativeTimeElement,e as default};
+//# sourceMappingURL=relative-time-element-define.js.map
