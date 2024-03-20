@@ -154,6 +154,46 @@ data = {
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
+  ],
+  # Guy with red hat finished loop one in 10:27:41, almost an hour behind the previous loop one finisher. #BM100
+  guy_with_red_hat: [
+    Loop.new(1, start: "00:00:00", stop: "10:27:41"),
+    Loop.new(2, start: nil, stop: nil),
+    Loop.new(3, start: nil, stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
+  ],
+  # Another large gap, and the next loop one finisher comes in at 11:16:42. “Ratjaw sucks.” #BM100
+  ratjaw_sucks: [
+    Loop.new(1, start: "00:00:00", stop: "11:16:42"),
+    Loop.new(2, start: nil, stop: nil),
+    Loop.new(3, start: nil, stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
+  ],
+  # The next runner finishes loop one in 11:30; as he approaches the gate his crew yells “c’mon c’mon; we don’t have all day!”
+  does_not_have_all_day: [
+    Loop.new(1, start: "00:00:00", stop: "11:30:00"),
+    Loop.new(2, start: nil, stop: nil),
+    Loop.new(3, start: nil, stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
+  ],
+  # The man in black has finished loop one in 11:49:30. #BM100
+  man_in_black: [
+    Loop.new(1, start: "00:00:00", stop: "11:49:30"),
+    Loop.new(2, start: "11:57:04", stop: nil),
+    Loop.new(3, start: nil, stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
+  ],
+  # The man in black begins loop two at 11:57:04. Eight minute interloopal period. MIB II finishes loop one immediately thereafter. #BM100
+  man_in_black_2: [
+    Loop.new(1, start: "00:00:00", stop: "11:58:00"),
+    Loop.new(2, start: nil, stop: nil),
+    Loop.new(3, start: nil, stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
   ]
 }
 
