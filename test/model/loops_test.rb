@@ -4,18 +4,28 @@ class LoopsTest < Test
   it "started" do
     loop = Loop.new(1, start: "08:32:33", stop: nil)
 
-    assert_equal :started, loop.state
+    assert loop.started?
   end
 
   it "finished" do
     loop = Loop.new(1, start: "08:32:33", stop: "20:10:06")
 
-    assert_equal :finished, loop.state
+    assert loop.finished?
   end
 
   it "not_started" do
     loop = Loop.new(1, start: nil, stop: nil)
 
-    assert_equal :not_started, loop.state
+    assert loop.not_started?
+  end
+
+  it "has seconds since start" do
+    time = Time.now
+    Barkley.stub :start, time - 2*60*60 do
+      loop = Loop.new(1, start: "01:00:00", stop: "20:10:06")
+
+      # Barkley started an hour ago, 1 hour was passed in the loop
+      assert_equal 3600, loop.seconds_since_start(time)
+    end
   end
 end
