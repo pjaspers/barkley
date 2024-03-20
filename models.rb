@@ -147,6 +147,20 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 7,
+    slugs: [:iso],
+    profile: Profile.new(
+      first_name: "Iso", last_name: "Yucra",
+      year: 1968,
+      nationality: :es
+    ),
+    state: Status.new(state: :confirmed, reason: "<a href='https://twitter.com/recore_b/status/1770276100792254944'>This tweet</a>"),
+    the_inter_webs: web.(
+      strava: "https://www.strava.com/athletes/18047935",
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=47665"
+    )
+  ),
+  Runner.new(
     attempts: 3,
     slugs: [:jasmin],
     profile: Profile.new(

@@ -55,6 +55,9 @@ From his Strava bio:
 
 Has ran the Barkley Fall Classic a couple of times and has finished MOAB multiple times.
   NOTES
+  :iso => <<~NOTES,
+  Has run a 6 days event 2023-12-28: <a href="https://www.strava.com/activities/10521175373">strava-link</a>
+  NOTES
 }
 
 Barkley.runners.each do |runner|
