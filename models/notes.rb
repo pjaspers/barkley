@@ -59,6 +59,11 @@ Has ran the Barkley Fall Classic a couple of times and has finished MOAB multipl
   Has run a 6 days event 2023-12-28: <a href="https://www.strava.com/activities/10521175373">strava-link</a>
   NOTES
   :jared => <<~NOTES,
+  Previous attempts in 2023, 2021,2016,2014,2013 and 201212 (finished in 16, 14 and 12, fun run in 21, fun run in 23)
+
+  <blockquote>To put it lightly, Jared Campbell is a prolific, inspirational, and ingenious endurance athlete and environmentalist. Among his accomplishments, Campbell is the sole three-time finisher of the Barkley Marathons, he founded a trail running event that supports clean-air initiatives, and he has rebuilt a home to be net positive and teaches others how to do it affordably, too. If it were not for his humility, perhaps more people would know the breadth of Campbell’s philanthropic climate work, as well as his self-blueprinted adventures.</blockquote>
+
+  Taken from <a href="https://www.irunfar.com/werunfar-profile-jared-campbell">this article</a>
   NOTES
   :joe => <<~NOTES,
   NOTES
