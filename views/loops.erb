@@ -1,24 +1,33 @@
 <table class="loops">
-  <tr>
-    <th class="loops__header">
-      Name
-    </th>
+  <colgroup>
+    <col style="width: 20%"/>
     <% [1,2,3,4,5].each do |i| %>
-      <th class="loops__header">
-        <div>
-          <span>Loop <%=i %></span>
-          <span>start</span>
-        </div>
-
-      </th>
-      <th class="loops__header">
-        <div>
-          <span>Loop <%=i %></span>
-          <span>finish</span>
-        </div>
-      </th>
+      <col style="width: 8%">
+      <col style="width: 8%">
     <% end %>
-  </tr>
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="loops__header">
+        Name
+      </th>
+      <% [1,2,3,4,5].each do |i| %>
+        <th class="loops__header">
+          <div>
+            <span>Loop <%=i %></span>
+            <span>start</span>
+          </div>
+
+        </th>
+        <th class="loops__header">
+          <div>
+            <span>Loop <%=i %></span>
+            <span>finish</span>
+          </div>
+        </th>
+      <% end %>
+    </tr>
+  </thead>
   <tbody>
     <% Barkley.loops.each do |nickname, (runner,loops)| %>
       <tr class="loops__line">
