@@ -1,10 +1,16 @@
 <h1>Barkley Marathons 2024</h1>
 
-<h2>Events</h2>
+<ul class="navigation">
+  <% %w(timeline cutoffs loops resources runners).each do |item| %>
+    <li><a href="#<%= item %>"><%= item.capitalize %></a></li>
+  <% end %>
+</ul>
+
+<h2 id="timeline">Timeline</h2>
 
 The conch was blown at <span class="highlight"><%= local_time(Barkley.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(Barkley.start) %></span>, so we've been running for <span class="highlight"><%= elapsed(Barkley.start) %></span> and we still have <span class="highlight highlight--blue"><%= elapsed(Barkley.end_time) %></span> remaining before it all ends.
 
-<h2>Cutoffs</h2>
+<h2 id="cutoffs">Cutoffs</h2>
 
 You can't start a loop after it's cutoff.
 
@@ -32,7 +38,11 @@ You can't start a loop after it's cutoff.
   </div>
 </div>
 
-<h2>Resources</h2>
+<h2 id="loops">Loops</h2>
+
+<%= partial("loops") %>
+
+<h2 id="resources">Resources</h2>
 
 <ul class="resources">
   <li>
@@ -63,7 +73,7 @@ You can't start a loop after it's cutoff.
 </ul>
 
 
-<h2>Runners</h2>
+<h2 id="runners">Runners</h2>
 
 <div class="runners_overview">
   <% Barkley.runners.each.with_index(1) do |runner, index| %>
