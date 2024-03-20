@@ -187,6 +187,19 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 8,
+    slugs: [:joe],
+    profile: Profile.new(
+      first_name: "Joe", last_name: "McConaughy",
+      year: 1991,
+      nationality: :us,
+    ),
+    state: Status.new(state: :confirmed, reason: "on photo"),
+    the_inter_webs:   web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=784193"
+    )
+  ),
+  Runner.new(
     attempts: 2,
     slugs: [:clarke],
     profile: Profile.new(
