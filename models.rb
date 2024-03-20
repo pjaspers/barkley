@@ -134,6 +134,19 @@ all = [
   ),
   Runner.new(
     attempts: 1,
+    slugs: [:hendrik],
+    profile: Profile.new(
+      first_name: "Hendrik", last_name: "Boury",
+      year: 1990,
+      nationality: :de,
+    ),
+    state: Status.new(state: :confirmed, reason: "on the List"),
+    the_inter_webs:   web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=2022317"
+    )
+  ),
+  Runner.new(
+    attempts: 1,
     slugs: [:ihor],
     profile: Profile.new(
       first_name: "Ihor", last_name: "Verys",
@@ -187,7 +200,7 @@ all = [
     )
   ),
   Runner.new(
-    attempts: 8,
+    attempts: 2,
     slugs: [:joe],
     profile: Profile.new(
       first_name: "Joe", last_name: "McConaughy",

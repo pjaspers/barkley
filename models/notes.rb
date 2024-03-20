@@ -62,6 +62,8 @@ Has ran the Barkley Fall Classic a couple of times and has finished MOAB multipl
   NOTES
   :joe => <<~NOTES,
   NOTES
+  :hendrik => <<~NOTES,
+  NOTES
 }
 
 Barkley.runners.each do |runner|
