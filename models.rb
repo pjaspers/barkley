@@ -18,8 +18,9 @@ Status = Data.define(:state, :reason)
 TheInterwebs = Data.define(:strava, :instagram, :twitter, :duv, :web, :wiki)
 
 class Runner
-  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes, :finishes
-  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: nil, notes: nil, attempts: 0, finishes: 0)
+  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes, :finishes, :nick_name
+
+  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: [], notes: nil, attempts: 0, finishes: 0)
     @slugs = slugs
     @profile = profile
     @state = state
@@ -385,6 +386,7 @@ class Runners
     end
   end
 
+  def find!(key) = @data.detect{|r| r.key == key } || raise("No one named #{key}")
   def by_slug(string) = @data.detect{|r| r.slugs.include?(string.to_sym)}
   def each(&block) = @data.each(&block)
 end

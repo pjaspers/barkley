@@ -1,6 +1,6 @@
 module Barkley
   class << self
-    attr_accessor :runners
+    attr_accessor :runners, :loops
 
     def conch_blown = Time.new(2024, 03, 20, 4, 17, 0, "-04:00")
     def start = conch_blown + 1*60*60
