@@ -12,6 +12,7 @@ class HelpersTest < WebTest
   it "hour_minute_seconds" do
     app = App.new({})
 
-    assert_equal [0,11,50], hour_minute_seconds(710)
+    assert_equal [0,11,50], app.hour_minute_seconds(710)
+    assert_equal "00:11:50", app.hhmmss(710)
   end
 end

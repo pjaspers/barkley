@@ -9,17 +9,21 @@
     <% end %>
   </tr>
 
-  <% Barkley.loops.each do |nickname, loops| %>
+  <% Barkley.loops.each do |nickname, (runner,loops)| %>
     <tr>
       <td>
-        <%= nickname %>
+        <% if runner %>
+          <%= nickname %> (<%= runner.profile.name %>?)
+        <% else %>
+          <%= nickname %>
+        <% end %>
       </td>
 
       <% loops.each do |l| %>
         <td>
-            <% if l.started? %>
-              <%= hour_minute_seconds(l.start).join(":") %>
-            <% end %>
+          <% if l.started? || l.finished? %>
+            <%= hhmmss(l.start) %>
+          <% end %>
         </td>
         <td>
           <% if l.finished? %>

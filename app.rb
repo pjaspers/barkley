@@ -64,6 +64,10 @@ class App < Roda
     HTML
   end
 
+  def hhmmss(seconds)
+    "%02d:%02d:%02d" % hour_minute_seconds(seconds)
+  end
+
   # Takes seconds and returns an array with [hour, minute, seconds]
   #
   #       hour_minute_seconds(710) => [0,11,50]

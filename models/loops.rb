@@ -10,8 +10,8 @@ class Loop
   end
 
   def started? = state == :started
-  def finished? = state == :finished?
-  def not_started? = state == :not_started?
+  def finished? = state == :finished
+  def not_started? = state == :not_started
   def started_at = @barkley_start + @start
   def finished_at = @barkley_start + @stop
 
@@ -183,10 +183,11 @@ aliases.each do |nickname, key|
   Barkley.loops ||= {}
   loops = data.fetch(nickname)
 
-  Barkley.loops[nickname] = loops
+  runner = nil
   if key
     runner = Barkley.runners.find!(key)
     runner.nick_name = nickname
     runner.loops = loops
   end
+  Barkley.loops[nickname] = [runner, loops]
 end
