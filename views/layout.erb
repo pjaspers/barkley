@@ -7,16 +7,17 @@
     <meta name="description" content="Barkley 2024">
     <style>
      :root {
-       --main-width: 40rem;
+       --main-width: 80ch;
        --unit: 8px;
-       --color-secondary: hsl(270deg 46% 85%);
-       --background: hsl(42, 89%, 96%);
+       --background: hsl(42deg 89% 96%);
        --red: hsl(336, 65%, 72%);
        --pop-red: hsl(336, 100%, 60%);
-       --blue: hsl(226, 89%, 17%);
-       --light-blue: hsl(189, 47%, 73%);
-       --main: hsl(22, 56%, 85%);
-       --white: hsl(60, 100%, 100%);
+
+       --pink: hsl(20deg 75% 80%);
+       --yellow: hsl(60deg 75% 80%);
+       --blue: hsl(120deg 75% 80%);
+       --green: hsl(120deg 75% 80%);
+
        --shadow-color: 40deg 27% 60%;
        --shadow-elevation-low:
          0px 0.1px 0.1px hsl(var(--shadow-color) / 0.34),
@@ -64,7 +65,7 @@
        box-sizing: border-box;
        color: inherit;
        text-align: left;
-       line-height: 1.5;
+       line-height: 1.8;
      }
      body {
        background-color: var(--background);
@@ -83,7 +84,7 @@
      }
      .wrapper {
        margin: 0 auto;
-       max-width: 80ch;
+       max-width: var(--main-width);
        padding: var(--unit);
      }
      @media(min-width: 700px) {
@@ -104,8 +105,13 @@
      .highlight {
        background-color: hsl(60deg 75% 80%);
        border-radius: 4px;
-       padding: calc(var(--unit) / 2) var(--unit);
+       padding: calc(var(--unit) / 2) calc(var(--unit) / 2);
      }
+
+     <% %w(yellow blue pink green).each do |color| %>
+       .highlight--<%= color %> { background-color: var(--<%= color %>); }
+     <% end %>
+
      /* clamp(min, val, max) */
      h1 { font-size: clamp(2.0rem, 4.0vw + 1rem, 6rem); }
      h2 { font-size: clamp(1.5rem, 2.0vw + 1rem, 4rem); }
