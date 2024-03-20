@@ -1,9 +1,9 @@
 <table class="loops">
   <colgroup>
-    <col style="width: 20%"/>
+    <col style="width: 19%"/>
     <% [1,2,3,4,5].each do |i| %>
-      <col style="width: 8%">
-      <col style="width: 8%">
+      <col style="width: 9%">
+      <col style="width: 9%">
     <% end %>
   </colgroup>
   <thead>
@@ -12,13 +12,15 @@
         Name
       </th>
       <% [1,2,3,4,5].each do |i| %>
-        <th class="loops__header">
-          <div>
-            <span>Loop <%=i %></span>
-            <span>start</span>
-          </div>
+        <% if i > 1 %>
+          <th class="loops__header">
+            <div>
+              <span>Loop <%=i %></span>
+              <span>start</span>
+            </div>
+          </th>
+        <% end %>
 
-        </th>
         <th class="loops__header">
           <div>
             <span>Loop <%=i %></span>
