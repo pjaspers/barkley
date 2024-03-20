@@ -1,9 +1,22 @@
 class Loop
+  attr_accessor :start, :stop, :number
+
   # start and stop is relative to the start
   def initialize(number, start:, stop:)
     @number = number
     @start = start ? duration_to_sec(start) : start
     @stop = stop ? duration_to_sec(stop) : stop
+    @barkley_start = Barkley.start
+  end
+
+  def started? = state == :started
+  def finished? = state == :finished?
+  def not_started? = state == :not_started?
+  def started_at = @barkley_start + @start
+  def finished_at = @barkley_start + @stop
+
+  def seconds_since_start(now = Time.now)
+    now - @barkley_start - @start
   end
 
   def state
@@ -170,7 +183,7 @@ aliases.each do |nickname, key|
   Barkley.loops ||= {}
   loops = data.fetch(nickname)
 
-  Barkley.loops[:nickname] = loops
+  Barkley.loops[nickname] = loops
   if key
     runner = Barkley.runners.find!(key)
     runner.nick_name = nickname

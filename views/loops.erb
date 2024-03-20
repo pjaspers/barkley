@@ -1,0 +1,34 @@
+<table>
+  <tr>
+    <th>
+      Name
+    </th>
+    <% [1,2,3,4,5].each do |i| %>
+      <th>Loop <%=i %> start</th>
+      <th>Loop <%=i %> finish</th>
+    <% end %>
+  </tr>
+
+  <% Barkley.loops.each do |nickname, loops| %>
+    <tr>
+      <td>
+        <%= nickname %>
+      </td>
+
+      <% loops.each do |l| %>
+        <td>
+            <% if l.started? %>
+              <%= hour_minute_seconds(l.start).join(":") %>
+            <% end %>
+        </td>
+        <td>
+          <% if l.finished? %>
+            <%= hour_minute_seconds(l.stop).join(":") %>
+          <% elsif l.started? %>
+            <%= humanize(l.seconds_since_start) %> <span class="highlight highlight--green">ongoing</span>
+          <% end %>
+        </td>
+      <% end %>
+    </tr>
+<% end %>
+</table>

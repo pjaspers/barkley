@@ -37,6 +37,9 @@ class App < Roda
       end
     end
 
+    r.get "loops" do
+      view "loops"
+    end
 
     r.root do
       @runners = Barkley.runners
@@ -59,5 +62,38 @@ class App < Roda
       #{Time.now - time} seconds
     </relative-time>
     HTML
+  end
+
+  # Takes seconds and returns an array with [hour, minute, seconds]
+  #
+  #       hour_minute_seconds(710) => [0,11,50]
+  def hour_minute_seconds(seconds)
+    [60, 60, 24].collect do |count|
+      next 0 unless seconds > 0
+
+      seconds, n = seconds.divmod(count)
+      n
+    end.reverse
+  end
+
+  # Takes seconds and returns a human string
+  #
+  #       humanize(710) => "11 minutes and 50 seconds"
+  def humanize(secs)
+    hour, minute, seconds = hour_minute_seconds(secs)
+    parts = []
+    [[hour, ["hour", "hours"]],
+     [minute, ["minute", "minutes"]],
+     [seconds, ["second", "seconds"]]].each do |count, (singular, plural)|
+      count = count.round
+      parts << (count > 1 ? "#{count} #{plural}" : "#{count} #{singular}") if count > 0
+    end
+    parts.compact
+    last = parts.pop
+    if parts.count > 0
+      "#{parts.join(", ")} and #{last}"
+    else
+      last
+    end
   end
 end

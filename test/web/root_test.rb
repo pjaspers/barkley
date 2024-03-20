@@ -21,4 +21,11 @@ class RootTest < WebTest
     end
   end
 
+  describe "/loops" do
+    it "works" do
+      visit "/loops"
+
+      assert_equal 200, page.status_code
+    end
+  end
 end
