@@ -217,6 +217,15 @@ aliases = {
   french_runner_2:           :maxime,
   guy_with_gray_beard:       :christophe,
   muscular_guy: nil,
+  guy_with_red_hat:          :hendrik,
+  # Another large gap, and the next loop one finisher comes in at 11:16:42. “Ratjaw sucks.” #BM100
+  ratjaw_sucks: nil,
+  # The next runner finishes loop one in 11:30; as he approaches the gate his crew yells “c’mon c’mon; we don’t have all day!”
+  does_not_have_all_day: nil,
+  # The man in black has finished loop one in 11:49:30. #BM100
+  man_in_black: nil,
+  # The man in black begins loop two at 11:57:04. Eight minute interloopal period. MIB II finishes loop one immediately thereafter. #BM100
+  man_in_black_2: nil,
 }
 
 aliases.each do |nickname, key|
