@@ -69,8 +69,11 @@ tweets = {
   1770873749065043996 => "Greig Hamilton began loop four at 32:43:11 and Jared Campbell began loop 4 at 32:43:37. #BM100",
   1770868051476390033 => "Jared Campbell finished loop three in 32:20:54. #BM100",
   1770883341241213218 => "Albert Herrero Casas finished loop three in 33:22:37. #BM100",
-  1770889923660284332 => "Albert Herrero Casas began loop four at 33:49:19. #BM100"
+  1770889923660284332 => "Albert Herrero Casas began loop four at 33:49:19. #BM100",
+  1770901120396742981 => "Maxime Gauduin finished loop three in 34:32:49. #BM100",
+  1770903945910636768 => "Tomo Ihara finished loop three in 34:43:15. #BM100",
 }
+
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
 
 # Each start and stop should be an instance of an Update, that's why
@@ -201,7 +204,7 @@ data = {
   japanese_runner: [
     Loop.new(1, start: U["00:00:00"], stop: U["09:11:05"]),
     Loop.new(2, start: nil, stop: U["22:08:53"]),
-    Loop.new(3, start: U["22:25:10"], stop: nil),
+    Loop.new(3, start: U["22:25:10"], stop: U["34:43:15", t[1770903945910636768]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -218,7 +221,7 @@ data = {
   french_runner_2: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:45:55"]),
     Loop.new(2, start: nil, stop: U["20:26:20"]),
-    Loop.new(3, start: U["21:50:45"], stop: nil),
+    Loop.new(3, start: U["21:50:45"], stop: U["34:32:49", t[1770901120396742981]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
