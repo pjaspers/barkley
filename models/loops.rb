@@ -78,7 +78,7 @@ data = {
   ],
   more_3: [
     Loop.new(1, start: "00:00:00", stop: "08:31:59"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "DNF"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -104,7 +104,7 @@ data = {
   very_daring_shorts: [
     Loop.new(1, start: "00:00:00", stop: "09:30:24"),
     Loop.new(2, start: "09:55:02", stop: "22:08:57"),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(3, start: "23:55:00", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -136,19 +136,19 @@ data = {
     Loop.new(5, start: nil, stop: nil),
   ],
   # Two French runners have finished loop one in 8:45:48 and a few seconds later,
-  # maxime
+  # aurelien
   french_runner_1: [
     Loop.new(1, start: "00:00:00", stop: "08:45:48"),
     Loop.new(2, start: nil, stop: "19:52:48"),
-    Loop.new(3, start: "21:01:40", stop: nil),
+    Loop.new(3, start: "21:01:40", stop: "DNF"),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
-  # aurelien
+  # maxime
   french_runner_2: [
     Loop.new(1, start: "00:00:00", stop: "08:45:55"),
     Loop.new(2, start: nil, stop: "20:26:20"),
-    Loop.new(3, start: "21:50:45", stop: "DNF"),
+    Loop.new(3, start: "21:50:45", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -170,7 +170,7 @@ data = {
   # Guy with red hat finished loop one in 10:27:41, almost an hour behind the previous loop one finisher. #BM100
   guy_with_red_hat: [
     Loop.new(1, start: "00:00:00", stop: "10:27:41"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "DNF"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -194,7 +194,7 @@ data = {
   # The man in black has finished loop one in 11:49:30. #BM100
   man_in_black: [
     Loop.new(1, start: "00:00:00", stop: "11:49:30"),
-    Loop.new(2, start: "11:57:04", stop: nil),
+    Loop.new(2, start: "11:57:04", stop: "DNF"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -206,7 +206,7 @@ data = {
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
-  ]
+  ],
 }
 
 # harvey
@@ -218,7 +218,7 @@ aliases = {
   # 3 more runners
   more_1:                    :sebastien,
   more_2:                    :ihor,
-  more_3: nil,
+  more_3: :harvey,
   # Next 2 runners
   next_1:                    :greig,
   next_2: nil,
@@ -236,7 +236,7 @@ aliases = {
   # The next runner finishes loop one in 11:30; as he approaches the gate his crew yells “c’mon c’mon; we don’t have all day!”
   does_not_have_all_day: nil,
   # The man in black has finished loop one in 11:49:30. #BM100
-  man_in_black: nil,
+  man_in_black:             :harald,
   # The man in black begins loop two at 11:57:04. Eight minute interloopal period. MIB II finishes loop one immediately thereafter. #BM100
   man_in_black_2: nil,
 }

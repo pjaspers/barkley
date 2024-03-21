@@ -120,6 +120,19 @@ all = [
   ),
   Runner.new(
     attempts: 3,
+    slugs: [:harald],
+    profile: Profile.new(
+      first_name: "Harvald", last_name: "Zundel",
+      year: 1968,
+      nationality: :us
+    ),
+    state: Status.new(state: :confirmed, reason: "Mentioned by Keith"),
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=246250",
+    )
+  ),
+  Runner.new(
+    attempts: 3,
     slugs: [:harvey],
     profile: Profile.new(
       first_name: "Harvey", last_name: "Lewis",
