@@ -1,5 +1,5 @@
 class Loop
-  attr_accessor :start, :stop, :number
+  attr_accessor :number
 
   # start and stop is relative to the start
   def initialize(number, start:, stop:)
