@@ -58,7 +58,7 @@
             <% elsif l.finished? %>
               <%= hour_minute_seconds(l.stop).join(":") %>
             <% elsif l.started? %>
-              <span class="highlight highlight--green">
+              <span class="highlight highlight--green loops__ongoing">
                 <%= elapsed(l.started_at, style: "narrow") %>
               </span>
             <% end %>
