@@ -62,7 +62,13 @@
           <% end %>
           <td data-score="<%= l.score %>">
             <% if l.dnf? %>
-              <span class="highlight highlight--red">DNF</span>
+              <% if l.finish_source %>
+                <a href="<%= l.finish_source %>" title="<%= l.stop_title %>">
+                  <span class="highlight highlight--red">DNF</span>
+                </a>
+              <% else %>
+                <span class="highlight highlight--red">DNF</span>
+              <% end %>
             <% elsif l.finished? %>
               <% if l.finish_source %>
                 <a href="<%= l.finish_source %>" title="<%= l.stop_title %>">

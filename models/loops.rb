@@ -224,7 +224,7 @@ data = {
   ],
   # A guy with a gray beard and a muscular guy with tree trunk legs came through the fire tower at 12:55. #BM100
   guy_with_gray_beard: [
-    Loop.new(1, start: U["00:00:00"], stop: nil),
+    Loop.new(1, start: U["00:00:00"], stop: U["DNF", ["https://twitter.com/generalgoliath/status/1770810728397647988", "Had to drop after 5 hours, due to ankle injury. (Source: his Strava and Facebook)"]]),
     Loop.new(2, start: nil, stop: nil),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
