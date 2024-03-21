@@ -176,6 +176,7 @@ all = [
   ),
   Runner.new(
     attempts: 8,
+    finishes: 3,
     slugs: [:jared],
     profile: Profile.new(
       first_name: "Jared", last_name: "Campbell",
