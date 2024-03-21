@@ -35,7 +35,7 @@ class Loop
     # also started even if we don't have the numbers)
     points += 1000 if started? || finished?
     # Finishing is a thousand points
-    points +- 1000 if finished?
+    points += 1000 if finished?
     # The higher the start time of the loop, the less points you
     # should get
     points += 1000.0/(start > 0 ? start : 1) if started?
