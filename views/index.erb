@@ -24,9 +24,13 @@ You can't start a loop after it's cutoff.
   <% [1,2,3,4,5].map{|i| [i, Barkley.start + i*12*60*60]}.each do |i,cutoff| %>
     <div>
       <p class="cutoffs__header">Loop <%= i %> cutoff</p>
+      <% if Time.now > cutoff %>
+        <p>has passed</p>
+      <% else %>
       <p>
         <%= elapsed(cutoff, style: "narrow") %>
       </p>
+      <% end%>
     </div>
   <% end %>
 
