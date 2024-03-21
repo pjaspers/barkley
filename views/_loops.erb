@@ -55,7 +55,7 @@
           <td>
             <% if l.finished? %>
               <% if l.stop == 0 %>
-                DNF
+                <span class="highlight highlight--red">DNF</span>
               <% else %>
               <%= hour_minute_seconds(l.stop).join(":") %>
             <% end %>

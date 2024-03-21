@@ -113,7 +113,10 @@
      <% %w(yellow blue pink green).each do |color| %>
        .highlight--<%= color %> { background-color: var(--<%= color %>); }
      <% end %>
-
+     .highlight--red {
+       background-color: var(--pop-red);
+       color: var(--background);
+     }
      /* clamp(min, val, max) */
      h1 { font-size: clamp(2.0rem, 4.0vw + 1rem, 6rem); }
      h2 { font-size: clamp(1.5rem, 2.0vw + 1rem, 4rem); }
