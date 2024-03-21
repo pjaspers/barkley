@@ -49,8 +49,8 @@
             <td>
               <% if l.started? || l.finished? %>
                 <% if l.start %>
-                  <% if l.start_twitter %>
-                    <a href="<%= l.start_twitter %>">
+                  <% if l.start_source %>
+                    <a href="<%= l.start_source %>">
                       <%= hhmmss(l.start) %>
                     </a>
                   <% else %>
@@ -64,8 +64,8 @@
             <% if l.dnf? %>
               <span class="highlight highlight--red">DNF</span>
             <% elsif l.finished? %>
-              <% if l.finish_twitter %>
-                <a href="<%= l.finish_twitter %>">
+              <% if l.finish_source %>
+                <a href="<%= l.finish_source %>">
                   <%= hhmmss(l.stop) %>
                 </a>
               <% else %>

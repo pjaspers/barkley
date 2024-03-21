@@ -2,13 +2,13 @@ require_relative 'test_helper'
 
 class LoopsTest < Test
   it "started" do
-    loop = Loop.new(1, start: "08:32:33", stop: nil)
+    loop = Loop.new(1, start: U["08:32:33"], stop: nil)
 
     assert loop.started?
   end
 
   it "finished" do
-    loop = Loop.new(1, start: "08:32:33", stop: "20:10:06")
+    loop = Loop.new(1, start: U["08:32:33"], stop: U["20:10:06"])
 
     assert loop.finished?
   end
@@ -22,7 +22,7 @@ class LoopsTest < Test
   it "has seconds since start" do
     time = Time.now
     Barkley.stub :start, time - 2*60*60 do
-      loop = Loop.new(1, start: "01:00:00", stop: "20:10:06")
+      loop = Loop.new(1, start: U["01:00:00"], stop: U["20:10:06"])
 
       # Barkley started an hour ago, 1 hour was passed in the loop
       assert_equal 3600, loop.seconds_since_start(time)
