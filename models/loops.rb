@@ -34,39 +34,45 @@ class Loop
 end
 
 data = {
+  # Guessing like no tomorrow
+  # john
   runner_1: [
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
-    Loop.new(2, start: "08:38:38", stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: "08:38:38", stop: "19:27:49"),
+    Loop.new(3, start: "19:45:51", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
+  # damian
   runner_2: [
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
-    Loop.new(2, start: nil, stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "19:27:51"),
+    Loop.new(3, start: "19:45:51", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
+  # jasmin
   runner_3: [
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
-    Loop.new(2, start: nil, stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "19:27:52"),
+    Loop.new(3, start: "19:45:51", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # Guessing because we only know that these came in a few moments after the first three
+  # sebastien
   more_1: [
     Loop.new(1, start: "00:00:00", stop: "08:31:59"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "19:27:53"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
+  # ihor
   more_2: [
     Loop.new(1, start: "00:00:00", stop: "08:31:59"),
-    Loop.new(2, start: nil, stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "19:27:54"),
+    Loop.new(3, start: "19:45:51", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -197,14 +203,15 @@ data = {
   ]
 }
 
+# harvey
 aliases = {
   # First three runners
   runner_1:                  :john,
   runner_2:                  :damian,
-  runner_3:                  :harvey,
+  runner_3:                  :jasmin,
   # 3 more runners
-  more_1: nil,
-  more_2: nil,
+  more_1:                    :sebastien,
+  more_2:                    :ihor,
   more_3: nil,
   # Next 2 runners
   next_1: nil,
