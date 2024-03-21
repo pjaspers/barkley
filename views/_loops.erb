@@ -50,7 +50,7 @@
               <% if l.started? || l.finished? %>
                 <% if l.start %>
                   <% if l.start_source %>
-                    <a href="<%= l.start_source %>">
+                    <a href="<%= l.start_source %>" title="<%= l.start_title %>">
                       <%= hhmmss(l.start) %>
                     </a>
                   <% else %>
@@ -65,7 +65,7 @@
               <span class="highlight highlight--red">DNF</span>
             <% elsif l.finished? %>
               <% if l.finish_source %>
-                <a href="<%= l.finish_source %>">
+                <a href="<%= l.finish_source %>" title="<%= l.stop_title %>">
                   <%= hhmmss(l.stop) %>
                 </a>
               <% else %>

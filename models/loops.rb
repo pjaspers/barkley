@@ -26,6 +26,8 @@ class Loop
 
   def start_source = @start.source
   def finish_source = @stop.source
+  def start_title = @start&.text
+  def stop_title = @stop&.text
 
   def seconds_since_start(now = Time.now)
     now - @barkley_start - @start.duration
@@ -55,7 +57,21 @@ class Loop
   end
 end
 
-t = ->(id) { "https://twitter.com/keithdunn/status/#{id}" }
+tweets = {
+  1770856700179788154 => "John Kelly and Damian Hall finished loop three in 31:36:57, :58. #BM100",
+  1770873027825139776 => "Ok, to correct a couple numbers - John Kelly began loop four at 31:48:36; Damian Hall began loop four at 31:50:19. #BM100",
+  1770866384513249421 => "Jasmin Paris finished loop three in 32:15:53, smiling and looking good. #BM100",
+  1770869408589574173 => "Jasmin Paris began loop four at 32:27:50. #BM100",
+  1770876876958912672 => "Sebastien Raichon finished loop three in 32:57:06. #BM100",
+  1770881998464118928 => "Sebastien Raichon began loop four at 33:16:52. #BM100",
+  1770859105072107625 => "Ihor Verys began loop four at 31:46:21. #BM100",
+  1770865783683367040 => "Greig Hamilton finished loop three in 32:12:43. #BM100",
+  1770873749065043996 => "Greig Hamilton began loop four at 32:43:11 and Jared Campbell began loop 4 at 32:43:37. #BM100",
+  1770868051476390033 => "Jared Campbell finished loop three in 32:20:54. #BM100",
+  1770883341241213218 => "Albert Herrero Casas finished loop three in 33:22:37. #BM100",
+  1770889923660284332 => "Albert Herrero Casas began loop four at 33:49:19. #BM100"
+}
+t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
 
 # Each start and stop should be an instance of an Update, that's why
 # the `U` lambda is there, so you just do `U["21:13:34"]`, which just
@@ -66,7 +82,7 @@ t = ->(id) { "https://twitter.com/keithdunn/status/#{id}" }
 # also add the text of the tweet, so you don't even need to click
 # through, but that's for when the kids are in bed.
 #
-U = -> (time, source = nil, text = nil) { Update.new(time, source, text) }
+U = -> (time, tweet = []) { Update.new(time, tweet[0], tweet[1]) }
 
 class Update
   attr_reader :source, :text
