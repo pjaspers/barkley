@@ -134,7 +134,7 @@ data = {
   # Two French runners have finished loop one in 8:45:48 and a few seconds later,
   french_runner_1: [
     Loop.new(1, start: "00:00:00", stop: "08:45:48"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: "21:50:45", stop: nil),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
