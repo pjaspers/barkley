@@ -107,7 +107,7 @@
      .highlight {
        background-color: hsl(60deg 75% 80%);
        border-radius: 4px;
-       padding: calc(var(--unit) / 2) calc(var(--unit) / 2);
+       padding: calc(var(--unit) / 4) calc(var(--unit) / 2);
      }
 
      <% %w(yellow blue pink green).each do |color| %>
@@ -121,7 +121,7 @@
      h1 { font-size: clamp(2.0rem, 4.0vw + 1rem, 6rem); }
      h2 { font-size: clamp(1.5rem, 2.0vw + 1rem, 4rem); }
      h3 { font-size: clamp(1.2rem, 1.2vw + 1rem, 3rem); }
-     h4 { font-size: clamp(0.9rem, 1.0vw + 1rem, 2rem); }
+     h4 { font-size: clamp(0.6rem, 0.6vw + 1rem, 1rem); }
 
      .runner {
        display: grid;
@@ -316,9 +316,18 @@
        grid-auto-flow: row;
        grid-template-columns: 1fr 1fr 1fr 1fr;
      }
+     .cutoffs__box {
+       display: grid;
+       grid-auto-flow: column;
+       justify-items: center;
+     }
+     .cutoffs__box h4 {
+       text-align: center;
+     }
      .cutoffs__header {
        font-weight: 800;
        font-family: Paint;
+       text-align: center;
      }
      .navigation {
        display: grid;

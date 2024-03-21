@@ -6,10 +6,14 @@ module Barkley
     def start = conch_blown + 1*60*60
     def elapsed = Time.now - start
     def end_time = start + duration_to_sec("60:00:00")
-    def full_run_cut_off = start + duration_to_sec("36:00:00")
-    # Fun run is three loops, once you start for a 4th it's no longer a fun run
-    # Need to finish before 40h
-    def fun_run_cut_off = start + duration_to_sec("40:00:00")
+
+    def cut_off(loop_number:, fun_run:)
+      if fun_run
+        start + loop_number * duration_to_sec("13:20:00")
+      else
+        start + loop_number * duration_to_sec("12:00:00")
+      end
+    end
 
     # Sort the loops in a way that the person who's in the furthest
     # loop is on top, and the rest is behind that

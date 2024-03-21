@@ -1,0 +1,7 @@
+<% if Time.now > cutoff %>
+  <p class="highlight highlight--red">passed</p>
+<% else %>
+  <p class="highlight highlight--green">
+    <%= elapsed(cutoff, style: "narrow") %>
+  </p>
+<% end %>

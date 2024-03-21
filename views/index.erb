@@ -15,31 +15,24 @@ The conch was blown at <span class="highlight"><%= local_time(Barkley.conch_blow
 You can't start a loop after it's cutoff.
 
 <div class="cutoffs">
-  <div>
-    <p class="cutoffs__header">Time remaining</p>
-    <p><%= elapsed(Barkley.start + 60*60*60, style: "narrow") %></p>
-  </div>
-
-
-  <% [1,2,3,4,5].map{|i| [i, Barkley.start + i*12*60*60]}.each do |i,cutoff| %>
+  <% [1,2,3,4,5].each do |i| %>
     <div>
       <p class="cutoffs__header">Loop <%= i %> cutoff</p>
-      <% if Time.now > cutoff %>
-        <p>has passed</p>
-      <% else %>
-      <p>
-        <%= elapsed(cutoff, style: "narrow") %>
-      </p>
-      <% end%>
-    </div>
-  <% end %>
+      <div class="cutoffs__box">
+        <% if i < 4 %>
+          <div class="cutoff__funrun">
+            <h4>Fun Run</h4>
+            <%= partial("cutoff", locals: {cutoff: Barkley.cut_off(loop_number: i, fun_run: true)}) %>
+          </div>
+        <% end %>
 
-  <div>
-    <p class="cutoffs__header">
-      <abbr title="You need to finish your third loop in 40 hours, if you start a 4th loop, it's no longer a fun run.">Fun run cut off*</abbr>
-    </p>
-    <p><%= elapsed(Barkley.fun_run_cut_off, style: "narrow") %></p>
-  </div>
+        <div class="cutoff_fullrun">
+          <h4>Full Run</h4>
+          <%= partial("cutoff", locals: {cutoff: Barkley.cut_off(loop_number: i, fun_run: false)}) %>
+        </div>
+      </div>
+    </div>
+  <% end%>
 </div>
 
 <h2 id="loops">Loops</h2>

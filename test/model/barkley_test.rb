@@ -1,9 +1,16 @@
 require_relative 'test_helper'
 
 class BarkleyTest < Test
+  [1,2,3,4,5].each do |i|
+    it "loop #{i} fun run" do
+      refute_nil Barkley.cut_off(loop_number: i, fun_run: true)
+    end
+
+  it "loop #{i}" do
+      refute_nil Barkley.cut_off(loop_number: i, fun_run: false)
+    end
+  end
   it "cutoffs" do
-    refute_nil Barkley.fun_run_cut_off
-    refute_nil Barkley.full_run_cut_off
     refute_nil Barkley.elapsed
     refute_nil Barkley.start
   end
