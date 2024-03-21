@@ -72,6 +72,7 @@ tweets = {
   1770889923660284332 => "Albert Herrero Casas began loop four at 33:49:19. #BM100",
   1770901120396742981 => "Maxime Gauduin finished loop three in 34:32:49. #BM100",
   1770903945910636768 => "Tomo Ihara finished loop three in 34:43:15. #BM100",
+  1770909152694440019 => "Tomo began loop four at 35:04:16. #BM100",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -205,7 +206,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["09:11:05"]),
     Loop.new(2, start: nil, stop: U["22:08:53"]),
     Loop.new(3, start: U["22:25:10"], stop: U["34:43:15", t[1770903945910636768]]),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(4, start: U["35:04:16", t[1770909152694440019]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # Two French runners have finished loop one in 8:45:48 and a few seconds later,
