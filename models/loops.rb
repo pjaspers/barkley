@@ -77,7 +77,7 @@ data = {
   runner_3: [
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
     Loop.new(2, start: nil, stop: "19:27:52"),
-    Loop.new(3, start: "19:45:51", stop: nil),
+    Loop.new(3, start: "19:45:51", stop: ["32:15:53", m[112134878192699850], t[1770866384513249421]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
