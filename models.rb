@@ -119,10 +119,24 @@ all = [
     )
   ),
   Runner.new(
+    attempts: 5,
+    slugs: [:guillaume],
+    profile: Profile.new(
+      first_name: "Guillaume", last_name: "Calmettes",
+      year: 1984,
+      nationality: :fr
+    ),
+    state: Status.new(state: :confirmed, reason: "Mentioned by Keith"),
+    # Was World champion rogaining
+    the_inter_webs: web.(
+      duv: "https://statistik.d-u-v.org/getresultperson.php?runner=367155",
+    )
+  ),
+  Runner.new(
     attempts: 3,
     slugs: [:harald],
     profile: Profile.new(
-      first_name: "Harvald", last_name: "Zundel",
+      first_name: "Harald", last_name: "Zundel",
       year: 1968,
       nationality: :us
     ),

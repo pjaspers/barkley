@@ -224,6 +224,13 @@ data = {
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
+  went_back_for_a_page: [
+    Loop.new(1, start: "00:00:00", stop: "11:30:00"),
+    Loop.new(2, start: nil, stop: "26:25:29"),
+    Loop.new(3, start: "26:27:00", stop: nil),
+    Loop.new(4, start: nil, stop: nil),
+    Loop.new(5, start: nil, stop: nil),
+  ],
 }
 
 # harvey
@@ -256,6 +263,7 @@ aliases = {
   man_in_black:             :harald,
   # The man in black begins loop two at 11:57:04. Eight minute interloopal period. MIB II finishes loop one immediately thereafter. #BM100
   man_in_black_2: nil,
+  went_back_for_a_page: :guillaume,
 }
 
 aliases.each do |nickname, key|
