@@ -148,7 +148,7 @@ data = {
   french_runner_2: [
     Loop.new(1, start: "00:00:00", stop: "08:45:55"),
     Loop.new(2, start: nil, stop: "20:26:20"),
-    Loop.new(3, start: "21:50:45", stop: nil),
+    Loop.new(3, start: "21:50:45", stop: "DNF"),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],

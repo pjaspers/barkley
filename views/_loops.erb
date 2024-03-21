@@ -54,7 +54,11 @@
           <% end %>
           <td>
             <% if l.finished? %>
+              <% if l.stop == 0 %>
+                DNF
+              <% else %>
               <%= hour_minute_seconds(l.stop).join(":") %>
+            <% end %>
             <% elsif l.started? %>
               <span class="highlight highlight--green">
                 <%= elapsed(l.started_at, style: "narrow") %>
