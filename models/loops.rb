@@ -131,10 +131,11 @@ data = {
     Loop.new(5, start: nil, stop: nil),
   ],
   # followed by a nondescript guy in 8:46:35. #BM100
+  # Jared
   non_descript_guy: [
     Loop.new(1, start: "00:00:00", stop: "08:46:35"),
     Loop.new(2, start: nil, stop: "19:52:47"),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(3, start: nil, stop: ["32:20:54", m[112134906075064364], t[1770868051476390033]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
