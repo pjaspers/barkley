@@ -73,6 +73,8 @@ tweets = {
   1770901120396742981 => "Maxime Gauduin finished loop three in 34:32:49. #BM100",
   1770903945910636768 => "Tomo Ihara finished loop three in 34:43:15. #BM100",
   1770909152694440019 => "Tomo began loop four at 35:04:16. #BM100",
+  1770920536987566265 => "Maxime Gauduin began loop four at 35:59:26. Ten runners are on loop four. #BM100",
+  1770926893753115028 => "Thomas Dunkerbeck finished loop three in 36:15:40. #BM100"
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -177,7 +179,7 @@ data = {
   very_daring_shorts: [
     Loop.new(1, start: U["00:00:00"], stop: U["09:30:24"]),
     Loop.new(2, start: U["09:55:02"], stop: U["22:08:57"]),
-    Loop.new(3, start: U["23:55:00"], stop: nil),
+    Loop.new(3, start: U["23:55:00"], stop: U["36:15:40", t[1770926893753115028]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -223,7 +225,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:45:55"]),
     Loop.new(2, start: nil, stop: U["20:26:20"]),
     Loop.new(3, start: U["21:50:45"], stop: U["34:32:49", t[1770901120396742981]]),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(4, start: U["35:59:26", t[1770920536987566265]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A guy with a gray beard and a muscular guy with tree trunk legs came through the fire tower at 12:55. #BM100
