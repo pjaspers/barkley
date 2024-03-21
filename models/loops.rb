@@ -100,9 +100,10 @@ data = {
   ],
   # A guy with very daring shorts has finished loop one in 9:30:24. #BM100
   # A guy with very daring shorts started loop two at 9:55:02. #BM100
+  # thomas
   very_daring_shorts: [
     Loop.new(1, start: "00:00:00", stop: "09:30:24"),
-    Loop.new(2, start: "09:55:02", stop: nil),
+    Loop.new(2, start: "09:55:02", stop: "22:08:57"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -126,9 +127,10 @@ data = {
     Loop.new(5, start: nil, stop: nil),
   ],
   # A Japanese runner has set a new personal record for loop one at 9:11:05. #BM100
+  # tomokazu
   japanese_runner: [
     Loop.new(1, start: "00:00:00", stop: "09:11:05"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "22:08:53"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
