@@ -118,7 +118,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
     Loop.new(2, start: nil, stop: U["19:27:53"]),
     Loop.new(3, start: U["20:10:14"], stop: U["32:57:06", t[1770876876958912672]]),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(4, start: U["33:16:52", t[1770881998464118928]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # ihor
@@ -176,8 +176,8 @@ data = {
   guy_with_awesome_glasses: [
     Loop.new(1, start: U["00:00:00"], stop: U["09:16:14"]),
     Loop.new(2, start: U["09:45:04"], stop: U["20:26:04"]),
-    Loop.new(3, start: U["21:08:52"], stop: nil),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(3, start: U["21:08:52"], stop: U["33:22:37", t[1770883341241213218]]),
+    Loop.new(4, start: U["33:49:19", t[1770889923660284332]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A Japanese runner has set a new personal record for loop one at 9:11:05. #BM100
