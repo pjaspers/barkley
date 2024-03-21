@@ -49,8 +49,7 @@ class Loop
     (hours.to_i * 60 * 60) + (minutes.to_i * 60) + seconds.to_i
   end
 end
-# https://twitter.com/keithdunn/status/1770856700179788154
-# https://social.running.cafe/@KeithDunn/
+
 t = ->(id) { "https://twitter.com/keithdunn/status/#{id}" }
 m = ->(id) { "https://social.running.cafe/@KeithDunn/#{id}"}
 
@@ -61,7 +60,9 @@ data = {
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
     Loop.new(2, start: "08:38:38", stop: "19:27:49"),
     Loop.new(3, start: "19:45:51", stop: ["31:36:57", [m["112134725873697114"], t["1770856700179788154"]]]),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(4,
+             start: ["31:50:19", m[112134778394731332], t[1770860114339148240]],
+             stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # damian
