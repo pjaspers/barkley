@@ -131,7 +131,7 @@ data = {
   japanese_runner: [
     Loop.new(1, start: "00:00:00", stop: "09:11:05"),
     Loop.new(2, start: nil, stop: "22:08:53"),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(3, start: "22:25:10", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
