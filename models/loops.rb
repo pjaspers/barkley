@@ -86,7 +86,7 @@ data = {
   more_1: [
     Loop.new(1, start: "00:00:00", stop: "08:31:59"),
     Loop.new(2, start: nil, stop: "19:27:53"),
-    Loop.new(3, start: "20:10:14", stop: nil),
+    Loop.new(3, start: "20:10:14", stop: ["32:57:06", [nil, t[1770876876958912672]]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
