@@ -4,8 +4,12 @@ class Loop
   # start and stop is relative to the start
   def initialize(number, start:, stop:)
     @number = number
-    @start = start ? duration_to_sec(Array(start).first) : start
-    @stop = stop ? duration_to_sec(Array(stop).first) : stop
+    start, *start_sources = Array(start)
+    stop, *stop_sources = Array(stop)
+    @start = start ? duration_to_sec(start) : start
+    @start_sources = start_sources
+    @stop_sources = stop_sources
+    @stop = stop ? duration_to_sec(stop) : stop
     @barkley_start = Barkley.start
   end
 
@@ -15,6 +19,11 @@ class Loop
   def dnf? = state == :dnf
   def started_at = @barkley_start + @start
   def finished_at = @barkley_start + @stop
+
+  def start_mastodon = @start_sources.first
+  def start_twitter = @start_sources.last
+  def finish_mastodon = @stop_sources.first
+  def finish_twitter = @stop_sources.last
 
   def seconds_since_start(now = Time.now)
     now - @barkley_start - @start
@@ -59,9 +68,9 @@ data = {
   runner_1: [
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
     Loop.new(2, start: "08:38:38", stop: "19:27:49"),
-    Loop.new(3, start: "19:45:51", stop: ["31:36:57", [m["112134725873697114"], t["1770856700179788154"]]]),
+    Loop.new(3, start: "19:45:51", stop: ["31:36:57", m["112134725873697114"], t["1770856700179788154"]]),
     Loop.new(4,
-             start: ["31:48:36", [nil, t[1770873027825139776]]],
+             start: ["31:48:36", nil, t[1770873027825139776]],
              stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -69,8 +78,8 @@ data = {
   runner_2: [
     Loop.new(1, start: "00:00:00", stop: "08:30:59"),
     Loop.new(2, start: nil, stop: "19:27:51"),
-    Loop.new(3, start: "19:45:51", stop: ["31:36:58", [m["112134725873697114"], t["1770856700179788154"]]]),
-    Loop.new(4, start: ["31:50:19", [nil, t[1770873027825139776]]], stop: nil),
+    Loop.new(3, start: "19:45:51", stop: ["31:36:58", m["112134725873697114"], t["1770856700179788154"]]),
+    Loop.new(4, start: ["31:50:19", nil, t[1770873027825139776]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # jasmin
@@ -81,12 +90,12 @@ data = {
     Loop.new(4, start: ["32:27:50", m[112134925987883714],t[1770869408589574173]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
-  # Guessing because we only know that these came in a few moments after the first three
+  # Guessing because we only know that these came in a  few moments after the first three
   # sebastien
   more_1: [
     Loop.new(1, start: "00:00:00", stop: "08:31:59"),
     Loop.new(2, start: nil, stop: "19:27:53"),
-    Loop.new(3, start: "20:10:14", stop: ["32:57:06", [nil, t[1770876876958912672]]]),
+    Loop.new(3, start: "20:10:14", stop: ["32:57:06", nil, t[1770876876958912672]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -110,7 +119,7 @@ data = {
     Loop.new(1, start: "00:00:00", stop: "08:34:47"),
     Loop.new(2, start: nil, stop: "19:52:36"),
     Loop.new(3, start: nil, stop: ["32:12:43", m[112134870215096420], t[1770865783683367040]]),
-    Loop.new(4, start: ["32:43:11", [nil, t[1770873749065043996]]], stop: nil),
+    Loop.new(4, start: ["32:43:11", nil, t[1770873749065043996]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   next_2: [
@@ -136,7 +145,7 @@ data = {
     Loop.new(1, start: "00:00:00", stop: "08:46:35"),
     Loop.new(2, start: nil, stop: "19:52:47"),
     Loop.new(3, start: nil, stop: ["32:20:54", m[112134906075064364], t[1770868051476390033]]),
-    Loop.new(4, start: ["32:43:37", [nil, t[1770873749065043996]]], stop: nil),
+    Loop.new(4, start: ["32:43:37", nil, t[1770873749065043996]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A guy with awesome glasses has finished loop one in 9:16:14. #BM100

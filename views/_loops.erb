@@ -48,7 +48,15 @@
           <% if i > 1 %>
             <td>
               <% if l.started? || l.finished? %>
-                <%= hhmmss(l.start) if l.start%>
+                <% if l.start %>
+                  <% if l.start_twitter %>
+                    <a href="<%= l.start_twitter %>">
+                      <%= hhmmss(l.start) %>
+                    </a>
+                  <% else %>
+                    <%= hhmmss(l.start) %>
+                  <% end %>
+                <% end %>
               <% end %>
             </td>
           <% end %>
@@ -56,7 +64,13 @@
             <% if l.dnf? %>
               <span class="highlight highlight--red">DNF</span>
             <% elsif l.finished? %>
-              <%= hhmmss(l.stop) %>
+              <% if l.finish_twitter %>
+                <a href="<%= l.finish_twitter %>">
+                  <%= hhmmss(l.stop) %>
+                </a>
+              <% else %>
+                <%= hhmmss(l.stop) %>
+              <% end %>
             <% elsif l.started? %>
               <span class="highlight highlight--green loops__ongoing">
                 <%= elapsed(l.started_at, style: "narrow") %>
