@@ -12,6 +12,7 @@ class Loop
   def started? = state == :started
   def finished? = state == :finished
   def not_started? = state == :not_started
+  def dnf? = state == :dnf
   def started_at = @barkley_start + @start
   def finished_at = @barkley_start + @stop
 
@@ -20,10 +21,26 @@ class Loop
   end
 
   def state
+    return :dnf if @stop && @stop == 0
     return :finished if @stop
     return :started if @start
 
     :not_started
+  end
+
+  # Get a score for a loop, so we can order who is in the lead
+  def score
+    points = 0.0
+    # If you started you get a thousand points (if you finished, you
+    # also started even if we don't have the numbers)
+    points += 1000 if started? || finished?
+    # Finishing is a thousand points
+    points +- 1000 if finished?
+    # The higher the start time of the loop, the less points you
+    # should get
+    points += 1000.0/(start > 0 ? start : 1) if started?
+    # Each loop is harder, so more points
+    number * points
   end
 
   private def duration_to_sec(duration)

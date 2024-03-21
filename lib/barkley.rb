@@ -11,6 +11,14 @@ module Barkley
     # Need to finish before 40h
     def fun_run_cut_off = start + duration_to_sec("40:00:00")
 
+    # Sort the loops in a way that the person who's in the furthest
+    # loop is on top, and the rest is behind that
+    def sorted_loops
+      Barkley.loops.sort_by do |_nickname, (runner,loops)|
+        loops.map(&:score).inject(:+)
+      end.reverse
+    end
+
     private def duration_to_sec(duration)
       seconds, minutes, hours = duration.split(":").reverse
 

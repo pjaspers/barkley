@@ -31,7 +31,7 @@
     </tr>
   </thead>
   <tbody>
-    <% Barkley.loops.each do |nickname, (runner,loops)| %>
+    <% Barkley.sorted_loops.each do |nickname, (runner,loops)| %>
       <tr class="loops__line">
         <td class="loops__name">
           <span class="loops__name__nick"><%= nickname.to_s.split("_").map(&:capitalize).join(" ") %></span>
@@ -52,13 +52,11 @@
               <% end %>
             </td>
           <% end %>
-          <td>
-            <% if l.finished? %>
-              <% if l.stop == 0 %>
-                <span class="highlight highlight--red">DNF</span>
-              <% else %>
+          <td data-score="<%= l.score %>">
+            <% if l.dnf? %>
+              <span class="highlight highlight--red">DNF</span>
+            <% elsif l.finished? %>
               <%= hour_minute_seconds(l.stop).join(":") %>
-            <% end %>
             <% elsif l.started? %>
               <span class="highlight highlight--green">
                 <%= elapsed(l.started_at, style: "narrow") %>
