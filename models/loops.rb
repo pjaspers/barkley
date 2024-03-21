@@ -64,7 +64,7 @@ data = {
   more_1: [
     Loop.new(1, start: "00:00:00", stop: "08:31:59"),
     Loop.new(2, start: nil, stop: "19:27:53"),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(3, start: "20:10:14", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -132,10 +132,11 @@ data = {
     Loop.new(5, start: nil, stop: nil),
   ],
   # Two French runners have finished loop one in 8:45:48 and a few seconds later,
+  # Aurelien?
   french_runner_1: [
     Loop.new(1, start: "00:00:00", stop: "08:45:48"),
-    Loop.new(2, start: "21:50:45", stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: nil),
+    Loop.new(3, start: "21:50:45", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
