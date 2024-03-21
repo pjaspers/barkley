@@ -83,9 +83,10 @@ data = {
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
+  # Greig
   next_1: [
     Loop.new(1, start: "00:00:00", stop: "08:34:47"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "19:52:36"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -109,17 +110,18 @@ data = {
   # followed by a nondescript guy in 8:46:35. #BM100
   non_descript_guy: [
     Loop.new(1, start: "00:00:00", stop: "08:46:35"),
-    Loop.new(2, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "19:52:47"),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A guy with awesome glasses has finished loop one in 9:16:14. #BM100
   # A guy with awesome glasses has begun loop two at 9:45:04. #BM100
+  # albert
   guy_with_awesome_glasses: [
     Loop.new(1, start: "00:00:00", stop: "09:16:14"),
-    Loop.new(2, start: "09:45:04", stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: "09:45:04", stop: "20:26:04"),
+    Loop.new(3, start: "21:08:52", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -132,18 +134,19 @@ data = {
     Loop.new(5, start: nil, stop: nil),
   ],
   # Two French runners have finished loop one in 8:45:48 and a few seconds later,
-  # Aurelien?
+  # maxime
   french_runner_1: [
     Loop.new(1, start: "00:00:00", stop: "08:45:48"),
-    Loop.new(2, start: nil, stop: nil),
-    Loop.new(3, start: "21:50:45", stop: nil),
+    Loop.new(2, start: nil, stop: "19:52:48"),
+    Loop.new(3, start: "21:01:40", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
+  # aurelien
   french_runner_2: [
     Loop.new(1, start: "00:00:00", stop: "08:45:55"),
-    Loop.new(2, start: nil, stop: nil),
-    Loop.new(3, start: nil, stop: nil),
+    Loop.new(2, start: nil, stop: "20:26:20"),
+    Loop.new(3, start: "21:50:45", stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -215,7 +218,7 @@ aliases = {
   more_2:                    :ihor,
   more_3: nil,
   # Next 2 runners
-  next_1: nil,
+  next_1:                    :greig,
   next_2: nil,
   very_daring_shorts:        :thomas,
   non_descript_guy:          :jared,
