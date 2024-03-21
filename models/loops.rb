@@ -110,7 +110,7 @@ data = {
     Loop.new(1, start: "00:00:00", stop: "08:34:47"),
     Loop.new(2, start: nil, stop: "19:52:36"),
     Loop.new(3, start: nil, stop: ["32:12:43", m[112134870215096420], t[1770865783683367040]]),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(4, start: ["32:43:11", [nil, t[1770873749065043996]]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   next_2: [
@@ -136,7 +136,7 @@ data = {
     Loop.new(1, start: "00:00:00", stop: "08:46:35"),
     Loop.new(2, start: nil, stop: "19:52:47"),
     Loop.new(3, start: nil, stop: ["32:20:54", m[112134906075064364], t[1770868051476390033]]),
-    Loop.new(4, start: nil, stop: nil),
+    Loop.new(4, start: ["32:43:37", [nil, t[1770873749065043996]]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A guy with awesome glasses has finished loop one in 9:16:14. #BM100
