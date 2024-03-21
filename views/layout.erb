@@ -314,7 +314,12 @@
        display: grid;
        align-items: baseline;
        grid-auto-flow: row;
-       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-columns: 1fr 1fr;
+     }
+     @media(min-width: 700px) {
+       .cutoffs {
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+       }
      }
      .cutoffs__box {
        display: grid;
