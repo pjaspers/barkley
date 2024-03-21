@@ -58,6 +58,14 @@ class Loop
 end
 
 tweets = {
+  1770708985655488907 => "Aurélien Sanchez Began loop 3 at 21:50:45. #BM100",
+  1770714062726295722 => "Tomo Ihara and Thomas Dunkerbeck finished loop two in  22:08:53, :57. #BM100",
+  1770713123202208234 => "Aurélien Sanchez dropped on loop three and was tapped out. #BM100",
+  1770718152688648536 => "Tomo began loop three at 22:25:10. #BM100",
+  1770725093104091160 => "Harald Zundel dropped after getting lost on loop two and ending up knocking on someone’s door looking for help. #BM100",
+  1770744084581187872 => "Kelly Halpin, Harvey Lewis, Hendrik Boury, and Nicolay Nachev came in together after dropping on loop two and are tapped out. #BM100",
+  1770781038903460322 => "Guillaume Calmettes finished loop two in 26:25:29, turned it around quickly at the gate, and began loop three with about three minutes to spare. #BM100",
+  1770855514294952031 => "Ihor Verys has finished loop three in 31:31:47. #BM100",
   1770856700179788154 => "John Kelly and Damian Hall finished loop three in 31:36:57, :58. #BM100",
   1770873027825139776 => "Ok, to correct a couple numbers - John Kelly began loop four at 31:48:36; Damian Hall began loop four at 31:50:19. #BM100",
   1770866384513249421 => "Jasmin Paris finished loop three in 32:15:53, smiling and looking good. #BM100",
@@ -147,13 +155,13 @@ data = {
   more_2: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
     Loop.new(2, start: nil, stop: U["19:27:54"]),
-    Loop.new(3, start: U["19:45:51"], stop: U["31:31:47"]),
+    Loop.new(3, start: U["19:45:51"], stop: U["31:31:47", t[1770855514294952031]]),
     Loop.new(4, start: U["31:46:21",t[1770859105072107625]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
   more_3: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
-    Loop.new(2, start: nil, stop: U["DNF"]),
+    Loop.new(2, start: nil, stop: U["DNF", t[1770744084581187872]]),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -178,7 +186,7 @@ data = {
   # thomas
   very_daring_shorts: [
     Loop.new(1, start: U["00:00:00"], stop: U["09:30:24"]),
-    Loop.new(2, start: U["09:55:02"], stop: U["22:08:57"]),
+    Loop.new(2, start: U["09:55:02"], stop: U["22:08:57", t[1770714062726295722]]),
     Loop.new(3, start: U["23:55:00"], stop: U["36:15:40", t[1770926893753115028]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -206,8 +214,8 @@ data = {
   # tomokazu
   japanese_runner: [
     Loop.new(1, start: U["00:00:00"], stop: U["09:11:05"]),
-    Loop.new(2, start: nil, stop: U["22:08:53"]),
-    Loop.new(3, start: U["22:25:10"], stop: U["34:43:15", t[1770903945910636768]]),
+    Loop.new(2, start: nil, stop: U["22:08:53", t[1770714062726295722]]),
+    Loop.new(3, start: U["22:25:10", t[1770718152688648536]], stop: U["34:43:15", t[1770903945910636768]]),
     Loop.new(4, start: U["35:04:16", t[1770909152694440019]], stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -216,7 +224,7 @@ data = {
   french_runner_1: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:45:48"]),
     Loop.new(2, start: nil, stop: U["19:52:48"]),
-    Loop.new(3, start: U["21:01:40"], stop: U["DNF"]),
+    Loop.new(3, start: U["21:01:40", t[1770708985655488907]], stop: U["DNF", t[1770713123202208234]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
@@ -246,7 +254,7 @@ data = {
   # Guy with red hat finished loop one in 10:27:41, almost an hour behind the previous loop one finisher. #BM100
   guy_with_red_hat: [
     Loop.new(1, start: U["00:00:00"], stop: U["10:27:41"]),
-    Loop.new(2, start: nil, stop: U["DNF"]),
+    Loop.new(2, start: nil, stop: U["DNF", t[1770744084581187872]]),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -270,7 +278,7 @@ data = {
   # The man in black has finished loop one in 11:49:30. #BM100
   man_in_black: [
     Loop.new(1, start: U["00:00:00"], stop: U["11:49:30"]),
-    Loop.new(2, start: U["11:57:04"], stop: U["DNF"]),
+    Loop.new(2, start: U["11:57:04"], stop: U["DNF", t[1770725093104091160]]),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
@@ -285,8 +293,8 @@ data = {
   ],
   went_back_for_a_page: [
     Loop.new(1, start: U["00:00:00"], stop: U["11:30:00"]),
-    Loop.new(2, start: nil, stop: U["26:25:29"]),
-    Loop.new(3, start: U["26:27:00"], stop: nil),
+    Loop.new(2, start: nil, stop: U["26:25:29", t[1770781038903460322]]),
+    Loop.new(3, start: U["26:27:00", t[1770781038903460322]], stop: nil),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
