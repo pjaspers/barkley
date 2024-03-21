@@ -56,7 +56,7 @@
             <% if l.dnf? %>
               <span class="highlight highlight--red">DNF</span>
             <% elsif l.finished? %>
-              <%= hour_minute_seconds(l.stop).join(":") %>
+              <%= hhmmss(l.stop) %>
             <% elsif l.started? %>
               <span class="highlight highlight--green loops__ongoing">
                 <%= elapsed(l.started_at, style: "narrow") %>
