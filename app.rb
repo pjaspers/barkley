@@ -72,7 +72,7 @@ class App < Roda
   #
   #       hour_minute_seconds(710) => [0,11,50]
   def hour_minute_seconds(seconds)
-    [60, 60, 24].collect do |count|
+    [60, 60, 100].collect do |count|
       next 0 unless seconds > 0
 
       seconds, n = seconds.divmod(count)
