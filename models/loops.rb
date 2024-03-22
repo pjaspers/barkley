@@ -91,6 +91,12 @@ tweets = {
   1771081868370223302 => "Jasmin Paris finished loop four in 46:29:12. #BM100",
   1771088295067279399 => "Tomo Ihara dropped on loop four, taking quitter’s road back to camp. #BM100",
   1771090354835521860 => "Albert Herrero Casas also came back to camp via quitter’s road and was tapped out. #BM100",
+  1771085327395958831 => "Jasmin Paris @JasminKParis
+ has started loop five in the clockwise direction, while Jared Campbell @derajslc
+ is going counter-clockwise.  #BM100",
+ 1771026334849851730 => "Maxime Gauduin dropped on loop four at Fire Tower and is tapped out. “It’s really different from the BFC.”  #BM100",
+ 1770981623212749291 => "Guillaume Calmettes @gcalmettes
+ finished loop three in 39:52:59.  #BM100",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
