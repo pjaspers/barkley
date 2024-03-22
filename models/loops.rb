@@ -99,6 +99,8 @@ tweets = {
  1771026334849851730 => "Maxime Gauduin dropped on loop four at Fire Tower and is tapped out. “It’s really different from the BFC.”  #BM100",
  1770981623212749291 => "Guillaume Calmettes @gcalmettes
  finished loop three in 39:52:59.  #BM100",
+ 1771100559249993856 => "Sebastien Raichon appeared to have finished loop four, but failed to follow the course near the end of the loop.  After correcting his error he finished the loop in 47:45:39. #BM100",
+ 1771103254971035821 => "Sebastien Raichon began loop five, three minutes before the cutoff. For the first time ever, seven runners are on loop five at the #BM100.",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -164,8 +166,8 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
     Loop.new(2, start: nil, stop: U["19:27:53"]),
     Loop.new(3, start: U["20:10:14"], stop: U["32:57:06", t[1770876876958912672]]),
-    Loop.new(4, start: U["33:16:52", t[1770881998464118928]], stop: nil),
-    Loop.new(5, start: nil, stop: nil),
+    Loop.new(4, start: U["33:16:52", t[1770881998464118928]], stop: U["47:45:39", t[1771100559249993856]]),
+    Loop.new(5, start: U["47:57:00", t[1771103254971035821]], stop: nil, direction: :cw),
   ],
   # ihor
   more_2: [
