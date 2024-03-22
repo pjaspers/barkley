@@ -27,6 +27,12 @@ data = {
  :harvey => <<~NOTES,
   NOTES
  :jasmin => <<~NOTES,
+ This was the first time I heard time about Jasmin, <a href="https://www.buzzfeednews.com/article/skbaer/this-mom-won-a-268-mile-ultramarathon-race-while-breast">winning the Spine Race</a>. Since then I've been humbled and amazed by what she's capable of.
+
+ <ul>
+   <li><a href="https://www.runnersworld.com/uk/news/a39429022/jasmin-paris-interview/">On Barkley 2023</a></li>
+   <li><a href="https://www.irunfar.com/a-love-affair-an-interview-with-jasmin-paris">irunfar article</a></li>
+ </ul>
   NOTES
  :john => <<~NOTES,
   NOTES
