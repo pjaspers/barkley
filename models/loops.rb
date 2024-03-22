@@ -156,7 +156,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:27:52"]),
     Loop.new(3, start: U["19:45:51"], stop: U["32:15:53", t[1770866384513249421]]),
     Loop.new(4, start: U["32:27:50", t[1770869408589574173]], stop: U["46:29:12", t[1771081868370223302]]),
-    Loop.new(5, start: U["46:41:00", t[1771085327395958831]], stop: nil),
+    Loop.new(5, start: U["46:41:00", t[1771085327395958831]], stop: nil, direction: :cw),
   ],
   # Guessing because we only know that these came in a  few moments after the first three
   # sebastien
@@ -214,7 +214,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:52:47"]),
     Loop.new(3, start: nil, stop: U["32:20:54", t[1770868051476390033]]),
     Loop.new(4, start: U["32:43:37", t[1770873749065043996]], stop: U["46:19:25", t[1771078702408823196]]),
-    Loop.new(5, start: U["46:41:00", t[1771085327395958831]], stop: nil),
+    Loop.new(5, start: U["46:41:00", t[1771085327395958831]], stop: nil, direction: :ccw),
   ],
   # A guy with awesome glasses has finished loop one in 9:16:14. #BM100
   # A guy with awesome glasses has begun loop two at 9:45:04. #BM100
