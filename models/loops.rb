@@ -82,7 +82,13 @@ tweets = {
   1770903945910636768 => "Tomo Ihara finished loop three in 34:43:15. #BM100",
   1770909152694440019 => "Tomo began loop four at 35:04:16. #BM100",
   1770920536987566265 => "Maxime Gauduin began loop four at 35:59:26. Ten runners are on loop four. #BM100",
-  1770926893753115028 => "Thomas Dunkerbeck finished loop three in 36:15:40. #BM100"
+  1770926893753115028 => "Thomas Dunkerbeck finished loop three in 36:15:40. #BM100",
+  1771070767406432602 => "John Kelly and Ihor Verys finished loop four in 45:46:32, :36 #BM100",
+  1771075652847894917 => "Ihor Verys began loop five at 46:06:32. He chose to go clockwise. #BM100",
+  1771078341887459742 => "Greig Hamilton and Damian Hall finished loop four in 46:15:43 and 46:16:27. #BM100",
+  1771078702408823196 => "Jared Campbell finished loop four in 46:19:25. #BM100",
+  1771081701755637895 => "John Kelly began loop five in the counter-clockwise direction; Damian Hall  is going clockwise, Greig Hamilton is going counter-clockwise. #BM100",
+  1771081868370223302 => "Jasmin Paris finished loop four in 46:29:12. #BM100",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -123,23 +129,23 @@ data = {
     Loop.new(3, start: U["19:45:51"], stop: U["31:36:57", t["1770856700179788154"]]),
     Loop.new(4,
              start: U["31:48:36", t[1770873027825139776]],
-             stop: nil),
-    Loop.new(5, start: nil, stop: nil),
+             stop: U["45:46:32", t[1771070767406432602]]),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil),
   ],
   # damian
   runner_2: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:30:59"]),
     Loop.new(2, start: nil, stop: U["19:27:51"]),
     Loop.new(3, start: U["19:45:51"], stop: U["31:36:58", t["1770856700179788154"]]),
-    Loop.new(4, start: U["31:50:19", t[1770873027825139776]], stop: nil),
-    Loop.new(5, start: nil, stop: nil),
+    Loop.new(4, start: U["31:50:19", t[1770873027825139776]], stop: U["46:16:27", t[1771078341887459742]]),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil),
   ],
   # jasmin
   runner_3: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:30:59"]),
     Loop.new(2, start: nil, stop: U["19:27:52"]),
     Loop.new(3, start: U["19:45:51"], stop: U["32:15:53", t[1770866384513249421]]),
-    Loop.new(4, start: U["32:27:50", t[1770869408589574173]], stop: nil),
+    Loop.new(4, start: U["32:27:50", t[1770869408589574173]], stop: U["46:29:12", t[1771081868370223302]]),
     Loop.new(5, start: nil, stop: nil),
   ],
   # Guessing because we only know that these came in a  few moments after the first three
@@ -156,8 +162,8 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
     Loop.new(2, start: nil, stop: U["19:27:54"]),
     Loop.new(3, start: U["19:45:51"], stop: U["31:31:47", t[1770855514294952031]]),
-    Loop.new(4, start: U["31:46:21",t[1770859105072107625]], stop: nil),
-    Loop.new(5, start: nil, stop: nil),
+    Loop.new(4, start: U["31:46:21",t[1770859105072107625]], stop: U["45:46:36", t[1771070767406432602]]),
+    Loop.new(5, start: U["46:06:32", t[1771075652847894917]], stop: nil),
   ],
   more_3: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
@@ -171,8 +177,8 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:34:47"]),
     Loop.new(2, start: nil, stop: U["19:52:36"]),
     Loop.new(3, start: nil, stop: U["32:12:43", t[1770865783683367040]]),
-    Loop.new(4, start: U["32:43:11", t[1770873749065043996]], stop: nil),
-    Loop.new(5, start: nil, stop: nil),
+    Loop.new(4, start: U["32:43:11", t[1770873749065043996]], stop: U["46:15:43", t[1771078341887459742]]),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil),
   ],
   next_2: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:35:17"]),
@@ -197,7 +203,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:46:35"]),
     Loop.new(2, start: nil, stop: U["19:52:47"]),
     Loop.new(3, start: nil, stop: U["32:20:54", t[1770868051476390033]]),
-    Loop.new(4, start: U["32:43:37", t[1770873749065043996]], stop: nil),
+    Loop.new(4, start: U["32:43:37", t[1770873749065043996]], stop: U["46:19:25", t[1771078702408823196]]),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A guy with awesome glasses has finished loop one in 9:16:14. #BM100
