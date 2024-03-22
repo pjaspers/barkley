@@ -109,6 +109,7 @@ tweets = {
  1771100559249993856 => "Sebastien Raichon appeared to have finished loop four, but failed to follow the course near the end of the loop.  After correcting his error he finished the loop in 47:45:39. #BM100",
  1771103254971035821 => "Sebastien Raichon began loop five, three minutes before the cutoff. For the first time ever, seven runners are on loop five at the #BM100.",
  1771266642330218762 => "Ihor Verys finished loop five of the #BM100 in 58:44:59.",
+ 1771274084694786461 => "John Kelly finished loop five of the #BM100 in 59:15:38.  This is his third finish.",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -150,7 +151,7 @@ data = {
     Loop.new(4,
              start: U["31:48:36", t[1770873027825139776]],
              stop: U["45:46:32", t[1771070767406432602]]),
-    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil, direction: :ccw),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: U["59:15:38", t[1771274084694786461]], direction: :ccw),
   ],
   # damian
   runner_2: [
