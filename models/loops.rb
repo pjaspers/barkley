@@ -279,7 +279,7 @@ data = {
     Loop.new(5, start: nil, stop: nil),
   ],
   muscular_guy: [
-    Loop.new(1, start: U["00:00:00"], stop: nil),
+    Loop.new(1, start: U["00:00:00"], stop: U["DNF"]),
     Loop.new(2, start: nil, stop: nil),
     Loop.new(3, start: nil, stop: nil),
     Loop.new(4, start: nil, stop: nil),
