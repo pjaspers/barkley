@@ -89,6 +89,8 @@ tweets = {
   1771078702408823196 => "Jared Campbell finished loop four in 46:19:25. #BM100",
   1771081701755637895 => "John Kelly began loop five in the counter-clockwise direction; Damian Hall  is going clockwise, Greig Hamilton is going counter-clockwise. #BM100",
   1771081868370223302 => "Jasmin Paris finished loop four in 46:29:12. #BM100",
+  1771088295067279399 => "Tomo Ihara dropped on loop four, taking quitter’s road back to camp. #BM100",
+  1771090354835521860 => "Albert Herrero Casas also came back to camp via quitter’s road and was tapped out. #BM100",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -213,7 +215,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["09:16:14"]),
     Loop.new(2, start: U["09:45:04"], stop: U["20:26:04"]),
     Loop.new(3, start: U["21:08:52"], stop: U["33:22:37", t[1770883341241213218]]),
-    Loop.new(4, start: U["33:49:19", t[1770889923660284332]], stop: nil),
+    Loop.new(4, start: U["33:49:19", t[1770889923660284332]], stop: U["DNF", t[1771090354835521860]]),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A Japanese runner has set a new personal record for loop one at 9:11:05. #BM100
@@ -222,7 +224,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["09:11:05"]),
     Loop.new(2, start: nil, stop: U["22:08:53", t[1770714062726295722]]),
     Loop.new(3, start: U["22:25:10", t[1770718152688648536]], stop: U["34:43:15", t[1770903945910636768]]),
-    Loop.new(4, start: U["35:04:16", t[1770909152694440019]], stop: nil),
+    Loop.new(4, start: U["35:04:16", t[1770909152694440019]], stop: U["DNF", t[1771088295067279399]]),
     Loop.new(5, start: nil, stop: nil),
   ],
   # Two French runners have finished loop one in 8:45:48 and a few seconds later,
