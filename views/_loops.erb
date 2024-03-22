@@ -47,7 +47,7 @@
         <% loops.each.with_index(1) do |l, i| %>
           <% if i > 1 %>
             <td>
-              <% if l.started? || l.finished? %>
+              <% if l.started? || l.finished? || l.dnf? %>
                 <% if l.start %>
                   <% if l.start_source %>
                     <a href="<%= l.start_source %>" title="<%= l.start_title %>">
