@@ -111,6 +111,7 @@ tweets = {
  1771266642330218762 => "Ihor Verys finished loop five of the #BM100 in 58:44:59.",
  1771274084694786461 => "John Kelly finished loop five of the #BM100 in 59:15:38.  This is his third finish.",
  1771274824901374462 => "Damian Hall @Ultra_Damo came in from the wrong direction after not completing loop five of the #BM100.",
+ 1771277977260556593 => "Jared Campbell finished loop five of the #BM100 in 59:30:32. This is his fourth finish. “That new section is brutal. You are a bad man.”",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -226,7 +227,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:52:47"]),
     Loop.new(3, start: nil, stop: U["32:20:54", t[1770868051476390033]]),
     Loop.new(4, start: U["32:43:37", t[1770873749065043996]], stop: U["46:19:25", t[1771078702408823196]]),
-    Loop.new(5, start: U["46:41:00", t[1771085327395958831]], stop: nil, direction: :ccw),
+    Loop.new(5, start: U["46:41:00", t[1771085327395958831]], stop: U["59:30:32", t[1771277977260556593]], direction: :ccw),
   ],
   # A guy with awesome glasses has finished loop one in 9:16:14. #BM100
   # A guy with awesome glasses has begun loop two at 9:45:04. #BM100
