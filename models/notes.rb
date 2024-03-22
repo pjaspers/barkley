@@ -9,6 +9,11 @@ data = {
  :christophe => <<~NOTES,
   NOTES
  :damian => <<~NOTES,
+  Read his book <a href="https://www.ultradamo.com/writing">or both of them</a>, it's OK, I'll wait.
+
+  Came close in 2023, came even closer in 2024.
+
+  Known for his humour and "rivalry" with the <a href="/r/john">Tea Dodger</a>
   NOTES
  :claire => <<~NOTES,
   NOTES
@@ -36,6 +41,9 @@ data = {
  </ul>
   NOTES
  :john => <<~NOTES,
+ Absolute legend, both in running and on the interwebs. Expect a race report to appear <a href="https://randomforestrunner.com">here</a> after some time has passed.
+
+ Also see <a href="/r/damian">Damian</a> because they're mortal enemies (not really, they're adorable)
   NOTES
  :christiana => <<~NOTES,
   NOTES
