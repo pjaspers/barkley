@@ -109,7 +109,7 @@ all = [
     profile: Profile.new(
       first_name: "Greig", last_name: "Hamilton",
       year: 1980,
-      nationality: :us
+      nationality: :nz
     ),
     state: Status.new(state: :confirmed, reason: "On the list"),
     # Was World champion rogaining
