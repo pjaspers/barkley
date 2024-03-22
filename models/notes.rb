@@ -20,8 +20,9 @@ data = {
   In 2022 he made it to Loop 4, before timing out in that loop.
   NOTES
  :ihor => <<~NOTES,
- Ukranian-Canadian runner, was the assist to <a href="/harvey">'s win in the Big Dog Backyard (ran 717.5km in 108 hours)
+ Ukranian-Canadian runner, was the assist to <a href="/harvey">Harvey</a>'s win in the Big Dog Backyard (Ihor ran 717.5km in 108 hours)
 
+ Finished the Barkley on his first attempt.
  <a href="https://runningmagazine.ca/trail-running/meet-the-ukrainian-canadian-ultrarunner-who-is-winning-everything/">Runninmagazine.ca article</a>
  NOTES
  :harvey => <<~NOTES,
