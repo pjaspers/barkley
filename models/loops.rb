@@ -26,6 +26,13 @@ class Loop
   def started_at = @barkley_start + @start.duration
   def finished_at = @barkley_start + @stop.duration
 
+  def fun_run?
+    return false unless number == 3
+    return false unless finished?
+
+    @stop.duration < 40*60*60
+  end
+
   def start_source = @start.source
   def finish_source = @stop.source
   def start_title = @start&.text

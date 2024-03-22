@@ -87,6 +87,11 @@
                 <%= elapsed(l.started_at, style: "narrow") %>
               </span>
             <% end %>
+            <% if l.fun_run? %>
+              <span class="highlight highlight--blue" title="Completed a Fun Run">
+                FUN
+              </span>
+            <% end %>
           </td>
         <% end %>
       </tr>
