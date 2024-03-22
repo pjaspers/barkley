@@ -233,7 +233,7 @@ data = {
     Loop.new(1, start: U["00:00:00"], stop: U["08:45:55"]),
     Loop.new(2, start: nil, stop: U["20:26:20"]),
     Loop.new(3, start: U["21:50:45"], stop: U["34:32:49", t[1770901120396742981]]),
-    Loop.new(4, start: U["35:59:26", t[1770920536987566265]], stop: nil),
+    Loop.new(4, start: U["35:59:26", t[1770920536987566265]], stop: U["DNF", t[1771026334849851730]]),
     Loop.new(5, start: nil, stop: nil),
   ],
   # A guy with a gray beard and a muscular guy with tree trunk legs came through the fire tower at 12:55. #BM100
@@ -294,7 +294,7 @@ data = {
   went_back_for_a_page: [
     Loop.new(1, start: U["00:00:00"], stop: U["11:30:00"]),
     Loop.new(2, start: nil, stop: U["26:25:29", t[1770781038903460322]]),
-    Loop.new(3, start: U["26:27:00", t[1770781038903460322]], stop: nil),
+    Loop.new(3, start: U["26:27:00", t[1770781038903460322]], stop: U["39:52:59", t[1770981623212749291]]),
     Loop.new(4, start: nil, stop: nil),
     Loop.new(5, start: nil, stop: nil),
   ],
