@@ -61,6 +61,8 @@ class Loop
     # The higher the start time of the loop, the less points you
     # should get
     points += 1000.0/(start > 0 ? start : 1) if started?
+    # And you should get points for finishing first
+    points += 1000.0/(stop > 0 ? stop : 1) if finished?
     # Each loop is harder, so more points
     number * points
   end
