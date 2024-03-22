@@ -113,6 +113,7 @@ tweets = {
  1771274824901374462 => "Damian Hall @Ultra_Damo came in from the wrong direction after not completing loop five of the #BM100.",
  1771277977260556593 => "Jared Campbell finished loop five of the #BM100 in 59:30:32. This is his fourth finish. “That new section is brutal. You are a bad man.”",
  1771279904300061032 => "Greig Hamilton finished loop five of the #BM100 in 59:38:42.",
+ 1771281582621409447 => "Sebastien Raichon did not complete loop five and faces the bugler. #BM100",
 }
 
 t = ->(id) { ["https://twitter.com/keithdunn/status/#{id}", tweets[id]] }
@@ -179,7 +180,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:27:53"]),
     Loop.new(3, start: U["20:10:14"], stop: U["32:57:06", t[1770876876958912672]]),
     Loop.new(4, start: U["33:16:52", t[1770881998464118928]], stop: U["47:45:39", t[1771100559249993856]]),
-    Loop.new(5, start: U["47:57:00", t[1771103254971035821]], stop: nil, direction: :cw),
+    Loop.new(5, start: U["47:57:00", t[1771103254971035821]], stop: U["DNF", t[1771281582621409447]], direction: :cw),
   ],
   # ihor
   more_2: [
