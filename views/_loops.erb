@@ -56,6 +56,11 @@
                   <% else %>
                     <%= hhmmss(l.start) %>
                   <% end %>
+                  <% if i == 5 %>
+                    <span class="highlight highlight--yellow">
+                      <%= l.direction.to_s.upcase %>
+                    </span>
+                  <% end %>
                 <% end %>
               <% end %>
             </td>

@@ -1,12 +1,14 @@
 class Loop
   attr_accessor :number
+  attr_reader :direction
 
   # start and stop is relative to the start
-  def initialize(number, start:, stop:)
+  def initialize(number, start:, stop:, direction: "CW")
     @number = number
     @start = start
     @stop = stop
     @barkley_start = Barkley.start
+    @direction = direction
   end
 
   def start
@@ -138,7 +140,7 @@ data = {
     Loop.new(4,
              start: U["31:48:36", t[1770873027825139776]],
              stop: U["45:46:32", t[1771070767406432602]]),
-    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil, direction: :ccw),
   ],
   # damian
   runner_2: [
@@ -146,7 +148,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:27:51"]),
     Loop.new(3, start: U["19:45:51"], stop: U["31:36:58", t["1770856700179788154"]]),
     Loop.new(4, start: U["31:50:19", t[1770873027825139776]], stop: U["46:16:27", t[1771078341887459742]]),
-    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil, direction: :cw),
   ],
   # jasmin
   runner_3: [
@@ -171,7 +173,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:27:54"]),
     Loop.new(3, start: U["19:45:51"], stop: U["31:31:47", t[1770855514294952031]]),
     Loop.new(4, start: U["31:46:21",t[1770859105072107625]], stop: U["45:46:36", t[1771070767406432602]]),
-    Loop.new(5, start: U["46:06:32", t[1771075652847894917]], stop: nil),
+    Loop.new(5, start: U["46:06:32", t[1771075652847894917]], stop: nil, direction: :cw),
   ],
   more_3: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:31:59"]),
@@ -186,7 +188,7 @@ data = {
     Loop.new(2, start: nil, stop: U["19:52:36"]),
     Loop.new(3, start: nil, stop: U["32:12:43", t[1770865783683367040]]),
     Loop.new(4, start: U["32:43:11", t[1770873749065043996]], stop: U["46:15:43", t[1771078341887459742]]),
-    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil),
+    Loop.new(5, start: U["46:22:00", t[1771081701755637895]], stop: nil, direction: :ccw),
   ],
   next_2: [
     Loop.new(1, start: U["00:00:00"], stop: U["08:35:17"]),
