@@ -73,7 +73,7 @@ end
 
 class Update
   attr_reader :source, :text, :time
-  def initialize(time, source, text)
+  def initialize(time, source = nil, text = nil)
     @time = time
     @source = source
     @text = text

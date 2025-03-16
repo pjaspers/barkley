@@ -17,7 +17,7 @@ class BarkleyTest < Test
 
   Barkley.runners.each do |runner|
     # Can't find a pic for matej
-    next if runner.key == :matej
+    next if runner.key == "matej"
 
     it "#{runner.key} has a jpeg" do
       assert File.exist?(root.join("public/runners/#{runner.key}.jpg"))
