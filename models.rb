@@ -42,7 +42,7 @@ web = ->(data) {
   TheInterwebs.new(**{strava: nil, instagram: nil, twitter: nil, duv: nil, web: nil, wiki: nil}.merge(data))
 }
 
-all = Dir.glob("#{Config.root}/data/2024/runners/*.yml").map do |yml|
+all = Dir.glob("#{Config.root}/data/2025/runners/*.yml").map do |yml|
   slug = File.basename(yml, ".yml")
   runner_data = YAML.load_file(yml).transform_keys(&:to_sym)
   notes = runner_data.delete(:notes) || ""
@@ -100,7 +100,7 @@ Barkley.runners = Runners.new(all)
 require_relative "models/loops"
 
 Barkley.loops ||= {}
-Dir.glob("#{Config.root}/data/2024/loops/*.yml").map do |yml|
+Dir.glob("#{Config.root}/data/2025/loops/*.yml").map do |yml|
   nickname = File.basename(yml, ".yml")
   loops_data = YAML.load_file(yml).transform_keys(&:to_sym)
   loops = loops_data.delete(:loops).map do |h|

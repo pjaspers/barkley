@@ -1,4 +1,4 @@
-<h1>Barkley Marathons 2024</h1>
+<h1>Barkley Marathons 2025</h1>
 
 <ul class="navigation">
   <% %w(timeline cutoffs loops resources runners).each do |item| %>
@@ -8,10 +8,16 @@
 
 <h2 id="timeline">Timeline</h2>
 
-<p>
-  The conch was blown at <span class="highlight"><%= local_time(Barkley.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(Barkley.start) %></span>, and the race ended at <span class="highlight"><%= local_time(Barkley.end_time) %></span>.
-</p>
+<% if Barkley.conch_blown? %>
+  <p>
+    The conch was blown at <span class="highlight"><%= local_time(Barkley.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(Barkley.start) %></span>, and the race ended at <span class="highlight"><%= local_time(Barkley.end_time) %></span>.
+  </p>
+<% else %>
+  <p>
+    The conch has not been blown yet.
+<% end %>
 
+<% if false %>
 <h3 class="highlight highlight--blue whatarace">
   <strong>The 2024 Barkley Marathons has ended. There are five finishers. #BM100</strong>
 </h3>
@@ -25,6 +31,7 @@
     From left to right: <a href="/r/greig">Greig Hamilton</a>, <a href="/r/jared">Jared Campbell</a>, <a href="/r/ihor">Ihor Verys</a>, <a href="/r/jasmin">Jasmin Paris</a> and <a href="/r/john">John Kelly</a>. <a href="https://twitter.com/keithdunn/status/1771289243979014519">[source]</a>
   </figcaption>
 </figure>
+<% end %>
 
 <% if false %>
   so we've been running for <span class="highlight"><%= elapsed(Barkley.start) %></span> and we still have <span class="highlight highlight--blue"><%= elapsed(Barkley.end_time) %></span> remaining before it all ends.
@@ -32,6 +39,7 @@
 
 <h2 id="cutoffs">Cutoffs</h2>
 
+<% if Barkley.conch_blown? %>
 You can't start a loop after it's cutoff.
 
 <div class="cutoffs">
@@ -54,6 +62,13 @@ You can't start a loop after it's cutoff.
     </div>
   <% end%>
 </div>
+
+<% else %>
+<div class="cutoffs">
+  <p>Waiting on the conch to be blown</p>
+</div>
+<% end %>
+
 
 <h2 id="loops">Loops</h2>
 
