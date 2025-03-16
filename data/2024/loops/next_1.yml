@@ -1,0 +1,56 @@
+---
+:runner: greig
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:34:47'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '19:52:36'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '32:12:43'
+    :text: 'Greig Hamilton finished loop three in 32:12:43. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770865783683367040
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '32:43:11'
+    :text: 'Greig Hamilton began loop four at 32:43:11 and Jared Campbell began loop
+      4 at 32:43:37. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770873749065043996
+  :stop:
+    :time: '46:15:43'
+    :text: 'Greig Hamilton and Damian Hall finished loop four in 46:15:43 and 46:16:27.
+      #BM100'
+    :source: https://twitter.com/keithdunn/status/1771078341887459742
+- :index: 5
+  :direction: :ccw
+  :start:
+    :time: '46:22:00'
+    :text: 'John Kelly began loop five in the counter-clockwise direction; Damian
+      Hall  is going clockwise, Greig Hamilton is going counter-clockwise. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771081701755637895
+  :stop:
+    :time: '59:38:42'
+    :text: 'Greig Hamilton finished loop five of the #BM100 in 59:38:42.'
+    :source: https://twitter.com/keithdunn/status/1771279904300061032

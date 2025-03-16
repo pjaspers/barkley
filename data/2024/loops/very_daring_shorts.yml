@@ -1,0 +1,54 @@
+---
+:runner: thomas
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '09:30:24'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time: '09:55:02'
+    :text:
+    :source:
+  :stop:
+    :time: '22:08:57'
+    :text: 'Tomo Ihara and Thomas Dunkerbeck finished loop two in  22:08:53, :57.
+      #BM100'
+    :source: https://twitter.com/keithdunn/status/1770714062726295722
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '23:55:00'
+    :text:
+    :source:
+  :stop:
+    :time: '36:15:40'
+    :text: 'Thomas Dunkerbeck finished loop three in 36:15:40. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770926893753115028
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

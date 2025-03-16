@@ -1,0 +1,12 @@
+attempts: 5
+profile:
+  first_name: "Guillaume"
+  last_name: "Calmettes"
+  year: 1984
+  nationality: :fr
+state:
+  state: :confirmed
+  reason: "Mentioned by Keith"
+# Was World champion rogaining
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=367155"

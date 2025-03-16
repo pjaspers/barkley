@@ -1,0 +1,13 @@
+attempts: 3
+profile:
+  first_name: "Harvey"
+  last_name: "Lewis"
+  year: 1976
+  nationality: :us
+state:
+  state: :confirmed
+  reason: "Mentioned a lot on instagram"
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=19568"
+  instagram: "https://www.instagram.com/harveylewisultrarunner/"
+  web: "https://en.wikipedia.org/wiki/Harvey_Sweetland_Lewis"

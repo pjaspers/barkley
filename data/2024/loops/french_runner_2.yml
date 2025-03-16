@@ -1,0 +1,55 @@
+---
+:runner: maxime
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:45:55'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '20:26:20'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '21:50:45'
+    :text:
+    :source:
+  :stop:
+    :time: '34:32:49'
+    :text: 'Maxime Gauduin finished loop three in 34:32:49. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770901120396742981
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '35:59:26'
+    :text: 'Maxime Gauduin began loop four at 35:59:26. Ten runners are on loop four.
+      #BM100'
+    :source: https://twitter.com/keithdunn/status/1770920536987566265
+  :stop:
+    :time: DNF
+    :text: 'Maxime Gauduin dropped on loop four at Fire Tower and is tapped out. “It’s
+      really different from the BFC.”  #BM100'
+    :source: https://twitter.com/keithdunn/status/1771026334849851730
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

@@ -1,0 +1,53 @@
+---
+:runner: ihor
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:31:59'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '19:27:54'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '19:45:51'
+    :text:
+    :source:
+  :stop:
+    :time: '31:31:47'
+    :text: 'Ihor Verys has finished loop three in 31:31:47. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770855514294952031
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '31:46:21'
+    :text: 'Ihor Verys began loop four at 31:46:21. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770859105072107625
+  :stop:
+    :time: '45:46:36'
+    :text: 'John Kelly and Ihor Verys finished loop four in 45:46:32, :36 #BM100'
+    :source: https://twitter.com/keithdunn/status/1771070767406432602
+- :index: 5
+  :direction: :cw
+  :start:
+    :time: '46:06:32'
+    :text: 'Ihor Verys began loop five at 46:06:32. He chose to go clockwise. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771075652847894917
+  :stop:
+    :time: '58:44:59'
+    :text: 'Ihor Verys finished loop five of the #BM100 in 58:44:59.'
+    :source: https://twitter.com/keithdunn/status/1771266642330218762

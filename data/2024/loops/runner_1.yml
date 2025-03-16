@@ -1,0 +1,56 @@
+---
+:runner: john
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:30:59'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time: '08:38:38'
+    :text:
+    :source:
+  :stop:
+    :time: '19:27:49'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '19:45:51'
+    :text:
+    :source:
+  :stop:
+    :time: '31:36:57'
+    :text:
+    :source: https://twitter.com/keithdunn/status/1770856700179788154
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '31:48:36'
+    :text: 'Ok, to correct a couple numbers - John Kelly began loop four at 31:48:36;
+      Damian Hall began loop four at 31:50:19. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770873027825139776
+  :stop:
+    :time: '45:46:32'
+    :text: 'John Kelly and Ihor Verys finished loop four in 45:46:32, :36 #BM100'
+    :source: https://twitter.com/keithdunn/status/1771070767406432602
+- :index: 5
+  :direction: :ccw
+  :start:
+    :time: '46:22:00'
+    :text: 'John Kelly began loop five in the counter-clockwise direction; Damian
+      Hall  is going clockwise, Greig Hamilton is going counter-clockwise. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771081701755637895
+  :stop:
+    :time: '59:15:38'
+    :text: 'John Kelly finished loop five of the #BM100 in 59:15:38.  This is his
+      third finish.'
+    :source: https://twitter.com/keithdunn/status/1771274084694786461

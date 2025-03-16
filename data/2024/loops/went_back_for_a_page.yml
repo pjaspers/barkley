@@ -1,0 +1,57 @@
+---
+:runner: guillaume
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '11:30:00'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '26:25:29'
+    :text: 'Guillaume Calmettes finished loop two in 26:25:29, turned it around quickly
+      at the gate, and began loop three with about three minutes to spare. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770781038903460322
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '26:27:00'
+    :text: 'Guillaume Calmettes finished loop two in 26:25:29, turned it around quickly
+      at the gate, and began loop three with about three minutes to spare. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770781038903460322
+  :stop:
+    :time: '39:52:59'
+    :text: |-
+      Guillaume Calmettes @gcalmettes
+       finished loop three in 39:52:59.  #BM100
+    :source: https://twitter.com/keithdunn/status/1770981623212749291
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

@@ -1,0 +1,57 @@
+---
+:runner: jasmin
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:30:59'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '19:27:52'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '19:45:51'
+    :text:
+    :source:
+  :stop:
+    :time: '32:15:53'
+    :text: 'Jasmin Paris finished loop three in 32:15:53, smiling and looking good.
+      #BM100'
+    :source: https://twitter.com/keithdunn/status/1770866384513249421
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '32:27:50'
+    :text: 'Jasmin Paris began loop four at 32:27:50. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770869408589574173
+  :stop:
+    :time: '46:29:12'
+    :text: 'Jasmin Paris finished loop four in 46:29:12. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771081868370223302
+- :index: 5
+  :direction: :cw
+  :start:
+    :time: '46:41:00'
+    :text: |-
+      Jasmin Paris @JasminKParis
+       has started loop five in the clockwise direction, while Jared Campbell @derajslc
+       is going counter-clockwise.  #BM100
+    :source: https://twitter.com/keithdunn/status/1771085327395958831
+  :stop:
+    :time: '59:58:21'
+    :text: 'Jasmin Paris finished loop five of the #BM100 in 59:58:21.'
+    :source: https://twitter.com/keithdunn/status/1771285169963438324

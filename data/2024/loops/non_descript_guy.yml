@@ -1,0 +1,58 @@
+---
+:runner: jared
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:46:35'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '19:52:47'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '32:20:54'
+    :text: 'Jared Campbell finished loop three in 32:20:54. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770868051476390033
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '32:43:37'
+    :text: 'Greig Hamilton began loop four at 32:43:11 and Jared Campbell began loop
+      4 at 32:43:37. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770873749065043996
+  :stop:
+    :time: '46:19:25'
+    :text: 'Jared Campbell finished loop four in 46:19:25. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771078702408823196
+- :index: 5
+  :direction: :ccw
+  :start:
+    :time: '46:41:00'
+    :text: |-
+      Jasmin Paris @JasminKParis
+       has started loop five in the clockwise direction, while Jared Campbell @derajslc
+       is going counter-clockwise.  #BM100
+    :source: https://twitter.com/keithdunn/status/1771085327395958831
+  :stop:
+    :time: '59:30:32'
+    :text: 'Jared Campbell finished loop five of the #BM100 in 59:30:32. This is his
+      fourth finish. “That new section is brutal. You are a bad man.”'
+    :source: https://twitter.com/keithdunn/status/1771277977260556593

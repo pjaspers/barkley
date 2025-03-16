@@ -1,0 +1,56 @@
+---
+:runner: sebastien
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:31:59'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '19:27:53'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '20:10:14'
+    :text:
+    :source:
+  :stop:
+    :time: '32:57:06'
+    :text: 'Sebastien Raichon finished loop three in 32:57:06. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770876876958912672
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '33:16:52'
+    :text: 'Sebastien Raichon began loop four at 33:16:52. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770881998464118928
+  :stop:
+    :time: '47:45:39'
+    :text: 'Sebastien Raichon appeared to have finished loop four, but failed to follow
+      the course near the end of the loop.  After correcting his error he finished
+      the loop in 47:45:39. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771100559249993856
+- :index: 5
+  :direction: :cw
+  :start:
+    :time: '47:57:00'
+    :text: 'Sebastien Raichon began loop five, three minutes before the cutoff. For
+      the first time ever, seven runners are on loop five at the #BM100.'
+    :source: https://twitter.com/keithdunn/status/1771103254971035821
+  :stop:
+    :time: DNF
+    :text: 'Sebastien Raichon did not complete loop five and faces the bugler. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771281582621409447

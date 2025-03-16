@@ -1,0 +1,53 @@
+---
+:runner: aurelien
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '08:45:48'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '19:52:48'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '21:01:40'
+    :text: 'Aurélien Sanchez Began loop 3 at 21:50:45. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770708985655488907
+  :stop:
+    :time: DNF
+    :text: 'Aurélien Sanchez dropped on loop three and was tapped out. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770713123202208234
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

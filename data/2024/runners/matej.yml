@@ -1,0 +1,13 @@
+attempts: 1
+profile:
+  first_name: "Matej"
+  last_name: "Arnus"
+  year: 1978
+  nationality: :si
+state:
+  state: :likely
+  reason: "On Taka's list"
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=404460"
+notes: |
+  Finished the Tor des Geants last year (614th), was the assist with 207km in 32 hours, can't find much else.

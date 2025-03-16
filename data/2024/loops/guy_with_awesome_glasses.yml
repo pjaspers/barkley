@@ -1,0 +1,54 @@
+---
+:runner: albert
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '09:16:14'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time: '09:45:04'
+    :text:
+    :source:
+  :stop:
+    :time: '20:26:04'
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '21:08:52'
+    :text:
+    :source:
+  :stop:
+    :time: '33:22:37'
+    :text: 'Albert Herrero Casas finished loop three in 33:22:37. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770883341241213218
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '33:49:19'
+    :text: 'Albert Herrero Casas began loop four at 33:49:19. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770889923660284332
+  :stop:
+    :time: DNF
+    :text: 'Albert Herrero Casas also came back to camp via quitter’s road and was
+      tapped out. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771090354835521860
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

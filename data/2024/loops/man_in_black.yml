@@ -1,0 +1,54 @@
+---
+:runner: harald
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '11:49:30'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time: '11:57:04'
+    :text:
+    :source:
+  :stop:
+    :time: DNF
+    :text: 'Harald Zundel dropped after getting lost on loop two and ending up knocking
+      on someone’s door looking for help. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770725093104091160
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

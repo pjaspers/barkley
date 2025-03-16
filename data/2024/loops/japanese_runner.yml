@@ -1,0 +1,54 @@
+---
+:runner: tomokazu
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '09:11:05'
+    :text:
+    :source:
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time: '22:08:53'
+    :text: 'Tomo Ihara and Thomas Dunkerbeck finished loop two in  22:08:53, :57.
+      #BM100'
+    :source: https://twitter.com/keithdunn/status/1770714062726295722
+- :index: 3
+  :direction: CW
+  :start:
+    :time: '22:25:10'
+    :text: 'Tomo began loop three at 22:25:10. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770718152688648536
+  :stop:
+    :time: '34:43:15'
+    :text: 'Tomo Ihara finished loop three in 34:43:15. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770903945910636768
+- :index: 4
+  :direction: CW
+  :start:
+    :time: '35:04:16'
+    :text: 'Tomo began loop four at 35:04:16. #BM100'
+    :source: https://twitter.com/keithdunn/status/1770909152694440019
+  :stop:
+    :time: DNF
+    :text: 'Tomo Ihara dropped on loop four, taking quitter’s road back to camp. #BM100'
+    :source: https://twitter.com/keithdunn/status/1771088295067279399
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
