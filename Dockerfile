@@ -1,5 +1,5 @@
 # Dockerfile
-ARG RUBY_VERSION=3.3.0
+ARG RUBY_VERSION=3.3.7
 FROM registry.docker.com/library/ruby:$RUBY_VERSION-alpine as base
 
 ARG APP_ROOT=/app
@@ -59,6 +59,7 @@ COPY models.rb .
 COPY models/ models/
 COPY config.rb .
 COPY lib/ lib/
+COPY data/ data/
 COPY public/ public/
 COPY views views
 

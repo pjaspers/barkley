@@ -89,7 +89,7 @@ DEPENDENCIES
   webrick (~> 1.8.1)
 
 RUBY VERSION
-   ruby 3.3.0p0
+   ruby 3.3.7p123
 
 BUNDLED WITH
    2.5.3
