@@ -5,7 +5,7 @@ profile:
   year: 1980
   nationality: :ch
 state:
-  state: :maybe,
+  state: :maybe
   reason: "Ran last year + strava"
 the_inter_webs:
   strava: "https://www.strava.com/pros/7068194"

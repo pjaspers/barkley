@@ -6,7 +6,7 @@ profile:
   year: 1991
   nationality: :fr
 state:
-  state: :confirmed,
+  state: :confirmed
   reason: "On the list"
 the_inter_webs:
   instagram: "https://www.instagram.com/aurelien_sanchez_/"

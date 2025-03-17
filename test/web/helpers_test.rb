@@ -21,4 +21,10 @@ class HelpersTest < WebTest
 
     assert_equal [28,45,20], app.hour_minute_seconds(28*60*60 + 45*60 + 20)
   end
+
+  it "elapsed" do
+    app = App.new({})
+
+    refute_nil app.elapsed(Time.now - 10)
+  end
 end

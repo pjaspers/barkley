@@ -1,12 +1,64 @@
 module Barkley
-  class << self
-    attr_accessor :runners, :loops
+  YEARS = {
+    2024 => {
+      conch_blown: Time.new(2024, 03, 20, 4, 17, 0, "-04:00"),
+    },
+    2025 => {
+      conch_blown: nil
+    }
+  }
 
-    def conch_blown? = false
-    def conch_blown = Time.new(2024, 03, 20, 4, 17, 0, "-04:00")
+  class Edition
+    attr_accessor :conch_blown, :year
+
+    def self.for_year(year)
+      new(conch_blown: Barkley::YEARS.dig(year, :conch_blown))
+    end
+
+    def initialize(conch_blown:)
+      @conch_blown = conch_blown
+      @year = conch_blown&.year || Time.now.year
+    end
+
+    def conch_blown?
+      !!@conch_blown
+    end
+
     def start = conch_blown + 1*60*60
     def elapsed = Time.now - start
     def end_time = start + duration_to_sec("60:00:00")
+
+    def ongoing?
+      return false if finished?
+      return false unless conch_blown?
+
+      true
+    end
+
+    def started?
+      return false unless conch_blown?
+
+      Time.now > start
+    end
+
+    def finished?
+      return false unless conch_blown?
+
+      Time.now > end_time
+    end
+
+    def runners
+      all = Dir.glob("#{Config.root}/data/#{@year}/runners/*.yml").map do |yml_path|
+        Runner.from_yml(yml_path)
+      end
+      Runners.new(all)
+    end
+
+    def nicknames
+      Dir.glob("#{Config.root}/data/#{@year}/loops/*.yml").map do |yml_path|
+        Nickname.from_yml(yml_path, edition: self)
+      end
+    end
 
     def cut_off(loop_number:, fun_run:)
       if fun_run
@@ -18,9 +70,9 @@ module Barkley
 
     # Sort the loops in a way that the person who's in the furthest
     # loop is on top, and the rest is behind that
-    def sorted_loops
-      Barkley.loops.sort_by do |_nickname, (runner,loops)|
-        loops.map(&:score).inject(:+)
+    def sorted_nicknames(year: 2025)
+      nicknames.sort_by do |nickname|
+        nickname.loops.map(&:score).inject(:+)
       end.reverse
     end
 

@@ -1,4 +1,4 @@
-<h1>Barkley Marathons 2025</h1>
+<h1>Barkley Marathons <%= @edition.year %></h1>
 
 <ul class="navigation">
   <% %w(timeline cutoffs loops resources runners).each do |item| %>
@@ -8,16 +8,26 @@
 
 <h2 id="timeline">Timeline</h2>
 
-<% if Barkley.conch_blown? %>
-  <p>
-    The conch was blown at <span class="highlight"><%= local_time(Barkley.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(Barkley.start) %></span>, and the race ended at <span class="highlight"><%= local_time(Barkley.end_time) %></span>.
-  </p>
+<% if @edition.conch_blown? %>
+  <% if @edition.finished? %>
+    <p>
+      The conch was blown at <span class="highlight"><%= local_time(@edition.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(@edition.start) %></span>, and the race ended at <span class="highlight"><%= local_time(@edition.end_time) %></span>.
+    </p>
+  <% elsif @edition.started? %>
+    <p>
+      The conch was blown at <span class="highlight"><%= local_time(@edition.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(@edition.start) %></span>, and the race will end at <span class="highlight"><%= local_time(@edition.end_time) %></span>.
+    </p>
+  <% else %>
+    <p>
+      The conch was blown at <span class="highlight"><%= local_time(@edition.conch_blown) %></span> so the race will start at <span class="highlight"><%= local_time(@edition.start) %></span>, and the race will end at <span class="highlight"><%= local_time(@edition.end_time) %></span>.
+    </p>
+  <% end %>
 <% else %>
   <p>
     The conch has not been blown yet.
 <% end %>
 
-<% if false %>
+<% if @edition.finished? %>
 <h3 class="highlight highlight--blue whatarace">
   <strong>The 2024 Barkley Marathons has ended. There are five finishers. #BM100</strong>
 </h3>
@@ -28,18 +38,18 @@
     alt="2024 Barkley finishers"
   />
   <figcaption>
-    From left to right: <a href="/r/greig">Greig Hamilton</a>, <a href="/r/jared">Jared Campbell</a>, <a href="/r/ihor">Ihor Verys</a>, <a href="/r/jasmin">Jasmin Paris</a> and <a href="/r/john">John Kelly</a>. <a href="https://twitter.com/keithdunn/status/1771289243979014519">[source]</a>
+    From left to right: <a href="<%= runner_a("greig") %>">Greig Hamilton</a>, <a href="<%= runner_a("jared") %>">Jared Campbell</a>, <a href="<%= runner_a("ihor") %>">Ihor Verys</a>, <a href="<%= runner_a("jasmin") %>">Jasmin Paris</a> and <a href="<%= runner_a("john") %>">John Kelly</a>. <a href="https://twitter.com/keithdunn/status/1771289243979014519">[source]</a>
   </figcaption>
 </figure>
 <% end %>
 
-<% if false %>
-  so we've been running for <span class="highlight"><%= elapsed(Barkley.start) %></span> and we still have <span class="highlight highlight--blue"><%= elapsed(Barkley.end_time) %></span> remaining before it all ends.
+<% if @edition.ongoing? %>
+  so we've been running for <span class="highlight"><%= elapsed(@edition.start) %></span> and we still have <span class="highlight highlight--blue"><%= elapsed(@edition.end_time) %></span> remaining before it all ends.
 <% end %>
 
 <h2 id="cutoffs">Cutoffs</h2>
 
-<% if Barkley.conch_blown? %>
+<% if @edition.conch_blown? %>
 You can't start a loop after it's cutoff.
 
 <div class="cutoffs">
@@ -50,13 +60,13 @@ You can't start a loop after it's cutoff.
         <% if i < 4 %>
           <div class="cutoff__funrun">
             <h4>Fun Run</h4>
-            <%= partial("cutoff", locals: {cutoff: Barkley.cut_off(loop_number: i, fun_run: true)}) %>
+            <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i, fun_run: true)}) %>
           </div>
         <% end %>
 
         <div class="cutoff_fullrun">
           <h4>Full Run</h4>
-          <%= partial("cutoff", locals: {cutoff: Barkley.cut_off(loop_number: i, fun_run: false)}) %>
+          <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i, fun_run: false)}) %>
         </div>
       </div>
     </div>
@@ -108,10 +118,10 @@ You can't start a loop after it's cutoff.
 <h2 id="runners">Runners</h2>
 
 <div class="runners_overview">
-  <% Barkley.runners.each.with_index(1) do |runner, index| %>
+  <% @edition.runners.each.with_index(1) do |runner, index| %>
     <div class="overview__entry">
       <div class="overview__main">
-        <a class="overview__name" href="/r/<%= runner.key %>">
+        <a class="overview__name" href="<%= runner_a(runner.key) %>">
           <%= runner.profile.name %>
         </a>
         <div class="overview__sub">

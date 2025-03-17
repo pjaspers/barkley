@@ -1,5 +1,9 @@
 <h3>
-  <a href="/">Home</a>
+  <% if @edition.year == 2025 %>
+    <a href="/">Home</a>
+  <% else %>
+    <a href="/2024">2024</a>
+  <% end %>
 </h3>
 
 <%= partial("runner", locals: {runner: @runner}) %>

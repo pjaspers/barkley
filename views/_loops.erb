@@ -31,11 +31,11 @@
     </tr>
   </thead>
   <tbody>
-    <% Barkley.sorted_loops.each do |nickname, (runner,loops)| %>
+    <% @edition.sorted_nicknames.each do |nickname| %>
       <tr class="loops__line">
         <td class="loops__name">
-          <span class="loops__name__nick"><%= nickname.to_s.split("_").map(&:capitalize).join(" ") %></span>
-          <% if runner %>
+          <span class="loops__name__nick"><%= nickname.name %></span>
+          <% if runner = nickname.runner %>
             <span class="loops__name__guess">
               <a href="/r/<%= runner.key %>">
                 <%= runner.profile.name %>?
@@ -44,7 +44,7 @@
           <% end %>
         </td>
 
-        <% loops.each.with_index(1) do |l, i| %>
+        <% nickname.loops.each.with_index(1) do |l, i| %>
           <% if i > 1 %>
             <td>
               <% if l.started? || l.finished? || l.dnf? %>

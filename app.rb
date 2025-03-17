@@ -29,9 +29,31 @@ class App < Roda
   route do |r|
     r.public
 
+    r.on "2024" do
+      @edition = Barkley::Edition.for_year(2024)
+
+      r.on "r" do
+        r.get String do |s|
+          @runner = @edition.runners.by_slug(s)
+
+          view "runner"
+        end
+      end
+
+      r.get "loops" do
+        view "loops"
+      end
+
+      r.get(true) do
+        view "index"
+      end
+    end
+
+
+    @edition = Barkley::Edition.for_year(2025)
     r.on "r" do
       r.get String do |s|
-        @runner = Barkley.runners.by_slug(s)
+        @runner = @edition.runners.by_slug(s)
 
         view "runner"
       end
@@ -42,8 +64,6 @@ class App < Roda
     end
 
     r.root do
-      @runners = Barkley.runners
-
       view "index"
     end
   end
@@ -63,6 +83,15 @@ class App < Roda
     </relative-time>
     HTML
   end
+
+  def runner_a(key)
+    if @edition.year == 2025
+      "/r/#{key}"
+    else
+      "/#{@edition.year}/r/#{key}"
+    end
+  end
+
 
   def hhmmss(seconds)
     "%02d:%02d:%02d" % hour_minute_seconds(seconds)
