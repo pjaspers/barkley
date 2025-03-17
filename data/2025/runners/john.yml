@@ -1,0 +1,18 @@
+attempts: 8
+finishes: 3
+profile:
+  first_name: "John"
+  last_name: "Kelly"
+  year: 1984
+  nationality: :us
+state:
+  state: :likely
+  reason: "Rumours a plenty"
+the_inter_webs:
+  strava: "https://www.strava.com/athletes/16389235"
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=788718"
+  instagram: "https://www.instagram.com/randomforestrunner/"
+notes: |
+  Absolute legend, both in running and on the interwebs. Expect a race report to appear <a href="https://randomforestrunner.com">here</a> after some time has passed.
+
+  3 time finisher.
