@@ -18,7 +18,7 @@ class App < Roda
   plugin :common_logger, logger
   plugin :render, escape: false, layout: './layout', :template_opts=>{chain_appends: !defined?(SimpleCov), freeze: true, skip_compiled_encoding_detection: true}
 
-  opts[:default_title] = "Barkley 2024"
+  opts[:default_title] = "Barkley 2025"
 
   # :nocov:
   if Config.development?
