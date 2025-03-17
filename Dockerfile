@@ -15,7 +15,7 @@ ENV BUNDLE_DEPLOYMENT="1" \
 FROM base as build
 
 ARG BUILD_PACKAGES="build-base curl-dev git curl"
-ARG DEV_PACKAGES="gcompat sqlite"
+ARG DEV_PACKAGES="gcompat"
 ARG RUBY_PACKAGES="tzdata"
 
 # WORKDIR $APP_ROOT
