@@ -10,8 +10,6 @@ gem 'puma'
 gem "base64"
 
 group :development do
-  gem "rackup"
-  gem "webrick", "~> 1.8.1"
   gem 'simplecov'
 end
 
