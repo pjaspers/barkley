@@ -38,4 +38,7 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
         env:
+          # A hack because Fly is having issues
+          # https://status.flyio.net/incidents/vhb5gb8cxr18
+          FLY_REGISTRY_HOST: "registry2.fly.io"
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
