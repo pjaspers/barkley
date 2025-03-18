@@ -6,8 +6,10 @@ require "tilt"
 require "tilt/erubi"
 
 class App < Roda
-  plugin :public
+  plugin :public, headers: { 'Cache-Control' => 'max-age=31536000, immutable' }
   plugin :partials
+  plugin :timestamp_public
+
   logger = if Config.test?
              Class.new{def write(_) end}.new
            else
@@ -27,6 +29,7 @@ class App < Roda
   # :nocov:
 
   route do |r|
+    r.timestamp_public
     r.public
 
     r.on "2024" do

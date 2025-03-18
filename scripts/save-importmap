@@ -3,6 +3,8 @@
 require "json"
 require "net/http"
 
+force = ENV["FORCE"]
+
 # https://generator.jspm.io/#U2VhYGBkDM0rySzJSU1hcEjPLMkoTdIvSs1JLMksS9UtycxN1U3NSc1NzStxMNEz1jMEAP7dw1YyAA
 #
 # Get things from jspm.io, paste it below the __END__, then run this and past the output somewhere in a view
@@ -31,11 +33,15 @@ import_map.fetch("scopes", []).each do |_key, values|
   to_import.merge!(values)
 end
 
-to_import.each do |name, url|
-  safe_name = name.gsub("/", "--") + ".js"
-  path = File.join(root, "public/dist/#{safe_name}")
-  map[:imports][name] = "./dist/#{safe_name}"
-  next if File.exist?(path)
+def path_for(root, name)= File.join(root, "public/dist/#{name}")
+def safe_name(name)= name.gsub("/", "--") + ".js"
+
+def download(name, url, force: false)
+  root = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+  path = File.join(root, "public/dist/#{name}")
+  return if File.exist?(path) && !force
+
+  puts "Downloading #{name} at #{url}"
 
   uri = URI.parse(url)
   response = Net::HTTP.get_response(uri)
@@ -44,18 +50,25 @@ to_import.each do |name, url|
   end
 end
 
-puts <<~HTML
-<script type="importmap">
-  #{JSON.pretty_generate(map)}
-</script>
+to_import.each do |name, url|
+  download(safe_name(name), url, force: force)
+  download(safe_name(name)+ ".map", url + ".map", force: force)
+  map[:imports][name] = "<%= timestamp_path(xxx./dist/#{safe_name(name)}xxx) %>"
+end
 
-<!-- ES Module Shims: Import maps polyfill for older browsers without import maps support (eg Safari 16.3) -->
-<script async src="https://ga.jspm.io/npm:es-module-shims@1.8.3/dist/es-module-shims.js" crossorigin="anonymous"></script
-HTML
+module_shims_version = "2.0.10"
+download("es-module-shims.js", "https://ga.jspm.io/npm:es-module-shims@#{module_shims_version}/dist/es-module-shims.js", force: force)
+download("es-module-shims.js.map", "https://ga.jspm.io/npm:es-module-shims@#{module_shims_version}/dist/es-module-shims.js.map", force: force)
+
+relative_time_version = "4.4.5"
+download("relative-time-element-define.js", "https://ga.jspm.io/npm:@github/relative-time-element@#{relative_time_version}/dist/relative-time-element-define.js", force: force)
+download("relative-time-element.js", "https://ga.jspm.io/npm:@github/relative-time-element@#{relative_time_version}/dist/relative-time-element.js", force: force)
+
+puts JSON.pretty_generate(map)
 
 __END__
 {
   "imports": {
-    "@github/relative-time-element": "https://ga.jspm.io/npm:@github/relative-time-element@4.3.1/dist/index.js"
+    "@github/relative-time-element": "https://ga.jspm.io/npm:@github/relative-time-element@4.4.5/dist/index.js"
   }
 }
