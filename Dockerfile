@@ -1,5 +1,5 @@
 # Dockerfile
-ARG RUBY_VERSION=3.3.7
+ARG RUBY_VERSION=3.4.2
 FROM registry.docker.com/library/ruby:$RUBY_VERSION-alpine AS base
 
 ARG BUNDLER_VERSION=2.6.0
