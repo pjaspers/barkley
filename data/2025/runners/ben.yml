@@ -3,7 +3,7 @@ profile:
   first_name: "Ben"
   last_name: "Wernick"
   year: 1979
-  nationality: :uk
+  nationality: :gb
 # maybe, likely, confirmed
 state:
   state: :confirmed
