@@ -1,0 +1,22 @@
+attempts: 0
+profile:
+  first_name: "Tim"
+  last_name: "Landy"
+  year: 1986
+  nationality: :us
+# maybe, likely, confirmed
+state:
+  state: :likely
+  reason: "https://www.facebook.com/swrrrunningclub"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1252181"
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
+  And as for Tim, his South West Road Runners club posted on Facebook on Tuesday: “After winning the Barkley Fall Classic last year, Tim went on to secure his place at the Barkley Marathons! He has spent his time since then training hard and we can’t wait to hear how he gets on. The Barkley Marathons could start any day now and we are all on tenterhooks to hear how Tim gets on. GO TIM!!”
+
+  https://run247.com/running-news/ultramarathon-news/barkley-marathons-2025-runners-taking-part
