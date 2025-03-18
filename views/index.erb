@@ -44,7 +44,11 @@
 <% end %>
 
 <% if @edition.ongoing? %>
-  so we've been running for <span class="highlight"><%= elapsed(@edition.start) %></span> and we still have <span class="highlight highlight--blue"><%= elapsed(@edition.end_time) %></span> remaining before it all ends.
+  <% if @edition.started? %>
+    They've been running for <span class="highlight"><%= elapsed(@edition.start) %></span> and we still have <span class="highlight highlight--blue"><%= elapsed(@edition.end_time) %></span> remaining before it all ends.
+  <% else %>
+    Time until we start: <span class="highlight"><%= elapsed(@edition.start) %></span>
+  <% end %>
 <% end %>
 
 <h2 id="cutoffs">Cutoffs</h2>
