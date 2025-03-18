@@ -1,0 +1,13 @@
+attempts: 1
+profile:
+  first_name: "Claire"
+  last_name: "Bannwarth"
+  year: 1989
+  nationality: :fr
+state:
+  state: :maybe
+  reason: "https://bsky.app/profile/territoriotrail.bsky.social/post/3lkljlut3ok2d"
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=885641"
+  web: "https://www.trailrunnermag.com/people/news/claire-bannwarth-fkt-colorado-trail/"
+  instagram: "https://www.instagram.com/clairebannwarth/"
