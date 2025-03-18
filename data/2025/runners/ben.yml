@@ -1,0 +1,19 @@
+attempts: 0
+profile:
+  first_name: "Ben"
+  last_name: "Wernick"
+  year: 1979
+  nationality: :uk
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: "https://bsky.app/profile/lukesibieta.bsky.social/post/3lko22y3f6k26"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1043061"
+  web: "https://www.wernick.co.uk/article/ben-wernick-greatest-vertical-distance-run/"
+  instagram: "https://www.instagram.com/bwernick/"
+  twitter: ""
+  wiki: ""
+notes: |
