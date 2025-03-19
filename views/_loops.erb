@@ -37,7 +37,7 @@
           <span class="loops__name__nick"><%= nickname.name %></span>
           <% if runner = nickname.runner %>
             <span class="loops__name__guess">
-              <a href="/r/<%= runner.key %>">
+              <a href="<%= runner_a(runner.key) %>">
                 <%= runner.profile.name %>?
               </a>
             </span>

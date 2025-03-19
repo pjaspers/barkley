@@ -1,6 +1,5 @@
-# tomo?
 ---
-:runner:
+:runner: tomokazu
 :loops:
 - :index: 1
   :direction: CW
