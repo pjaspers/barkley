@@ -36,6 +36,7 @@ class BarkleyTest < Test
   end
 
   it "ongoing?" do
+    refute Barkley::Edition.new(conch_blown: nil).ongoing?
     assert Barkley::Edition.new(conch_blown: Time.now - 24*60*50).ongoing?
     refute Barkley::Edition.new(conch_blown: Time.now - 7*24*60*50).ongoing?
   end
@@ -44,5 +45,10 @@ class BarkleyTest < Test
     refute Barkley::Edition.new(conch_blown: Time.now).started?
     refute Barkley::Edition.new(conch_blown: nil).started?
     assert Barkley::Edition.new(conch_blown: Time.now - 1*60*60 - 1).started?
+  end
+
+  it "finished?" do
+    refute Barkley::Edition.new(conch_blown: nil).finished?
+    assert Barkley::Edition.new(conch_blown: Time.now - 5*24*60*60).finished?
   end
 end
