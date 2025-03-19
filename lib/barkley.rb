@@ -61,12 +61,18 @@ module Barkley
       end
     end
 
-    def cut_off(loop_number:, fun_run:)
-      if fun_run
+    def cut_off(loop_number:)
+      if loop_number < 3
         start + loop_number * duration_to_sec("13:20:00")
       else
         start + loop_number * duration_to_sec("12:00:00")
       end
+    end
+
+    def cut_off_fun_loop(loop_number:)
+      raise "only loop 3 has a cut off for the fun loop" unless loop_number == 3
+
+      start + loop_number * duration_to_sec("13:20:00")
     end
 
     # Sort the loops in a way that the person who's in the furthest

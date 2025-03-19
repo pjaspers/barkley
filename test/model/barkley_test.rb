@@ -2,12 +2,8 @@ require_relative 'test_helper'
 
 class BarkleyTest < Test
   [1,2,3,4,5].each do |i|
-    it "loop #{i} fun run" do
-      refute_nil Barkley::Edition.for_year(2024).cut_off(loop_number: i, fun_run: true)
-    end
-
-  it "loop #{i}" do
-      refute_nil Barkley::Edition.for_year(2024).cut_off(loop_number: i, fun_run: false)
+    it "loop #{i}" do
+      refute_nil Barkley::Edition.for_year(2024).cut_off(loop_number: i)
     end
   end
   it "cutoffs" do
@@ -15,6 +11,23 @@ class BarkleyTest < Test
     refute_nil Barkley::Edition.for_year(2024).start
   end
 
+  it "cut offs" do
+    dts = ->(duration) {
+      seconds, minutes, hours = duration.split(":").reverse
+
+      (hours.to_i * 60 * 60) + (minutes.to_i * 60) + seconds.to_i
+    }
+
+    conch = Time.new(2024,03,01, 0, 0, 0, "-04:00")
+    edition = Barkley::Edition.new(conch_blown: conch)
+    assert_equal (edition.start + 1*dts["13:20:00"]), edition.cut_off(loop_number: 1)
+    assert_equal (edition.start + 2*dts["13:20:00"]), edition.cut_off(loop_number: 2)
+    assert_equal (edition.start + 3*dts["12:00:00"]), edition.cut_off(loop_number: 3)
+    assert_equal (edition.start + 3*dts["13:20:00"]), edition.cut_off_fun_loop(loop_number: 3)
+    assert_equal (edition.start + 4*dts["12:00:00"]), edition.cut_off(loop_number: 4)
+    assert_equal (edition.start + 5*dts["12:00:00"]), edition.cut_off(loop_number: 5)
+    assert_raises { edition.cut_off_fun_loop(loop_number: 1) }
+  end
 
   Barkley::Edition.for_year(2024).runners.each do |runner|
     # Can't find a pic for matej or ian

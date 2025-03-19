@@ -61,16 +61,18 @@ You can't start a loop after it's cutoff.
     <div>
       <p class="cutoffs__header">Loop <%= i %> cutoff</p>
       <div class="cutoffs__box">
-        <% if i < 4 %>
+        <% if i == 3 %>
           <div class="cutoff__funrun">
+            <%= partial("cutoff", locals: {cutoff: @edition.cut_off_fun_loop(loop_number: i)}) %>
             <h4>Fun Run</h4>
-            <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i, fun_run: true)}) %>
           </div>
         <% end %>
 
         <div class="cutoff_fullrun">
-          <h4>Full Run</h4>
-          <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i, fun_run: false)}) %>
+          <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i)}) %>
+          <% if i == 3 %>
+            <h4>Full Run</h4>
+          <% end %>
         </div>
       </div>
     </div>
