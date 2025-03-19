@@ -1,0 +1,20 @@
+attempts: 0
+profile:
+  first_name: "Chris"
+  last_name: "Fischer"
+  year: 1995
+  nationality: :us
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: "https://bsky.app/profile/keithdunn.bsky.social/post/3lkq6outwxc2y"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1619606"
+  web: "https://chrisjfish.com"
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
+  https://www.trailrunnermag.com/people/how-chris-fisher-logged-400000-feet-of-vert-in-october/
