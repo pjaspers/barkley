@@ -17,8 +17,9 @@ class BarkleyTest < Test
 
 
   Barkley::Edition.for_year(2024).runners.each do |runner|
-    # Can't find a pic for matej
+    # Can't find a pic for matej or ian
     next if runner.key == "matej"
+    next if runner.key == "julien"
 
     it "#{runner.key} has a jpeg" do
       assert File.exist?(root.join("public/runners/#{runner.key}.jpg"))
