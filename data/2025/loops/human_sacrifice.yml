@@ -1,0 +1,53 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: 'DNF'
+    :text: The human sacrifice lives! And has returned to camp.
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkphq5sghc2m
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

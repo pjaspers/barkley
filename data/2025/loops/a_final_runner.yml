@@ -1,0 +1,54 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '13:18:01'
+    :text: |
+      A final runner completes Loop 1 with under two minutes remaining to turn it around and begins Loop 2 at 13:19:30.
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkpfjr2iy227
+- :index: 2
+  :direction: CW
+  :start:
+    :time: "13:19:30"
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

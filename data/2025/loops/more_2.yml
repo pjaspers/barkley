@@ -1,0 +1,53 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '10:57:50'
+    :text: "Two more runners have finished Loop 1 in 10:57:32 and 10:57:50."
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkp5p7pm5c25
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

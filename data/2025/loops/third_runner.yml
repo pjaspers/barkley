@@ -1,0 +1,54 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '10:20:41'
+    :text: "The third runner has finished Loop 1 in 10:20:41. #BM100"
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkp3mkwv5s2j
+- :index: 2
+  :direction: CW
+  :start:
+    # guessing
+    :time: '10:40:41'
+    :text: "The third runner has just begun Loop 2."
+    :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3lkp4nqwawk2o"
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

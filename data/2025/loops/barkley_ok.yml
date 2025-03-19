@@ -1,0 +1,56 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '11:59:02'
+    :text: |
+      The next runner to finish Loop 1 came in at 11:59:02.
+      laz: Are you ok?
+      Runner: I’m Barkley ok.
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkpb24z4ds24
+- :index: 2
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
