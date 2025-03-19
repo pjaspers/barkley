@@ -1,0 +1,18 @@
+attempts: 0
+profile:
+  first_name: "Thomas"
+  last_name: "Calmettes"
+  year: 1988
+  nationality: :fr
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: "Keith said it"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1327282"
+notes: |
+  https://www.ouest-france.fr/sport/running/trail/trail-guillaume-calmettes-un-francais-adepte-des-paris-fous-5955982
+
+  (but it's an article about Guillaume, and it only briefly mentions Thomas)
