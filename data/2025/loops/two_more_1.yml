@@ -19,9 +19,9 @@
     :text:
     :source:
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: 'DNF'
+    :text: "Ten runners completed Loop 1 within the time limit; 9 continued to Loop 2. 14 runners have been tapped out; 16 remain on Loop 1 and will be tapped out when they return."
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkpft2in2k2y
 - :index: 3
   :direction: CW
   :start:
