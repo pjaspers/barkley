@@ -1,5 +1,25 @@
+Tomo is the first runner to begin Loop 3. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqm3ymjz22e
 
+Maxime Gauduin quit on Loop 3 with no pages and is tapped out. Three runners remain in the race.  #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqufam76k2u
 
+Tim Landy is still on Loop 2 and has timed out.  Whenever he returns to camp he will be tapped out.  Four runners are on Loop 3. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqu3b7ves2u
+
+Ian Farris quit on Loop 2 and has been tapped out. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqtqduae226
+
+Beginning Loop 3. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqqa3zvyc2o
+6:43
+
+Sébastien Raichon finished Loop 2 in 25:29:15; Maxime Gauduin in 25:29:16. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqodvopxc2v
+6:08
+
+John Kelly has finished Loop 2 in 25:00:40.  #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3lkqmpbcgf22q
 
 Jared and John?
 The first two runners have finished Loop 1 in 9:44:55 and 9:44:57. #BM100

@@ -1,5 +1,5 @@
 ---
-:runner:
+:runner: john
 :loops:
 - :index: 1
   :direction: CW
@@ -18,15 +18,15 @@
     :text:
     :source:
   :stop:
-    :time: DNF
-    :text: Julien Chable has become the latest to drop out on Loop 2. Six runners remain in the race.
-    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqbwu6sbc23
+    :time: "25:00:40"
+    :text: John Kelly has finished Loop 2 in 25:00:40.  #BM100
+    :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3lkqmpbcgf22q"
 - :index: 3
   :direction: CW
   :start:
-    :time:
-    :text:
-    :source:
+    :time: "25:10:40"
+    :text: John Kelly has begun Loop 3. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqnbezfak2v
   :stop:
     :time:
     :text:

@@ -1,5 +1,5 @@
 ---
-:runner:
+:runner: ian
 :loops:
 - :index: 1
   :direction: CW
@@ -19,9 +19,9 @@
     :text: "The third runner has just begun Loop 2."
     :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3lkp4nqwawk2o"
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: DNF
+    :text: Ian Farris quit on Loop 2 and has been tapped out. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqtqduae226
 - :index: 3
   :direction: CW
   :start:

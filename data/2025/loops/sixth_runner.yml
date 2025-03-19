@@ -1,6 +1,6 @@
 # guessting this is nondescript guy with a cool accent
 ---
-:runner:
+:runner: tim
 :loops:
 - :index: 1
   :direction: CW
@@ -20,9 +20,9 @@
     :text: "Nondescript guy with a cool accent has begun Loop 2"
     :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3lkpc34rgy22q"
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: DNF
+    :text: Tim Landy is still on Loop 2 and has timed out.  Whenever he returns to camp he will be tapped out.  Four runners are on Loop 3. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqu3b7ves2u
 - :index: 3
   :direction: CW
   :start:

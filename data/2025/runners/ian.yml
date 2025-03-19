@@ -1,0 +1,20 @@
+attempts: 0
+profile:
+  first_name: "Ian"
+  last_name: "Farris"
+  year: 1980
+  nationality:
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: ""
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: ""
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
+  Notes go here

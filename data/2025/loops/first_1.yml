@@ -1,5 +1,5 @@
 ---
-:runner:
+:runner: maxime
 :loops:
 - :index: 1
   :direction: CW
@@ -19,19 +19,19 @@
     :text: "Quick interloopal turnarounds and we have our first two runners on Loop 2.  One runner described the course as “on the verge of perfection; there is no margin for error.”"
     :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkp26hucqc2h
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: "25:29:16"
+    :text: Sébastien Raichon finished Loop 2 in 25:29:15; Maxime Gauduin in 25:29:16. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqodvopxc2v
 - :index: 3
   :direction: CW
   :start:
-    :time:
-    :text:
-    :source:
+    :time: "25:59:15"
+    :text: Beginning Loop 3.
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqqa3zvyc2o
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: DNF
+    :text: "Maxime Gauduin quit on Loop 3 with no pages and is tapped out. Three runners remain in the race.  #BM100"
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqufam76k2u
 - :index: 4
   :direction: CW
   :start:
