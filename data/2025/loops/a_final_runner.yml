@@ -16,8 +16,9 @@
   :direction: CW
   :start:
     :time: "13:19:30"
-    :text:
-    :source:
+    :text: |
+      A final runner completes Loop 1 with under two minutes remaining to turn it around and begins Loop 2 at 13:19:30.
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkpfjr2iy227
   :stop:
     :time:
     :text:
