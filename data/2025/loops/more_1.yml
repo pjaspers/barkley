@@ -19,15 +19,16 @@
     :text: "Tomo has begun Loop 2. #BM100"
     :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3lkp6axch3c2w"
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: "24:32:50"
+    :text: "Tomokazu Ihara is the first to finish Loop 2 in 24:32:50. #BM100"
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqlcmn2dc2x
 - :index: 3
   :direction: CW
   :start:
-    :time:
-    :text:
-    :source:
+    # guessing
+    :time: "24:47:50"
+    :text: "Tomo is the first runner to begin Loop 3"
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3lkqm3ymjz22e
   :stop:
     :time:
     :text:
