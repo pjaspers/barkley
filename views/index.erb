@@ -27,7 +27,7 @@
     The conch has not been blown yet.
 <% end %>
 
-<% if @edition.finished? %>
+<% if @edition.year == 2024 && @edition.finished? %>
 <h3 class="highlight highlight--blue whatarace">
   <strong>The 2024 Barkley Marathons has ended. There are five finishers. #BM100</strong>
 </h3>
@@ -50,6 +50,12 @@
     Time until we start: <span class="highlight"><%= elapsed(@edition.start) %></span>
   <% end %>
 <% end %>
+
+<% if @edition.year == 2025 %>
+<h3 class="highlight highlight--blue whatarace">
+  <strong>The 2025 Barkley Marathons has ended. There are no finishers. #BM100</strong>
+</h3>
+<% end  %>
 
 <h2 id="cutoffs">Cutoffs</h2>
 
