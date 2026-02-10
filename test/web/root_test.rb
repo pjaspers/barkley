@@ -5,7 +5,7 @@ class RootTest < WebTest
   describe "2026" do
     describe '/' do
       it "should " do
-        visit '/g'
+        visit '/'
         assert_equal 200, page.status_code
       end
     end
