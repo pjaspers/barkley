@@ -20,7 +20,7 @@ class App < Roda
   plugin :common_logger, logger
   plugin :render, escape: false, layout: './layout', :template_opts=>{chain_appends: !defined?(SimpleCov), freeze: true, skip_compiled_encoding_detection: true}
 
-  opts[:default_title] = "Barkley 2025"
+  opts[:default_title] = "Barkley"
 
   # :nocov:
   if Config.development?
@@ -33,6 +33,7 @@ class App < Roda
     r.public
 
     r.on "2024" do
+      @page_title = "Barkley 2024"
       @edition = Barkley::Edition.for_year(2024)
 
       r.on "r" do
@@ -53,6 +54,7 @@ class App < Roda
     end
 
     r.on "2025" do
+      @page_title = "Barkley 2025"
       @edition = Barkley::Edition.for_year(2025)
 
       r.on "r" do
@@ -74,6 +76,7 @@ class App < Roda
 
 
     @edition = Barkley::Edition.for_year(2026)
+    @page_title = "Barkley 2026"
     r.on "r" do
       r.get String do |s|
         @runner = @edition.runners.by_slug(s)
