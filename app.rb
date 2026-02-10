@@ -52,8 +52,28 @@ class App < Roda
       end
     end
 
+    r.on "2025" do
+      @edition = Barkley::Edition.for_year(2025)
 
-    @edition = Barkley::Edition.for_year(2025)
+      r.on "r" do
+        r.get String do |s|
+          @runner = @edition.runners.by_slug(s)
+
+          view "runner"
+        end
+      end
+
+      r.get "loops" do
+        view "loops"
+      end
+
+      r.get(true) do
+        view "index"
+      end
+    end
+
+
+    @edition = Barkley::Edition.for_year(2026)
     r.on "r" do
       r.get String do |s|
         @runner = @edition.runners.by_slug(s)

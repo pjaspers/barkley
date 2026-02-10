@@ -1,14 +1,13 @@
 <h1>Barkley Marathons <%= @edition.year %></h1>
 
-<ul class="navigation">
-  <% %w(timeline cutoffs loops resources runners).each do |item| %>
-    <li><a href="#<%= item %>"><%= item.capitalize %></a></li>
-  <% end %>
-</ul>
-
-<h2 id="timeline">Timeline</h2>
-
 <% if @edition.conch_blown? %>
+  <ul class="navigation">
+    <% %w(timeline cutoffs loops resources runners).each do |item| %>
+      <li><a href="#<%= item %>"><%= item.capitalize %></a></li>
+    <% end %>
+  </ul>
+
+  <h2 id="timeline">Timeline</h2>
   <% if @edition.finished? %>
     <p>
       The conch was blown at <span class="highlight"><%= local_time(@edition.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(@edition.start) %></span>, and the race ended at <span class="highlight"><%= local_time(@edition.end_time) %></span>.
@@ -23,8 +22,9 @@
     </p>
   <% end %>
 <% else %>
-  <p>
-    The conch has not been blown yet.
+  <h2 class="no-conch">
+    No sign of the conch <span class="highlight--red">yet.</span>
+  </h2>
 <% end %>
 
 <% if @edition.year == 2024 && @edition.finished? %>
@@ -51,50 +51,46 @@
   <% end %>
 <% end %>
 
-<% if @edition.year == 2025 %>
+<% if @edition.year == 2025 && @edition.finished? %>
 <h3 class="highlight highlight--blue whatarace">
   <strong>The 2025 Barkley Marathons has ended. There are no finishers. #BM100</strong>
 </h3>
 <% end  %>
 
-<h2 id="cutoffs">Cutoffs</h2>
-
 <% if @edition.conch_blown? %>
-You can't start a loop after it's cutoff.
+  <h2 id="cutoffs">Cutoffs</h2>
 
-<div class="cutoffs">
-  <% [1,2,3,4,5].each do |i| %>
-    <div>
-      <p class="cutoffs__header">Loop <%= i %> cutoff</p>
-      <div class="cutoffs__box">
-        <% if i == 3 %>
-          <div class="cutoff__funrun">
-            <%= partial("cutoff", locals: {cutoff: @edition.cut_off_fun_loop(loop_number: i)}) %>
-            <h4>Fun Run</h4>
-          </div>
-        <% end %>
+  You can't start a loop after it's cutoff.
 
-        <div class="cutoff_fullrun">
-          <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i)}) %>
+  <div class="cutoffs">
+    <% [1,2,3,4,5].each do |i| %>
+      <div>
+        <p class="cutoffs__header">Loop <%= i %> cutoff</p>
+        <div class="cutoffs__box">
           <% if i == 3 %>
-            <h4>Full Run</h4>
+            <div class="cutoff__funrun">
+              <%= partial("cutoff", locals: {cutoff: @edition.cut_off_fun_loop(loop_number: i)}) %>
+              <h4>Fun Run</h4>
+            </div>
           <% end %>
+
+          <div class="cutoff_fullrun">
+            <%= partial("cutoff", locals: {cutoff: @edition.cut_off(loop_number: i)}) %>
+            <% if i == 3 %>
+              <h4>Full Run</h4>
+            <% end %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end%>
-</div>
-
-<% else %>
-<div class="cutoffs">
-  <p>Waiting on the conch to be blown</p>
-</div>
+    <% end%>
+  </div>
 <% end %>
 
+<% if @edition.conch_blown? %>
+  <h2 id="loops">Loops</h2>
 
-<h2 id="loops">Loops</h2>
-
-<%= partial("loops") %>
+  <%= partial("loops") %>
+<% end %>
 
 <h2 id="resources">Resources</h2>
 
@@ -122,53 +118,54 @@ You can't start a loop after it's cutoff.
   </li>
 
   <li>
-    Photographers known to be around: <a href="https://www.instagram.com/howiesternphoto/">Howie Stern</a>, <a href="https://www.instagram.com/davidmiller.photography/">David Miller</a> and <a href="https://www.instagram.com/searchingforzocherman/">Jacob Zocherman</a>
+    Photographers known to sometimes be around: <a href="https://www.instagram.com/howiesternphoto/">Howie Stern</a>, <a href="https://www.instagram.com/davidmiller.photography/">David Miller</a> and <a href="https://www.instagram.com/searchingforzocherman/">Jacob Zocherman</a>
   </li>
 </ul>
 
+<% if @edition.runners.any? %>
+  <h2 id="runners">Runners</h2>
 
-<h2 id="runners">Runners</h2>
-
-<div class="runners_overview">
-  <% @edition.runners.each.with_index(1) do |runner, index| %>
-    <div class="overview__entry">
-      <div class="overview__main">
-        <a class="overview__name" href="<%= runner_a(runner.key) %>">
-          <%= runner.profile.name %>
-        </a>
-        <div class="overview__sub">
-          <ul>
-            <li>
-              <span title="<%= runner.profile.nationality %>" class="flag flag--<%= runner.profile.nationality %>"></span>
-            </li>
-            <li>
-              <strong>Age</strong> <%= runner.profile.age %>
-            </li>
-            <li>
-              <strong>Attempts</strong> <%= runner.attempts %>
-            </li>
-            <% if runner.finishes > 0 %>
+  <div class="runners_overview">
+    <% @edition.runners.each.with_index(1) do |runner, index| %>
+      <div class="overview__entry">
+        <div class="overview__main">
+          <a class="overview__name" href="<%= runner_a(runner.key) %>">
+            <%= runner.profile.name %>
+          </a>
+          <div class="overview__sub">
+            <ul>
               <li>
-                <strong>Finishes</strong> <%= runner.finishes %>
+                <span title="<%= runner.profile.nationality %>" class="flag flag--<%= runner.profile.nationality %>"></span>
               </li>
-            <% end %>
-          </ul>
+              <li>
+                <strong>Age</strong> <%= runner.profile.age %>
+              </li>
+              <li>
+                <strong>Attempts</strong> <%= runner.attempts %>
+              </li>
+              <% if runner.finishes > 0 %>
+                <li>
+                  <strong>Finishes</strong> <%= runner.finishes %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
         </div>
+
+        <p class="overview__info">
+          <span class="overview__state overview__state--<%= runner.state.state %>">
+            <abbr title="<%= runner.state.reason %>">
+              <%= runner.state.state %>
+            </abbr>
+
+          </span>
+        </p>
       </div>
-
-      <p class="overview__info">
-        <span class="overview__state overview__state--<%= runner.state.state %>">
-          <abbr title="<%= runner.state.reason %>">
-            <%= runner.state.state %>
-          </abbr>
-
-        </span>
-      </p>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
+<% end %>
 
 
 <p class="footer">
-  From your friends at <a href="https://ferrett.io">Ferrett</a>. <abbr class="left" title="We're training ferretts to track and share your runs.">[?]</abbr> | <a href="https://github.com/pjaspers/barkley">Source</a> | Previously: <a href="/2024">2024</a>
+  From your friends at <a href="https://ferrett.io">Ferrett</a>. <abbr class="left" title="We're training ferretts to track and share your runs.">[?]</abbr> | <a href="https://github.com/pjaspers/barkley">Source</a> | Previously: <a href="/2025">2025</a>, <a href="/2024">2024</a>
 </p>
