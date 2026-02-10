@@ -2,10 +2,19 @@
 require_relative 'test_helper'
 
 class RootTest < WebTest
+  describe "2026" do
+    describe '/' do
+      it "should " do
+        visit '/g'
+        assert_equal 200, page.status_code
+      end
+    end
+  end
+
   describe "2025" do
     describe '/' do
       it "should " do
-        visit '/'
+        visit '/2025'
         assert_equal 200, page.status_code
       end
     end
@@ -14,7 +23,7 @@ class RootTest < WebTest
       Barkley::Edition.for_year(2025).runners.each do |runner|
         it "works" do
           runner.slugs.each do |slug|
-            visit "/r/#{slug}"
+            visit "/2025/r/#{slug}"
 
             assert_equal 200, page.status_code
           end
@@ -24,7 +33,7 @@ class RootTest < WebTest
 
     describe "/loops" do
       it "works" do
-        visit "/loops"
+        visit "/2025/loops"
 
         assert_equal 200, page.status_code
       end
