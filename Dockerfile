@@ -1,8 +1,8 @@
 # Dockerfile
-ARG RUBY_VERSION=3.4.2
+ARG RUBY_VERSION=4.0.1
 FROM registry.docker.com/library/ruby:$RUBY_VERSION-alpine AS base
 
-ARG BUNDLER_VERSION=2.6.0
+ARG BUNDLER_VERSION=4.0.6
 ARG APP_ROOT=/app
 ARG BUNDLE_PATH="/usr/local/bundle"
 WORKDIR $APP_ROOT
@@ -15,7 +15,7 @@ ENV BUNDLE_DEPLOYMENT="1" \
 FROM base AS build
 
 ARG BUILD_PACKAGES="build-base"
-ARG DEV_PACKAGES=""
+ARG DEV_PACKAGES="git"
 ARG RUBY_PACKAGES="tzdata"
 
 # install packages
