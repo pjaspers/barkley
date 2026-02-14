@@ -1,0 +1,20 @@
+attempts: 0
+profile:
+  first_name: "Severine"
+  last_name: "Vandermeulen"
+  year: 1981
+  nationality: :be
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: "https://www.rtbf.be/article/severine-vandermeulen-premiere-femme-belge-a-la-barkley-j-ai-envie-de-comprendre-pourquoi-cette-course-est-si-rude-et-selective-11666446"
+
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=35413"
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes:
