@@ -1,0 +1,19 @@
+attempts: 0
+profile:
+  first_name: "Keith"
+  last_name: "Knipling"
+  year: 1976
+  nationality: :us
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: "https://www.instagram.com/p/DUvBNpBEZe6/?utm_source=barkley"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=46826"
+  web: "https://keith-knipling.com/"
+  instagram: "https://www.instagram.com/keithknipling/"
+  twitter: ""
+  wiki: ""
+notes:
