@@ -131,6 +131,10 @@ class App < Roda
   end
 
 
+  def strip_accents(str)
+    str.unicode_normalize(:nfd).gsub(/\p{M}/, "")
+  end
+
   def hhmmss(seconds)
     "%02d:%02d:%02d" % hour_minute_seconds(seconds)
   end

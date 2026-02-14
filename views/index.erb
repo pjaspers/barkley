@@ -133,7 +133,7 @@
       <div class="overview__entry">
         <div class="overview__main">
           <a class="overview__name" href="<%= runner_a(runner.key) %>">
-            <%= runner.profile.name %>
+            <%= strip_accents(runner.profile.name) %>
           </a>
           <div class="overview__sub">
             <ul>
