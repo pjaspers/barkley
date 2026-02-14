@@ -1,0 +1,12 @@
+---
+profile:
+  first_name: Hendrik
+  last_name: Boury
+  year: 1990
+  nationality: :de
+the_inter_webs:
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=2022317
+years:
+  2024:
+    state: :confirmed
+    reason: on the List

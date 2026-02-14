@@ -1,0 +1,26 @@
+---
+profile:
+  first_name: John
+  last_name: Kelly
+  year: 1984
+  nationality: :us
+the_inter_webs:
+  strava: https://www.strava.com/athletes/16389235
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=788718
+  instagram: https://www.instagram.com/randomforestrunner/
+finishes: 3
+prior_attempts: 6
+years:
+  2024:
+    state: :likely
+    reason: Ran last year + strava
+  2025:
+    state: :likely
+    reason: Rumours a plenty
+  2026:
+    state: :likely
+    reason: He's always there ;)
+notes: |
+  Absolute legend, both in running and on the interwebs. Expect a race report to appear <a href="https://randomforestrunner.com">here</a> after some time has passed.
+
+  3 time finisher.

@@ -1,0 +1,18 @@
+---
+profile:
+  first_name: Thomas
+  last_name: Dunkerbeck
+  year: 1976
+  nationality: :nl
+the_inter_webs:
+  strava: https://www.strava.com/athletes/58683376
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=89316
+  instagram: https://www.instagram.com/thomas_dunkerbeck/
+prior_attempts: 1
+years:
+  2024:
+    state: :confirmed
+    reason: Posted on instagram
+notes: 'https://www.trailrunnermag.com/people/news/the-good-the-bad-and-the-barkley/
+
+  '

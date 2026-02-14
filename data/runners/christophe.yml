@@ -1,0 +1,14 @@
+---
+profile:
+  first_name: Christophe
+  last_name: Nonorgue
+  year: 1980
+  nationality: :ch
+the_inter_webs:
+  strava: https://www.strava.com/pros/7068194
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=202867
+prior_attempts: 1
+years:
+  2024:
+    state: :maybe
+    reason: Ran last year + strava

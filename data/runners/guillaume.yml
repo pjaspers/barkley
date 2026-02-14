@@ -1,0 +1,13 @@
+---
+profile:
+  first_name: Guillaume
+  last_name: Calmettes
+  year: 1984
+  nationality: :fr
+the_inter_webs:
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=367155
+prior_attempts: 4
+years:
+  2024:
+    state: :confirmed
+    reason: Mentioned by Keith

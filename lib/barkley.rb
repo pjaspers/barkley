@@ -60,9 +60,10 @@ module Barkley
     end
 
     def runners
-      all = Dir.glob("#{Config.root}/data/#{@year}/runners/*.yml").map do |yml_path|
-        Runner.from_yml(yml_path)
-      end
+      all = Dir.glob("#{Config.root}/data/runners/*.yml")
+        .map { |yml_path| Runner.from_yml(yml_path) }
+        .select { |runner| runner.running?(@year) }
+        .each { |runner| runner.for_year(@year) }
       Runners.new(all)
     end
 

@@ -1,0 +1,20 @@
+---
+profile:
+  first_name: Sébastien
+  last_name: Raichon
+  year: 1972
+  nationality: :fr
+the_inter_webs:
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=255597
+  instagram: https://www.instagram.com/sebastienraichon/
+  strava: https://www.strava.com/athletes/12694886
+years:
+  2024:
+    state: :confirmed
+    reason: Announced <a href='https://www.mynaturalorigins.com/en/blog/sebastien-raichon-our-extreme-super-sports-star-will-be-taking-part-in-the-barkley-the-world-s-toughest-trail'>here</a>
+  2025:
+    state: :confirmed
+    reason: On the list
+  2026:
+    state: :maybe
+    reason: https://bsky.app/profile/alixwzl.bsky.social/post/3mesxhvlw2k2l

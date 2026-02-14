@@ -1,0 +1,24 @@
+---
+profile:
+  first_name: Aurélien
+  last_name: Sanchez
+  year: 1991
+  nationality: :fr
+the_inter_webs:
+  instagram: https://www.instagram.com/aurelien_sanchez_/
+  web: https://www.kisskissbankbank.com/fr/projects/laresolution
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=1348506
+  strava: https://www.strava.com/athletes/20076562
+  wiki: https://fr.wikipedia.org/wiki/Aurélien_Sanchez
+finishes: 1
+prior_attempts: 1
+years:
+  2024:
+    state: :confirmed
+    reason: On the list
+  2025:
+    state: :maybe
+    reason: https://bsky.app/profile/territoriotrail.bsky.social/post/3lkljlut3ok2d
+  2026:
+    state: :maybe
+    reason: https://bsky.app/profile/keithdunn.bsky.social/post/3mesthptlvs2f

@@ -1,0 +1,14 @@
+---
+profile:
+  first_name: Christiana
+  last_name: Rugloski
+  year: 1996
+  nationality: :us
+the_inter_webs:
+  strava: https://www.strava.com/athletes/71706675
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=1079915
+  instagram: https://www.instagram.com/krisrugloski/
+years:
+  2024:
+    state: :likely
+    reason: Winner of Fall Barkley

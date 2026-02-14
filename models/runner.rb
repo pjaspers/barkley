@@ -8,26 +8,45 @@ class Runner
 
   def self.from_yml(yml_path)
     slug = File.basename(yml_path, ".yml")
-    runner_data = YAML.load_file(yml_path).transform_keys(&:to_sym)
-    notes = runner_data.delete(:notes) || ""
-    profile = Profile.new(**runner_data.delete(:profile).transform_keys(&:to_sym))
-    status = Status.new(**runner_data.delete(:state).transform_keys(&:to_sym))
-    interwebs = TheInterwebs.from_data(**runner_data.delete(:the_inter_webs).transform_keys(&:to_sym))
-    runner = Runner.new(**runner_data.merge(profile: profile, state: status, the_inter_webs: interwebs, slugs: [slug]))
-    runner.notes = notes
-    runner
+    data = YAML.load_file(yml_path)
 
+    profile = Profile.new(**data["profile"].transform_keys(&:to_sym))
+    interwebs = TheInterwebs.from_data(**data["the_inter_webs"].transform_keys(&:to_sym))
+
+    runner = Runner.new(
+      slugs: [slug],
+      profile: profile,
+      the_inter_webs: interwebs,
+      finishes: data["finishes"] || 0,
+      notes: data["notes"] || "",
+      prior_attempts: data["prior_attempts"] || 0,
+      years: data["years"] || {}
+    )
+    runner
   end
 
-  def initialize(slugs:, profile:, state:, the_inter_webs:, loops: [], notes: nil, attempts: 0, finishes: 0)
+  def initialize(slugs:, profile:, the_inter_webs:, years: {}, prior_attempts: 0, loops: [], notes: nil, finishes: 0, state: nil, attempts: 0)
     @slugs = slugs
     @profile = profile
-    @state = state
     @the_inter_webs = the_inter_webs
+    @years = years
+    @prior_attempts = prior_attempts
     @loops = loops
-    @attempts = attempts
-    @finishes = finishes
     @notes = notes
+    @finishes = finishes
+    @state = state
+    @attempts = attempts
+  end
+
+  def running?(year)
+    @years.key?(year)
+  end
+
+  def for_year(year)
+    year_data = @years[year]
+    @state = Status.new(state: year_data["state"], reason: year_data["reason"])
+    @attempts = @prior_attempts + @years.keys.count { |y| y <= year }
+    self
   end
 
   def key

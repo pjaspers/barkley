@@ -1,0 +1,18 @@
+---
+profile:
+  first_name: Iso
+  last_name: Yucra
+  year: 1968
+  nationality: :bo
+the_inter_webs:
+  strava: https://www.strava.com/athletes/18047935
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=47665
+prior_attempts: 6
+years:
+  2024:
+    state: :confirmed
+    reason: "<a href='https://twitter.com/recore_b/status/1770276100792254944'>This
+      tweet</a>"
+notes: 'Has run a 6 days event 2023-12-28: <a href="https://www.strava.com/activities/10521175373">strava-link</a>
+
+  '
