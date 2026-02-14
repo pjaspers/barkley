@@ -1,8 +1,8 @@
 <h3>
-  <% if @edition.year == 2025 %>
+  <% if @edition.year == 2026 %>
     <a href="/">Home</a>
   <% else %>
-    <a href="/2024">2024</a>
+    <a href="/<%= @edition.year %>"><%= @edition.year %></a>
   <% end %>
 </h3>
 
