@@ -14,9 +14,9 @@
 - :index: 2
   :direction: CCW
   :start:
-    :time:
-    :text:
-    :source:
+    :time: '10:00:00'
+    :text: Knee Guy has begun loop 2. Five runners are on loop two; 35 runners are on loop 1. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3metwbvjxm224
   :stop:
     :time:
     :text:
