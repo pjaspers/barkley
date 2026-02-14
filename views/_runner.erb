@@ -43,7 +43,7 @@
       :web,
       :wiki,
     ].each do |key| %>
-      <% if link = runner.the_inter_webs.public_send(key) %>
+      <% if (link = runner.the_inter_webs.public_send(key)) && !link.empty? %>
         <a href="<%= link %>">
           <%= key %>
         </a>
