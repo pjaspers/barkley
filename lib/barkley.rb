@@ -1,15 +1,22 @@
 module Barkley
+  # Frozen Head State Park, Morgan County, Tennessee
+  TIMEZONE = TZInfo::Timezone.get("America/New_York")
+
+  def self.frozen_head_time(*args)
+    TIMEZONE.local_time(*args)
+  end
+
   YEARS = {
     2024 => {
-      conch_blown: Time.new(2024, 03, 20, 4, 17, 0, "-04:00"),
+      conch_blown: frozen_head_time(2024, 3, 20, 4, 17, 0),
     },
     2025 => {
       # https://social.running.cafe/@KeithDunn/114183951364240283
-      conch_blown: Time.new(2025, 03, 18, 10, 37, 0, "-04:00")
+      conch_blown: frozen_head_time(2025, 3, 18, 10, 37, 0)
     },
     2026 => {
       # https://mastodon.social/@keithdunn/116068408559331980
-      conch_blown: Time.new(2026, 02, 14, 05, 0, 0, "-05:00")
+      conch_blown: frozen_head_time(2026, 2, 14, 5, 0, 0)
     }
   }
 

@@ -7,6 +7,8 @@ gem "roda"
 gem "tilt"
 gem "erubi"
 gem 'puma'
+gem 'tzinfo'
+gem 'tzinfo-data'
 gem "base64"
 
 gem "logger"

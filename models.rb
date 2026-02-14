@@ -5,6 +5,7 @@
 require_relative "config"
 require "yaml"
 require "forwardable"
+require "tzinfo"
 require_relative "lib/barkley"
 
 require_relative "models/runner"
