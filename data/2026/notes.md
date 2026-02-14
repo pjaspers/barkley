@@ -24,3 +24,7 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3metwbvjxm224
 
 Two French Guys have finished loop 1 in 10:07:46 and 10:08:10, one of whom stopped to put trash bags over his shoes prior to crossing the creek. 🤦‍♂️ #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3metwnqmbjk2n
+
+A Pale Guy and Happy Guy with Red Shirt finished loop 1 in 10:40:27 and :29. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3metyyrw5xc2p
+

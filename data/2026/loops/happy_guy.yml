@@ -1,0 +1,53 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CCW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '10:40:29'
+    :text: A Pale Guy and Happy Guy with Red Shirt finished loop 1 in 10:40:27 and :29. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3metyyrw5xc2p
+- :index: 2
+  :direction: CCW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
