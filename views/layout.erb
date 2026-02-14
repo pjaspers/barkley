@@ -396,12 +396,13 @@
      }
      .tz-toggle {
        cursor: pointer;
-       color: white;
-       background: var(--pop-red);
-       border: 2px solid var(--pop-red);
-       border-radius: 4px;
-       padding: calc(var(--unit) / 4) calc(var(--unit));
+       color: inherit;
+       background: none;
+       border: none;
+       padding: 0;
+       font: inherit;
        font-size: 0.75em;
+       font-weight: 600;
      }
     </style>
   </head>
@@ -431,7 +432,7 @@
       toggle.addEventListener("click", () => {
         const active = toggle.getAttribute("aria-pressed") !== "true";
         toggle.setAttribute("aria-pressed", active);
-        toggle.textContent = active ? "Show in local time" : "Show in Frozen Head time";
+        toggle.textContent = active ? "[Show in local time]" : "[Show in Frozen Head time]";
 
         // This is a hack, but seems to work.
         document.querySelectorAll('relative-time[format="datetime"]').forEach(el => {
