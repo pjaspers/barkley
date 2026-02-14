@@ -14,9 +14,9 @@
 - :index: 2
   :direction: CCW
   :start:
-    :time:
-    :text:
-    :source:
+    :time: '10:50:29'
+    :text: Happy Guy with Red Shirt changed his shirt for loop 2, so not quite sure who he is now.  But in any event there are now eight runners on loop 2, with a ninth to follow soon. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3meu4fok2v223
   :stop:
     :time:
     :text:

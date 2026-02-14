@@ -28,3 +28,5 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3metwnqmbjk2n
 A Pale Guy and Happy Guy with Red Shirt finished loop 1 in 10:40:27 and :29. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3metyyrw5xc2p
 
+Happy Guy with Red Shirt changed his shirt for loop 2, so not quite sure who he is now.  But in any event there are now eight runners on loop 2, with a ninth to follow soon. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3meu4fok2v223
