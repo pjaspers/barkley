@@ -157,10 +157,16 @@
 
         <p class="overview__info">
           <span class="overview__state overview__state--<%= runner.state.state %>">
-            <abbr title="<%= runner.state.reason %>">
-              <%= runner.state.state %>
-            </abbr>
-
+            <%= runner.state.state %>
+            <% if runner.state.reason %>
+              <span class="tooltip">
+                <% if runner.state.reason.start_with?("http") %>
+                  <a href="<%= runner.state.reason %>"><%= runner.state.reason %></a>
+                <% else %>
+                  <%= runner.state.reason %>
+                <% end %>
+              </span>
+            <% end %>
           </span>
         </p>
       </div>

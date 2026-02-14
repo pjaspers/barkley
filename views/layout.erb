@@ -236,6 +236,9 @@
          aspect-ratio: 3 / 1;
        }
      }
+     .runners_overview {
+       isolation: isolate;
+     }
      .overview__entry {
        display: grid;
        align-items: baseline;
@@ -259,9 +262,31 @@
        list-style: none;
      }
      .overview__state {
+       position: relative;
        width: fit-content;
        border-radius: 4px;
        padding: var(--unit) var(--unit);
+       cursor: default;
+     }
+     .tooltip {
+       display: none;
+       position: absolute;
+       right: 0;
+       top: 100%;
+       z-index: 1;
+       width: 250px;
+       padding: var(--unit);
+       border-radius: var(--unit);
+       background: var(--pop-red);
+       color: var(--background);
+       text-align: center;
+       word-break: break-all;
+     }
+     .tooltip a {
+       color: var(--background);
+     }
+     .overview__state:hover .tooltip {
+       display: block;
      }
      .overview__state--confirmed {
        background-color: hsl(120deg 75% 80%);
