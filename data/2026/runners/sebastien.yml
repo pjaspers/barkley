@@ -1,0 +1,13 @@
+attempts: 3
+profile:
+  first_name: "Sébastien"
+  last_name: "Raichon"
+  year: 1972
+  nationality: :fr
+state:
+  state: :maybe
+  reason: "https://bsky.app/profile/alixwzl.bsky.social/post/3mesxhvlw2k2l"
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=255597"
+  instagram: "https://www.instagram.com/sebastienraichon/"
+  strava: "https://www.strava.com/athletes/12694886"
