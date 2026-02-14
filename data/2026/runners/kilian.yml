@@ -1,0 +1,20 @@
+attempts: 0
+profile:
+  first_name: "Kilian"
+  last_name: "Jornet"
+  year: 1987
+  nationality: :es
+# maybe, likely, confirmed
+state:
+  state: :confirmed
+  reason: "https://bsky.app/profile/barkleymarathon.bsky.social/post/3metndlldu223"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=71615"
+  web: "https://www.kilianjornet.cat/"
+  instagram: "https://www.instagram.com/kilianjornet/"
+  twitter: ""
+  wiki: "https://en.wikipedia.org/wiki/K%C3%ADlian_Jornet"
+notes: |
+  The goat.
