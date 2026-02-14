@@ -1,0 +1,53 @@
+---
+:runner:
+:loops:
+- :index: 1
+  :direction: CCW
+  :start:
+    :time: '00:00:00'
+    :text:
+    :source:
+  :stop:
+    :time: '09:47:08'
+    :text: Chiseled Jaw Guy, Knee Guy, Old Guy, Midnight guy, and The Path Finder are the first five in
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3metvte5vpc2q
+- :index: 2
+  :direction: CCW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 3
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 4
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:
+- :index: 5
+  :direction: CW
+  :start:
+    :time:
+    :text:
+    :source:
+  :stop:
+    :time:
+    :text:
+    :source:

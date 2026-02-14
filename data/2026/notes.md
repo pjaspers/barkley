@@ -9,3 +9,18 @@ https://bsky.app/profile/alixwzl.bsky.social/post/3metkikeg2s2u
 
 Iain Bethune, All the kit matches - same jacket, same backpack. So yeah, looks like he's in #bm100
 https://bsky.app/profile/alixwzl.bsky.social/post/3metkk5x5ck2u
+
+Chiseled Jaw Guy, Knee Guy, Old Guy, Midnight guy, and The Path Finder are the first five in
+https://bsky.app/profile/keithdunn.bsky.social/post/3metvte5vpc2q
+
+The first five runners have finished loop one in 9:47:08
+https://bsky.app/profile/keithdunn.bsky.social/post/3metvso47oc2q
+
+Old French Guy does a 9:22 turnaround and is the first to begin loop 2, followed quickly by three more runners. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3metw36vark2q
+
+Knee Guy has begun loop 2. Five runners are on loop two; 35 runners are on loop 1. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3metwbvjxm224
+
+Two French Guys have finished loop 1 in 10:07:46 and 10:08:10, one of whom stopped to put trash bags over his shoes prior to crossing the creek. 🤦‍♂️ #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3metwnqmbjk2n
