@@ -97,7 +97,7 @@ class App < Roda
   def local_time(time)
     <<~HTML
     <relative-time datetime="#{time.iso8601}" format="datetime" hour="numeric" minute="numeric" second="numeric">
-      #{time.strftime("%d %M %Y %H:%M")}
+      #{time.strftime("%b %d, %Y %H:%M")}
     </relative-time>
     HTML
   end
