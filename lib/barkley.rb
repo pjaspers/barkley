@@ -9,7 +9,7 @@ module Barkley
     },
     2026 => {
       # https://mastodon.social/@keithdunn/116068408559331980
-      conch_blown: Time.new(2026, 02, 14, 05, 0, 0, "-04:00")
+      conch_blown: Time.new(2026, 02, 14, 05, 0, 0, "-05:00")
     }
   }
 
