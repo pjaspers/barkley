@@ -9,6 +9,18 @@ class RootTest < WebTest
         assert_equal 200, page.status_code
       end
     end
+
+    describe "/r/<runner>" do
+      Barkley::Edition.for_year(2026).runners.each do |runner|
+        it "works" do
+          runner.slugs.each do |slug|
+            visit "/2026/r/#{slug}"
+
+            assert_equal 200, page.status_code
+          end
+        end
+      end
+    end
   end
 
   describe "2025" do

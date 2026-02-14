@@ -74,6 +74,18 @@ class App < Roda
       end
     end
 
+    r.on "2026" do
+      @page_title = "Barkley 2026"
+      @edition = Barkley::Edition.for_year(2026)
+
+      r.on "r" do
+        r.get String do |s|
+          @runner = @edition.runners.by_slug(s)
+
+          view "runner"
+        end
+      end
+    end
 
     @edition = Barkley::Edition.for_year(2026)
     @page_title = "Barkley 2026"
@@ -111,7 +123,7 @@ class App < Roda
   end
 
   def runner_a(key)
-    if @edition.year == 2025
+    if @edition.year == 2026
       "/r/#{key}"
     else
       "/#{@edition.year}/r/#{key}"
