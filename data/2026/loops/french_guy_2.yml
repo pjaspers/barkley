@@ -14,9 +14,9 @@
 - :index: 2
   :direction: CCW
   :start:
-    :time:
-    :text:
-    :source:
+    :time: '10:23:50'
+    :text: Water Ballon Guy has begun loop 2, followed quickly by another French guy. Seven runners are on loop 2. #BM100
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3metxksgp4s2n
   :stop:
     :time:
     :text:
