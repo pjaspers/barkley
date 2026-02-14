@@ -1,4 +1,3 @@
-finishes: 1
 profile:
   first_name: Aurélien
   last_name: Sanchez
@@ -11,7 +10,8 @@ the_inter_webs:
   web: https://www.kisskissbankbank.com/fr/projects/laresolution
   wiki: https://fr.wikipedia.org/wiki/Aurélien_Sanchez
 years:
-  2023: {}
+  2023:
+    finished: true
   2024:
     reason: On the list
     state: :confirmed

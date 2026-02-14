@@ -1,4 +1,3 @@
-finishes: 3
 notes: 'Previous attempts in 2023, 2021,2016,2014,2013 and 201212 (finished in 16,
   14 and 12, fun run in 21, fun run in 23)
 
@@ -24,13 +23,17 @@ profile:
 the_inter_webs:
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=46981
 years:
-  2012: {}
+  2012:
+    finished: true
   2013: {}
-  2014: {}
-  2016: {}
+  2014:
+    finished: true
+  2016:
+    finished: true
   2019: {}
   2021: {}
   2023: {}
   2024:
+    finished: true
     reason: on photo
     state: :confirmed

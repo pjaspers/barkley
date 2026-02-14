@@ -22,5 +22,6 @@ years:
   2019: {}
   2022: {}
   2024:
+    finished: true
     reason: On the list
     state: :confirmed

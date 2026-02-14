@@ -14,5 +14,6 @@ years:
   2022: {}
   2023: {}
   2024:
+    finished: true
     reason: Ran last year
     state: :maybe

@@ -1,4 +1,3 @@
-finishes: 3
 notes: 'Absolute legend, both in running and on the interwebs. Expect a race report
   to appear <a href="https://randomforestrunner.com">here</a> after some time has
   passed.
@@ -19,11 +18,14 @@ the_inter_webs:
 years:
   2015: {}
   2016: {}
-  2017: {}
+  2017:
+    finished: true
   2019: {}
   2022: {}
-  2023: {}
+  2023:
+    finished: true
   2024:
+    finished: true
     reason: Ran last year + strava
     state: :likely
   2025:

@@ -4,7 +4,7 @@ require_relative "./the_interwebs"
 require "yaml"
 
 class Runner
-  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes, :finishes, :nick_name
+  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes, :nick_name
 
   def self.from_yml(yml_path)
     slug = File.basename(yml_path, ".yml")
@@ -17,23 +17,25 @@ class Runner
       slugs: [slug],
       profile: profile,
       the_inter_webs: interwebs,
-      finishes: data["finishes"] || 0,
       notes: data["notes"] || "",
       years: data["years"] || {}
     )
     runner
   end
 
-  def initialize(slugs:, profile:, the_inter_webs:, years: {}, loops: [], notes: nil, finishes: 0, state: nil, attempts: 0)
+  def initialize(slugs:, profile:, the_inter_webs:, years: {}, loops: [], notes: nil, state: nil, attempts: 0)
     @slugs = slugs
     @profile = profile
     @the_inter_webs = the_inter_webs
     @years = years
     @loops = loops
     @notes = notes
-    @finishes = finishes
     @state = state
     @attempts = attempts
+  end
+
+  def finishes
+    @years.count { |_, data| data.is_a?(Hash) && data["finished"] }
   end
 
   def running?(year)
