@@ -6,6 +6,10 @@ module Barkley
     2025 => {
       # https://social.running.cafe/@KeithDunn/114183951364240283
       conch_blown: Time.new(2025, 03, 18, 10, 37, 0, "-04:00")
+    },
+    2026 => {
+      # https://mastodon.social/@keithdunn/116068408559331980
+      conch_blown: Time.new(2026, 02, 14, 05, 0, 0, "-04:00")
     }
   }
 
