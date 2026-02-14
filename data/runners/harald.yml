@@ -1,13 +1,13 @@
----
 profile:
   first_name: Harald
   last_name: Zundel
-  year: 1968
   nationality: :us
+  year: 1968
 the_inter_webs:
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=246250
-prior_attempts: 2
 years:
+  2014: {}
+  2021: {}
   2024:
-    state: :confirmed
     reason: Mentioned by Keith
+    state: :confirmed

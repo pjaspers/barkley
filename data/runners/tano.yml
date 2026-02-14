@@ -7,8 +7,8 @@ profile:
 the_inter_webs:
   instagram: https://www.instagram.com/tano_isola/
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=685434
-prior_attempts: 1
 years:
+  2021: {}
   2024:
     state: :likely
     reason: On the list

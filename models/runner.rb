@@ -19,18 +19,16 @@ class Runner
       the_inter_webs: interwebs,
       finishes: data["finishes"] || 0,
       notes: data["notes"] || "",
-      prior_attempts: data["prior_attempts"] || 0,
       years: data["years"] || {}
     )
     runner
   end
 
-  def initialize(slugs:, profile:, the_inter_webs:, years: {}, prior_attempts: 0, loops: [], notes: nil, finishes: 0, state: nil, attempts: 0)
+  def initialize(slugs:, profile:, the_inter_webs:, years: {}, loops: [], notes: nil, finishes: 0, state: nil, attempts: 0)
     @slugs = slugs
     @profile = profile
     @the_inter_webs = the_inter_webs
     @years = years
-    @prior_attempts = prior_attempts
     @loops = loops
     @notes = notes
     @finishes = finishes
@@ -45,7 +43,7 @@ class Runner
   def for_year(year)
     year_data = @years[year]
     @state = Status.new(state: year_data["state"], reason: year_data["reason"])
-    @attempts = @prior_attempts + @years.keys.count { |y| y <= year }
+    @attempts = @years.keys.count { |y| y <= year }
     self
   end
 

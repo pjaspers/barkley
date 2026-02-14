@@ -1,22 +1,24 @@
----
-profile:
-  first_name: Tomokazu
-  last_name: Ihara
-  year: 1977
-  nationality: :jp
-the_inter_webs:
-  strava: https://www.strava.com/pros/4651420
-  duv: https://statistik.d-u-v.org/getresultperson.php?runner=161561
-  instagram: https://www.instagram.com/rd_tomo/
-  web: https://tomospit.com
-prior_attempts: 4
-years:
-  2024:
-    state: :likely
-    reason: Ran last year + strava
-  2025:
-    state: :confirmed
-    reason: Just mentioned by keith
 notes: 'https://www.rdrc.sg/blogs/news/rdrc-interview-with-tomokazu-ihara-the-barkley-marathons
 
   '
+profile:
+  first_name: Tomokazu
+  last_name: Ihara
+  nationality: :jp
+  year: 1977
+the_inter_webs:
+  duv: https://statistik.d-u-v.org/getresultperson.php?runner=161561
+  instagram: https://www.instagram.com/rd_tomo/
+  strava: https://www.strava.com/pros/4651420
+  web: https://tomospit.com
+years:
+  2018: {}
+  2019: {}
+  2022: {}
+  2023: {}
+  2024:
+    reason: Ran last year + strava
+    state: :likely
+  2025:
+    reason: Just mentioned by keith
+    state: :confirmed

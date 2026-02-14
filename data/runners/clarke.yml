@@ -1,23 +1,29 @@
----
+notes: 'From his Strava bio:
+
+
+  <blockquote>Ultra runner with two primary aspirational goals in the sport: 1) win
+  more ultramarathons outright against all competition (won my 1st at The Last Annual
+  Heart of the South, aka HOTS, in June 2022), and 2) complete at least a Fun Run
+  (3 loops) within 40 hours at the Barkley Marathons.</blockquote>
+
+
+  Has ran the Barkley Fall Classic a couple of times and has finished MOAB multiple
+  times.
+
+  '
 profile:
   first_name: John
   last_name: Clarke
-  year: 1965
   nationality: :us
+  year: 1965
 the_inter_webs:
-  strava: https://www.strava.com/athletes/28619337
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=213437
-prior_attempts: 1
+  strava: https://www.strava.com/athletes/28619337
 years:
+  2022: {}
   2024:
-    state: :confirmed
     reason: Bio on Strava
-  2025:
     state: :confirmed
+  2025:
     reason: From The List
-notes: |
-  From his Strava bio:
-
-  <blockquote>Ultra runner with two primary aspirational goals in the sport: 1) win more ultramarathons outright against all competition (won my 1st at The Last Annual Heart of the South, aka HOTS, in June 2022), and 2) complete at least a Fun Run (3 loops) within 40 hours at the Barkley Marathons.</blockquote>
-
-  Has ran the Barkley Fall Classic a couple of times and has finished MOAB multiple times.
+    state: :confirmed

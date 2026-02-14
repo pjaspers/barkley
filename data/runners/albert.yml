@@ -1,18 +1,21 @@
----
+notes: 'A <a href="https://en.wikipedia.org/wiki/World_Rogaining_Championships">World
+  Rogaining Champion</a> in 2022 (Also see <a href="/r/greig">Greig</a>)
+
+
+  He did 3 loops in 2023 and 1 loop in 2022
+
+  '
 profile:
   first_name: Albert
   last_name: Herrero Casas
-  year: 1982
   nationality: :es
+  year: 1982
 the_inter_webs:
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=641169
   instagram: https://www.instagram.com/albertherrerotrail/
-prior_attempts: 2
 years:
+  2022: {}
+  2023: {}
   2024:
-    state: :confirmed
     reason: Announced on instagram
-notes: |
-  A <a href="https://en.wikipedia.org/wiki/World_Rogaining_Championships">World Rogaining Champion</a> in 2022 (Also see <a href="/r/greig">Greig</a>)
-
-  He did 3 loops in 2023 and 1 loop in 2022
+    state: :confirmed

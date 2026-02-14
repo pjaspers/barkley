@@ -1,13 +1,12 @@
----
 profile:
   first_name: Joe
   last_name: McConaughy
-  year: 1991
   nationality: :us
+  year: 1991
 the_inter_webs:
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=784193
-prior_attempts: 1
 years:
+  2023: {}
   2024:
-    state: :confirmed
     reason: on photo
+    state: :confirmed

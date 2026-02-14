@@ -1,17 +1,16 @@
----
 profile:
   first_name: Jeff
   last_name: Garmire
-  year: 1990
   nationality: :us
+  year: 1990
 the_inter_webs:
   duv: https://statistik.d-u-v.org/getresultperson.php?runner=1004538
-  web: https://www.freeoutside.com/about-5
   instagram: ''
   twitter: ''
+  web: https://www.freeoutside.com/about-5
   wiki: ''
-prior_attempts: 1
 years:
+  2021: {}
   2026:
-    state: :confirmed
     reason: Podcast just dropped where he announced he's running
+    state: :confirmed
