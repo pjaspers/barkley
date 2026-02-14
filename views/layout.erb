@@ -362,6 +362,20 @@
        width: 100%;
        object-fit: contain;
      }
+     .timeline-header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+     }
+     .tz-toggle {
+       cursor: pointer;
+       color: white;
+       background: var(--pop-red);
+       border: 2px solid var(--pop-red);
+       border-radius: 4px;
+       padding: calc(var(--unit) / 4) calc(var(--unit));
+       font-size: 0.75em;
+     }
     </style>
   </head>
   <body>
@@ -383,6 +397,33 @@
     <script async src="<%= timestamp_path("./dist/es-module-shims.js") %>"></script>
     <script type="module">
       import * as RelativeTimeElement from "@github/relative-time-element";
+
+      const FROZEN_HEAD_TZ = "America/New_York";
+      const toggle = document.getElementById("tz-toggle");
+
+      toggle.addEventListener("click", () => {
+        const active = toggle.getAttribute("aria-pressed") !== "true";
+        toggle.setAttribute("aria-pressed", active);
+        toggle.textContent = active ? "Show in local time" : "Show in Frozen Head time";
+
+        // This is a hack, but seems to work.
+        document.querySelectorAll('relative-time[format="datetime"]').forEach(el => {
+          if (active) {
+            const date = new Date(el.getAttribute("datetime"));
+            const formatted = new Intl.DateTimeFormat("en-US", {
+              timeZone: FROZEN_HEAD_TZ,
+              hour: "numeric", minute: "numeric", second: "numeric",
+              day: "numeric", month: "short", year: "numeric",
+              timeZoneName: "short"
+            }).format(date);
+            el.shadowRoot.textContent = formatted;
+          } else {
+            const dt = el.getAttribute("datetime");
+            el.removeAttribute("datetime");
+            el.setAttribute("datetime", dt);
+          }
+        });
+      });
     </script>
 
     <div class="wrapper">

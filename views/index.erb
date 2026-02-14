@@ -7,7 +7,10 @@
     <% end %>
   </ul>
 
-  <h2 id="timeline">Timeline</h2>
+  <div class="timeline-header">
+    <h2 id="timeline">Timeline</h2>
+    <button id="tz-toggle" class="tz-toggle" aria-pressed="false">Show in Frozen Head time</button>
+  </div>
   <% if @edition.finished? %>
     <p>
       The conch was blown at <span class="highlight"><%= local_time(@edition.conch_blown) %></span> so the race started at <span class="highlight"><%= local_time(@edition.start) %></span>, and the race ended at <span class="highlight"><%= local_time(@edition.end_time) %></span>.
