@@ -1,0 +1,20 @@
+profile:
+  first_name: "Matt"
+  last_name: "Bixley"
+  year: 1972
+  nationality: :nz
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=81731"
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
+  Notes go here
+years:
+  2015: {}
+  2026:
+    reason: https://bsky.app/profile/capitalbackyard.bsky.social/post/3metvuq5fqk2d
+    state: :confirmed
