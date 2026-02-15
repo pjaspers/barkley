@@ -14,7 +14,7 @@
 - :index: 2
   :direction: CCW
   :start:
-    :time: 12:04
+    :time: "12:04:00"
     :text: A runner booped the gate to begin loop 2.  So far 12 in, 12 out. #BM100
     :source: https://bsky.app/profile/keithdunn.bsky.social/post/3meuadffwsk2k
   :stop:
