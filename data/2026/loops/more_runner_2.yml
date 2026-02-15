@@ -18,9 +18,9 @@
     :text: Another runner has finished loop 1 while at the same time the first woman begins loop 2.  10 runners are on loop 2, 2 are in camp, 3 have quit.  Runners have less than 30 minutes to complete loop 1 and be out on loop 2. #BM100
     :source: https://bsky.app/profile/keithdunn.bsky.social/post/3meu7t2u7422n
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: "DNF"
+    :text: "26 hours into the #BM100 4 runners are on loop 3, 3 runners are on loop 2, and 5 runners are in loop 1.  Runners currently on loop 2 must begin loop 3 by 26:40 in order to continue. #BM100"
+    :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3mevpdonk2k2n"
 - :index: 3
   :direction: CW
   :start:
