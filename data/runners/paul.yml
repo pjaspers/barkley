@@ -1,0 +1,21 @@
+profile:
+  first_name: "Paul"
+  last_name: "Terranova"
+  year: 1973
+  nationality: :us
+years:
+  2026:
+    state: :confirmed
+    reason: "https://bsky.app/profile/nicoleyed.bsky.social/post/3meufnvhuo22r"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=23281"
+  web: ""
+  instagram: "https://www.instagram.com/psterranova/"
+  twitter: ""
+  wiki: ""
+notes: |
+  https://www.redbull.com/us-en/adventure-essentials-paul-terranova
+  https://www.trailrunnermag.com/people/culture-people/rocky-mountain-slam/
+  https://sarahrunning.substack.com/p/an-ultra-nice-guy
