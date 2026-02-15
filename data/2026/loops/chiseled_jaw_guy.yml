@@ -1,5 +1,5 @@
 ---
-:runner:
+:runner: aurelien
 :loops:
 - :index: 1
   :direction: CCW
@@ -18,15 +18,15 @@
     :text: Old French Guy does a 9:22 turnaround and is the first to begin loop 2, followed quickly by three more runners. #BM100
     :source: https://bsky.app/profile/keithdunn.bsky.social/post/3metw36vark2q
   :stop:
-    :time:
-    :text:
-    :source:
+    :time: "22:35:42"
+    :text: "The first loop 2 finishers: Sébastien Raichon in 22:35:40; Mathieu Blanchard :42; Damian Hall :44. At the same time, another loop 2 runner has quit and is tapped out.  #BM100"
+    :source: https://bsky.app/profile/keithdunn.bsky.social/post/3mevanbcj2k2o
 - :index: 3
   :direction: CW
   :start:
-    :time:
-    :text:
-    :source:
+    :time: '22:54:26'
+    :text: "Damian Hall began loop 3 barefoot at 22:54:26. Mathieu Blanchard and Sébastien Raichon began loop 3 shortly thereafter.  #BM100"
+    :source: "https://bsky.app/profile/keithdunn.bsky.social/post/3mevbmjzw3c2x"
   :stop:
     :time:
     :text:
