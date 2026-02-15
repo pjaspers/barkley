@@ -45,3 +45,29 @@ Another runner has finished loop 1 while at the same time the first woman begins
 A runner booped the gate to begin loop 2.  So far 12 in, 12 out. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3meuadffwsk2k
 11:56 + 8 => 12:04
+
+
+1 DNF
+We have had our first loop 2 runner drop out of the race. 11 runners remain on loop 2; 7 runners are still on loop 1 (well over the time limit). #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3meutlo7cm22v
+
+2 DNF
+And then there were ten on loop 2. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3meux5xrl5c2p
+
+3 DNF
+A French runner has been tapped out. Nine runners remain on loop 2. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3meuyanxvw22o
+
+4 DNF
+Eight runners remain on loop 2. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3meuz2dohp22o
+
+5 DNF
+The first loop 2 finishers:
+Sébastien Raichon in 22:35:40; -> Old guy?
+Mathieu Blanchard :42; -> French Guy 1?
+Damian Hall :44. -> Midnight guy?
+
+At the same time, another loop 2 runner has quit and is tapped out.  #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3mevanbcj2k2o
