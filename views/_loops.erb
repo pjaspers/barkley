@@ -47,51 +47,51 @@
         <% nickname.loops.each.with_index(1) do |l, i| %>
           <% if i > 1 %>
             <td>
-              <% if l.started? || l.finished? || l.dnf? %>
-                <% if l.start %>
-                  <% if l.start_source %>
-                    <a href="<%= l.start_source %>" title="<%= l.start_title %>">
+              <div class="loops__cell__inner">
+                <span>
+                <% if l.started? || l.finished? || l.dnf? %>
+                  <% if l.start %>
+                    <% if l.start_source %>
+                      <a href="<%= l.start_source %>" title="<%= l.start_title %>"><%= hhmmss(l.start) %></a>
+                    <% else %>
                       <%= hhmmss(l.start) %>
-                    </a>
-                  <% else %>
-                    <%= hhmmss(l.start) %>
-                  <% end %>
-                  <% if i == 5 %>
-                    <span class="highlight highlight--yellow">
-                      <%= l.direction.to_s.upcase %>
-                    </span>
+                    <% end %>
                   <% end %>
                 <% end %>
-              <% end %>
+                </span>
+                <span>
+                  <% if i == 5 && l.start && (l.started? || l.finished? || l.dnf?) %>
+                    <span class="highlight highlight--yellow highlight--sm"><%= l.direction.to_s.upcase %></span>
+                  <% end %>
+                </span>
+              </div>
             </td>
           <% end %>
           <td data-score="<%= l.score %>">
-            <% if l.dnf? %>
-              <% if l.finish_source %>
-                <a href="<%= l.finish_source %>" title="<%= l.stop_title %>">
+            <div class="loops__cell__inner">
+              <span>
+              <% if l.dnf? %>
+                <% if l.finish_source %>
+                  <a href="<%= l.finish_source %>" title="<%= l.stop_title %>"><span class="highlight highlight--red">DNF</span></a>
+                <% else %>
                   <span class="highlight highlight--red">DNF</span>
-                </a>
-              <% else %>
-                <span class="highlight highlight--red">DNF</span>
-              <% end %>
-            <% elsif l.finished? %>
-              <% if l.finish_source %>
-                <a href="<%= l.finish_source %>" title="<%= l.stop_title %>">
+                <% end %>
+              <% elsif l.finished? %>
+                <% if l.finish_source %>
+                  <a href="<%= l.finish_source %>" title="<%= l.stop_title %>"><%= hhmmss(l.stop) %></a>
+                <% else %>
                   <%= hhmmss(l.stop) %>
-                </a>
-              <% else %>
-                <%= hhmmss(l.stop) %>
+                <% end %>
+              <% elsif l.started? %>
+                <span class="highlight highlight--green loops__ongoing"><%= elapsed(l.started_at, style: "narrow") %></span>
               <% end %>
-            <% elsif l.started? %>
-              <span class="highlight highlight--green loops__ongoing">
-                <%= elapsed(l.started_at, style: "narrow") %>
               </span>
-            <% end %>
-            <% if l.fun_run? %>
-              <span class="highlight highlight--blue" title="Completed a Fun Run">
-                FUN
+              <span>
+                <% if l.fun_run? %>
+                  <span class="highlight highlight--blue highlight--sm" title="Completed a Fun Run">FUN</span>
+                <% end %>
               </span>
-            <% end %>
+            </div>
           </td>
         <% end %>
       </tr>

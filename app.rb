@@ -96,6 +96,8 @@ class App < Roda
   end
 
   def hhmmss(seconds)
+    return "&nbsp;" unless seconds
+
     "%02d:%02d:%02d" % hour_minute_seconds(seconds)
   end
 
