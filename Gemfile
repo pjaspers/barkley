@@ -15,6 +15,7 @@ gem "logger"
 
 group :development do
   gem 'simplecov'
+  gem "irb", "~> 1.17.0"
 end
 
 group :test do

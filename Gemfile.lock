@@ -20,8 +20,16 @@ GEM
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     concurrent-ruby (1.3.6)
+    date (3.5.1)
     docile (1.4.1)
+    erb (6.0.1)
     erubi (1.13.1)
+    io-console (0.8.2)
+    irb (1.17.0)
+      pp (>= 0.6.0)
+      prism (>= 1.3.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
     logger (1.7.0)
     matrix (0.4.3)
     mini_mime (1.1.5)
@@ -44,7 +52,13 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.0-x86_64-linux-gnu)
       racc (~> 1.4)
+    pp (0.6.3)
+      prettyprint
+    prettyprint (0.2.0)
     prism (1.9.0)
+    psych (5.3.1)
+      date
+      stringio
     public_suffix (7.0.2)
     puma (7.2.0)
       nio4r (~> 2.0)
@@ -53,7 +67,13 @@ GEM
     rack-test (2.2.0)
       rack (>= 1.3)
     rake (13.3.1)
+    rdoc (7.2.0)
+      erb
+      psych (>= 4.0.0)
+      tsort
     regexp_parser (2.11.3)
+    reline (0.6.3)
+      io-console (~> 0.5)
     roda (3.100.0)
       rack
     simplecov (0.22.0)
@@ -62,7 +82,9 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.13.2)
     simplecov_json_formatter (0.1.4)
+    stringio (3.2.0)
     tilt (2.7.0)
+    tsort (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2025.3)
@@ -83,6 +105,7 @@ DEPENDENCIES
   base64
   capybara!
   erubi
+  irb (~> 1.17.0)
   logger
   minitest
   minitest-hooks
