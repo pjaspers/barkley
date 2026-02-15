@@ -93,3 +93,7 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mevpdonk2k2n
 
 Mathieu Blanchard quit on loop 3 due to cold and is tapped out.  #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mew4nirbmc2r
+
+
+I must have dozed off or something, but somehow I missed Max King dropping a couple hours ago, after making it to book 4 on loop 3. Two runners remain on loop 3; 1 remains on loop 1. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3mew7i35yls2o
