@@ -71,3 +71,11 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mevanbcj2k2o
 
 Damian Hall began loop 3 barefoot at 22:54:26. Mathieu Blanchard and Sébastien Raichon began loop 3 shortly thereafter.  #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mevbmjzw3c2x
+
+
+I had John Kelly and potentially Knee Guy, given his knee injury
+curtailing his Spine a month ago. If he was in the first group on loop
+one and wasn't on loop two then I like that even more (I mean I also
+really don't like that as it could indicate that the injury proved to
+be an issue)
+https://bsky.app/profile/alixwzl.bsky.social/post/3mevdlhohsk2u
