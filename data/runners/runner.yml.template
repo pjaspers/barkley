@@ -1,13 +1,13 @@
-attempts: 0
 profile:
   first_name: ""
   last_name: ""
   year: 1980
   nationality: :nz
-# maybe, likely, confirmed
-state:
-  state: :confirmed
-  reason: ""
+years:
+  2026:
+    state: :maybe, :likely, :confirmed
+    reason: ""
+    finished: false
 # duv, web, instagram, twitter, wiki
 # https://statistik.d-u-v.org
 the_inter_webs:
