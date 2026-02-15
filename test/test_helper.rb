@@ -5,6 +5,11 @@ require "minitest/autorun"
 require "pathname"
 ENV["RACK_ENV"] = "test"
 
+
+require "warning"
+# https://github.com/teamcapybara/capybara/pull/2781/files
+Warning.ignore(/RFC3986_PARSER/, /.*capybara.*/)
+
 class Test < Minitest::Test
   # Add spec DSL
   extend Minitest::Spec::DSL
