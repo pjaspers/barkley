@@ -35,3 +35,8 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3meu4fok2v223
 12:36
 Two more runners, including the lead woman, have finished loop 1; at the same time, two other runners returned to camp from the wrong direction and are tapped out. #BM100
 10:40 + 52 => 11:38
+
+
+12:54
+Another runner has finished loop 1 while at the same time the first woman begins loop 2.  10 runners are on loop 2, 2 are in camp, 3 have quit.  Runners have less than 30 minutes to complete loop 1 and be out on loop 2. #BM100
+11:38 + 18 => 11:56
