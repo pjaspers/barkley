@@ -64,10 +64,6 @@ Eight runners remain on loop 2. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3meuz2dohp22o
 
 5 DNF
-The first loop 2 finishers:
-Sébastien Raichon in 22:35:40; -> Old guy?
-Mathieu Blanchard :42; -> French Guy 1?
-Damian Hall :44. -> Midnight guy?
-
+The first loop 2 finishers: Sébastien Raichon in 22:35:40; Mathieu Blanchard :42; Damian Hall :44.
 At the same time, another loop 2 runner has quit and is tapped out.  #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mevanbcj2k2o
