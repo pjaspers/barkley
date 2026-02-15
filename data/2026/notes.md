@@ -85,3 +85,6 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mevflrb3oc2y
 
 Max King begins loop 3 wearing plastic bags around his feet in 25:42:12. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mevkx2rsrk2w
+
+
+26 hours into the #BM100 4 runners are on loop 3, 3 runners are on loop 2, and 5 runners are in loop 1.  Runners currently on loop 2 must begin loop 3 by 26:40 in order to continue. #BM100

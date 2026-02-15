@@ -3,8 +3,9 @@ class Runners
   extend Forwardable
   def_delegators :@data, :size, :length, :[], :empty?, :last, :index
 
-  def initialize(data)
+  def initialize(data, year: nil)
     @data = data
+    @year = year
   end
 
   [
@@ -13,7 +14,7 @@ class Runners
     :likely
   ].each do |state|
     define_method state do
-      @data.select{|r| r.state.state == state }
+      @data.select{|r| r.state(year: @year).state == state }
     end
   end
 

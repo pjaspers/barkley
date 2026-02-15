@@ -159,15 +159,16 @@
           </div>
         </div>
 
+        <% status = runner.state(year: @edition.year) %>
         <p class="overview__info">
-          <span class="overview__state overview__state--<%= runner.state.state %>">
-            <%= runner.state.state %>
-            <% if runner.state.reason %>
+          <span class="overview__state overview__state--<%= status.state %>">
+            <%= status.state %>
+            <% if status.reason %>
               <span class="tooltip">
-                <% if runner.state.reason.start_with?("http") %>
-                  <a href="<%= runner.state.reason %>"><%= runner.state.reason %></a>
+                <% if status.reason.start_with?("http") %>
+                  <a href="<%= status.reason %>"><%= status.reason %></a>
                 <% else %>
-                  <%= runner.state.reason %>
+                  <%= status.reason %>
                 <% end %>
               </span>
             <% end %>

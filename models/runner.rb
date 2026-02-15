@@ -4,7 +4,7 @@ require_relative "./the_interwebs"
 require "yaml"
 
 class Runner
-  attr_accessor :slugs, :profile, :state, :the_inter_webs, :loops, :attempts, :notes, :nick_name
+  attr_accessor :slugs, :profile, :the_inter_webs, :loops, :notes, :nick_name
 
   def self.from_yml(yml_path)
     slug = File.basename(yml_path, ".yml")
@@ -23,15 +23,27 @@ class Runner
     runner
   end
 
-  def initialize(slugs:, profile:, the_inter_webs:, years: {}, loops: [], notes: nil, state: nil, attempts: 0)
+  def initialize(slugs:, profile:, the_inter_webs:, years: {}, notes: nil)
     @slugs = slugs
     @profile = profile
     @the_inter_webs = the_inter_webs
     @years = years
-    @loops = loops
     @notes = notes
-    @state = state
-    @attempts = attempts
+  end
+
+  def attempts(year: nil)
+    if year
+      @years.keys.select{|y| y <= year}.count
+    else
+      @years.keys.count
+    end
+  end
+
+  def state(year:)
+    return {} unless running?(year)
+
+    year_data = @years[year]
+    Status.new(state: year_data["state"], reason: year_data["reason"])
   end
 
   def finishes
@@ -40,13 +52,6 @@ class Runner
 
   def running?(year)
     @years.key?(year)
-  end
-
-  def for_year(year)
-    year_data = @years[year]
-    @state = Status.new(state: year_data["state"], reason: year_data["reason"])
-    @attempts = @years.keys.count { |y| y <= year }
-    self
   end
 
   def key

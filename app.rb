@@ -32,57 +32,21 @@ class App < Roda
     r.timestamp_public
     r.public
 
-    r.on "2024" do
-      @page_title = "Barkley 2024"
-      @edition = Barkley::Edition.for_year(2024)
+    [
+      2026,
+      2025,
+      2024,
+    ].each do |year|
+      r.on year.to_s do
+        @page_title = "Barkley #{year}"
+        @edition = Barkley::Edition.for_year(year)
 
-      r.on "r" do
-        r.get String do |s|
-          @runner = @edition.runners.by_slug(s)
-
-          view "runner"
+        r.get "loops" do
+          view "loops"
         end
-      end
 
-      r.get "loops" do
-        view "loops"
-      end
-
-      r.get(true) do
-        view "index"
-      end
-    end
-
-    r.on "2025" do
-      @page_title = "Barkley 2025"
-      @edition = Barkley::Edition.for_year(2025)
-
-      r.on "r" do
-        r.get String do |s|
-          @runner = @edition.runners.by_slug(s)
-
-          view "runner"
-        end
-      end
-
-      r.get "loops" do
-        view "loops"
-      end
-
-      r.get(true) do
-        view "index"
-      end
-    end
-
-    r.on "2026" do
-      @page_title = "Barkley 2026"
-      @edition = Barkley::Edition.for_year(2026)
-
-      r.on "r" do
-        r.get String do |s|
-          @runner = @edition.runners.by_slug(s)
-
-          view "runner"
+        r.get(true) do
+          view "index"
         end
       end
     end
@@ -91,7 +55,7 @@ class App < Roda
     @page_title = "Barkley 2026"
     r.on "r" do
       r.get String do |s|
-        @runner = @edition.runners.by_slug(s)
+        @runner = Barkley.runners.by_slug(s)
 
         view "runner"
       end
@@ -123,11 +87,7 @@ class App < Roda
   end
 
   def runner_a(key)
-    if @edition.year == 2026
-      "/r/#{key}"
-    else
-      "/#{@edition.year}/r/#{key}"
-    end
+    "/r/#{key}"
   end
 
 

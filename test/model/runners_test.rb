@@ -14,8 +14,9 @@ class RunnersTest < Test
     john_2025 = Barkley::Edition.for_year(2025).runners.by_slug("john")
     john_2026 = Barkley::Edition.for_year(2026).runners.by_slug("john")
 
-    assert_equal john_2024.attempts + 1, john_2025.attempts
-    assert_equal john_2025.attempts + 1, john_2026.attempts
+    assert_equal john_2024.attempts(year: 2024) + 1, john_2025.attempts(year: 2025)
+    assert_equal john_2025.attempts(year: 2025) + 1, john_2026.attempts(year: 2026)
+    assert_equal john_2026.attempts, john_2026.attempts(year: 2026)
   end
 
   it "running? reflects which years a runner participates in" do

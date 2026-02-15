@@ -20,6 +20,12 @@ module Barkley
     }
   }
 
+  def self.runners
+    all = Dir.glob("#{Config.root}/data/runners/*.yml")
+            .map { |yml_path| Runner.from_yml(yml_path) }
+    Runners.new(all)
+  end
+
   class Edition
     attr_accessor :conch_blown, :year
 
@@ -63,8 +69,7 @@ module Barkley
       all = Dir.glob("#{Config.root}/data/runners/*.yml")
         .map { |yml_path| Runner.from_yml(yml_path) }
         .select { |runner| runner.running?(@year) }
-        .each { |runner| runner.for_year(@year) }
-      Runners.new(all)
+      Runners.new(all, year: @year)
     end
 
     def nicknames
