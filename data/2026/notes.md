@@ -67,3 +67,7 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3meuz2dohp22o
 The first loop 2 finishers: Sébastien Raichon in 22:35:40; Mathieu Blanchard :42; Damian Hall :44.
 At the same time, another loop 2 runner has quit and is tapped out.  #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mevanbcj2k2o
+
+
+Damian Hall began loop 3 barefoot at 22:54:26. Mathieu Blanchard and Sébastien Raichon began loop 3 shortly thereafter.  #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3mevbmjzw3c2x
