@@ -40,3 +40,8 @@ Two more runners, including the lead woman, have finished loop 1; at the same ti
 12:54
 Another runner has finished loop 1 while at the same time the first woman begins loop 2.  10 runners are on loop 2, 2 are in camp, 3 have quit.  Runners have less than 30 minutes to complete loop 1 and be out on loop 2. #BM100
 11:38 + 18 => 11:56
+
+1:03
+A runner booped the gate to begin loop 2.  So far 12 in, 12 out. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3meuadffwsk2k
+11:56 + 8 => 12:04
