@@ -79,3 +79,6 @@ one and wasn't on loop two then I like that even more (I mean I also
 really don't like that as it could indicate that the injury proved to
 be an issue)
 https://bsky.app/profile/alixwzl.bsky.social/post/3mevdlhohsk2u
+
+Max King finished loop 2 in 24:06:38. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3mevflrb3oc2y
