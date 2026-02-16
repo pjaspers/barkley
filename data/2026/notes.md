@@ -115,9 +115,19 @@ https://bsky.app/profile/ferenk.bsky.social/post/3meye7gxpk22h
 
 Things seen post race:
 
-https://www.instagram.com/p/DU0BnOkDUj4/?igsh=MWllN3g5cGpvaTdydA==
-https://run.outsideonline.com/news/2026-barkley-marathons-results-and-live-updates/
-https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/
+[Sebastien's Instagram pic that tells the story](https://www.instagram.com/p/DU0BnOkDUj4/?igsh=MWllN3g5cGpvaTdydA==)
+
+[Run Outside overview with Zocherman pictures](https://run.outsideonline.com/news/2026-barkley-marathons-results-and-live-updates/) ([archive](https://archive.is/Ci8pi))
+
+As usual Jacob delivers with the pictures.
+
+[(Dutch) Interview with Noor van der Veen](https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/) ([archive](https://archive.ph/Z2p1z))
+
 https://bsky.app/profile/philbranigan.bsky.social/post/3mexrl32yfs2n
-https://eu.knoxnews.com/picture-gallery/news/local/2026/02/15/no-finishers-at-40th-barkley-marathons-in-frozen-head-state-park/88691789007/#xf0p8vpc2uw54747udye9rj26mi476p
-https://www.lequipe.fr/Ultra-trail/Actualites/Sebastien-raichon-a-signe-le-meilleur-resultat-de-la-barkley-2026-avec-trois-boucles-c-etait-memorable-mais-mission-impossible/1652765
+[Guillaume was there, and John, and one other runner I don't know!](https://eu.knoxnews.com/picture-gallery/news/local/2026/02/15/no-finishers-at-40th-barkley-marathons-in-frozen-head-state-park/88691789007/#xf0p8vpc2uw54747udye9rj26mi476p) ([archive](https://archive.ph/oT21u))
+
+Solid dose of new info here.
+
+[First interview with Sebastien](https://www.lequipe.fr/Ultra-trail/Actualites/Sebastien-raichon-a-signe-le-meilleur-resultat-de-la-barkley-2026-avec-trois-boucles-c-etait-memorable-mais-mission-impossible/1652765) ([archive](https://archive.ph/CJBLL))
+
+Full of good stuff.
