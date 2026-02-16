@@ -101,3 +101,7 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mew7i35yls2o
 
 Sébastien Raichon finished loop 3 in 38:05:46 and is credited with a Fun Run. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mewucaxw3s2t
+
+
+Damian Hall came in off loop 3, but without collecting all his pages and is the last to face the bugler.  Fog, cold, and the wet weather were factors. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3mewvtcravc2b
