@@ -4,9 +4,6 @@ profile:
   year: 1980
   nationality: :fr
 years:
-  2024:
-    state: :confirmed
-    reason: "https://www.instagram.com/p/C43yzGYrouX/"
   2026:
     state: :confirmed
     reason: "https://bsky.app/profile/ferenk.bsky.social/post/3meye7gxpk22h"
