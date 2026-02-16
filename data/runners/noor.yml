@@ -1,0 +1,20 @@
+profile:
+  first_name: "Noor"
+  last_name: "van der Veen"
+  year: 1993
+  nationality: :nl
+years:
+  2026:
+    state: :confirmed
+    reason: "https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/"
+    finished: false
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1630721"
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
+  https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/
