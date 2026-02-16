@@ -131,3 +131,9 @@ Solid dose of new info here.
 [First interview with Sebastien](https://www.lequipe.fr/Ultra-trail/Actualites/Sebastien-raichon-a-signe-le-meilleur-resultat-de-la-barkley-2026-avec-trois-boucles-c-etait-memorable-mais-mission-impossible/1652765) ([archive](https://archive.ph/CJBLL))
 
 Full of good stuff.
+
+A lot (a ton?) of #bm100 diary content from Allie Baileys. Since they all are Insta Stories, they will vanish into the ether quickly :-(
+// via
+@barkleymarathon.bsky.social
+https://bsky.app/profile/trustedsystem.bsky.social/post/3meylqhyha5p6
+A fucking mazing
