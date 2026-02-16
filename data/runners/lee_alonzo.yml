@@ -1,0 +1,21 @@
+profile:
+  first_name: "Lee Alonzo"
+  last_name: "Murphy"
+  year: 1988
+  nationality: :ca
+years:
+  2026:
+    state: :confirmed
+    reason: "https://www.instagram.com/leealonzomurph/"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1794914"
+  web: ""
+  instagram: "https://www.instagram.com/leealonzomurph"
+  twitter: ""
+  wiki: ""
+  strava: "https://www.strava.com/athletes/54586089"
+notes: |
+  https://runningmagazine.ca/trail-running/lessons-from-a-700-day-running-streak/
+  https://runningmagazine.ca/trail-running/meet-the-only-canadian-at-bigs-backyard-ultra/

@@ -113,6 +113,10 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mewvtcravc2b
 - Ronan Pierre, a french runner, was on the race
 https://bsky.app/profile/ferenk.bsky.social/post/3meye7gxpk22h
 
+Lee Alonzo Murphy
+If you check the Strava for the runner who did 74 yards at Bigs looks like he's there #BM100
+https://bsky.app/profile/digbygut.bsky.social/post/3mewdtqhbdc2d
+
 Things seen post race:
 
 [Sebastien's Instagram pic that tells the story](https://www.instagram.com/p/DU0BnOkDUj4/?igsh=MWllN3g5cGpvaTdydA==)
