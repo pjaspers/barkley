@@ -105,3 +105,10 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mewucaxw3s2t
 
 Damian Hall came in off loop 3, but without collecting all his pages and is the last to face the bugler.  Fog, cold, and the wet weather were factors. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mewvtcravc2b
+
+
+Things seen post race:
+
+https://www.instagram.com/p/DU0BnOkDUj4/?igsh=MWllN3g5cGpvaTdydA==
+https://run.outsideonline.com/news/2026-barkley-marathons-results-and-live-updates/
+https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/
