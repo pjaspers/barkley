@@ -112,3 +112,5 @@ Things seen post race:
 https://www.instagram.com/p/DU0BnOkDUj4/?igsh=MWllN3g5cGpvaTdydA==
 https://run.outsideonline.com/news/2026-barkley-marathons-results-and-live-updates/
 https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/
+https://bsky.app/profile/philbranigan.bsky.social/post/3mexrl32yfs2n
+https://eu.knoxnews.com/picture-gallery/news/local/2026/02/15/no-finishers-at-40th-barkley-marathons-in-frozen-head-state-park/88691789007/#xf0p8vpc2uw54747udye9rj26mi476p

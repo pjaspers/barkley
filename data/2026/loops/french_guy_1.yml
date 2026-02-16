@@ -1,5 +1,5 @@
 ---
-:runner:
+:runner: guillaume
 :loops:
 - :index: 1
   :direction: CCW
