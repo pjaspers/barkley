@@ -106,6 +106,12 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mewucaxw3s2t
 Damian Hall came in off loop 3, but without collecting all his pages and is the last to face the bugler.  Fog, cold, and the wet weather were factors. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mewvtcravc2b
 
+@taka-does-stuff.bsky.social
+ Hi, some new names from Rémy Jegard who were an insider again this year :
+
+- Guillaume Calmettes and Thomas Calmettes were here, but I don't know if both are running
+- Ronan Pierre, a french runner, was on the race
+https://bsky.app/profile/ferenk.bsky.social/post/3meye7gxpk22h
 
 Things seen post race:
 
@@ -114,3 +120,4 @@ https://run.outsideonline.com/news/2026-barkley-marathons-results-and-live-updat
 https://hardloopnetwerk.nl/de-barkley-was-een-langgekoesterde-droom/
 https://bsky.app/profile/philbranigan.bsky.social/post/3mexrl32yfs2n
 https://eu.knoxnews.com/picture-gallery/news/local/2026/02/15/no-finishers-at-40th-barkley-marathons-in-frozen-head-state-park/88691789007/#xf0p8vpc2uw54747udye9rj26mi476p
+https://www.lequipe.fr/Ultra-trail/Actualites/Sebastien-raichon-a-signe-le-meilleur-resultat-de-la-barkley-2026-avec-trois-boucles-c-etait-memorable-mais-mission-impossible/1652765

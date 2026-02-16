@@ -1,0 +1,22 @@
+profile:
+  first_name: "Ronan"
+  last_name: "Pierre"
+  year: 1980
+  nationality: :fr
+years:
+  2024:
+    state: :confirmed
+    reason: "https://www.instagram.com/p/C43yzGYrouX/"
+  2026:
+    state: :confirmed
+    reason: "https://bsky.app/profile/ferenk.bsky.social/post/3meye7gxpk22h"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=439006"
+  web: ""
+  instagram: "https://www.instagram.com/ronan_pierre/"
+  twitter: ""
+  wiki: ""
+notes: |
+  https://www.ladepeche.fr/2025/01/26/ultra-trail-le-gersois-ronan-pierre-dernier-survivant-de-la-backyard-toulouse-12471611.php
