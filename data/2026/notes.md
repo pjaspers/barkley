@@ -97,3 +97,7 @@ https://bsky.app/profile/keithdunn.bsky.social/post/3mew4nirbmc2r
 
 I must have dozed off or something, but somehow I missed Max King dropping a couple hours ago, after making it to book 4 on loop 3. Two runners remain on loop 3; 1 remains on loop 1. #BM100
 https://bsky.app/profile/keithdunn.bsky.social/post/3mew7i35yls2o
+
+
+Sébastien Raichon finished loop 3 in 38:05:46 and is credited with a Fun Run. #BM100
+https://bsky.app/profile/keithdunn.bsky.social/post/3mewucaxw3s2t
