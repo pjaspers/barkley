@@ -8,13 +8,12 @@ years:
     state: :maybe, :likely, :confirmed
     reason: ""
     finished: false
-# duv, web, instagram, twitter, wiki
-# https://statistik.d-u-v.org
 the_inter_webs:
   duv: ""
   web: ""
   instagram: ""
   twitter: ""
   wiki: ""
+  strava: ""
 notes: |
   Notes go here

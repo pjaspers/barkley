@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+require "uri"
+require "yaml"
+
+print "First name: "
+first_name = gets.chomp
+
+print "Last name: "
+last_name = gets.chomp
+
+abort "Need both first and last name" if first_name.empty? || last_name.empty?
+
+# Create the runner yml from template
+data_dir = File.join(__dir__, "..", "data", "runners")
+template_file = File.join(data_dir, "runner.yml.template")
+runner_file = File.join(data_dir, "#{first_name.downcase}.yml")
+
+if File.exist?(runner_file)
+  puts "#{runner_file} already exists, skipping file creation"
+else
+  data = YAML.safe_load(File.read(template_file), permitted_classes: [Symbol])
+  data["profile"]["first_name"] = first_name
+  data["profile"]["last_name"] = last_name
+  File.write(runner_file, YAML.dump(data))
+  puts "Created #{runner_file}"
+end
+
+# Open browser tabs for research
+[
+  [URI("https://statistik.d-u-v.org/searchrunner.php"), {sname: "#{last_name}, #{first_name}", "Submit.x" => 16, "Submit.y" => 6}],
+  [URI("https://duckduckgo.com"), {ia: "web", q: "#{last_name} #{first_name} ultrarunner"}],
+  [URI("https://www.google.com/search"), {q: "#{last_name} #{first_name} ultrarunner"}],
+  [URI("https://www.google.com/search"), {q: "#{last_name} #{first_name} ultrarunner instagram"}],
+  [URI("https://www.strava.com/athletes/search"), {utf8: "✓", text: "#{last_name.downcase} #{first_name.downcase}", gsf: 1}],
+].each do |(url, params)|
+  url.query = URI.encode_www_form(params)
+  `open "#{url}"`
+end
