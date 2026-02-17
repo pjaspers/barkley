@@ -4,6 +4,9 @@ profile:
   year: 1972
   nationality: :au
 years:
+  2023:
+    state: :confirmed
+    reason: "https://www.facebook.com/TailwindAustralia/posts/667169568744096/"
   2026:
     state: :confirmed
     reason: "https://bsky.app/profile/wsergent.bsky.social/post/3meyw2qz7x225"
