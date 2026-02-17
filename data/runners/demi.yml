@@ -1,0 +1,19 @@
+profile:
+  first_name: "Demi"
+  last_name: "Marcantonio"
+  year: 1994
+  nationality: :us
+years:
+  2026:
+    state: :confirmed
+    reason: "https://bsky.app/profile/vikbrown.bsky.social/post/3meyubektjs2d"
+    finished: false
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1574774"
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
