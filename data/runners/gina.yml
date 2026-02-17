@@ -1,0 +1,19 @@
+profile:
+  first_name: "Gina"
+  last_name: "Fioroni"
+  year: 1977
+  nationality: :us
+years:
+  2026:
+    state: :confirmed
+    reason: "https://bsky.app/profile/ferenk.bsky.social/post/3meyyfoc2ik2d"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=779986"
+  web: ""
+  instagram: "https://www.instagram.com/furyrunner/"
+  twitter: ""
+  wiki: ""
+notes: |
+  https://www.nlr.gov/news/detail/features/2020/fuels-researcher-gina-fioroni-runs-past-lab-trail-obstacles
