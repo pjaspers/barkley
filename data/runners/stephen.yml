@@ -1,0 +1,19 @@
+profile:
+  first_name: "Stephen"
+  last_name: "Redfern"
+  year: 1972
+  nationality: :au
+years:
+  2026:
+    state: :confirmed
+    reason: "https://bsky.app/profile/wsergent.bsky.social/post/3meyw2qz7x225"
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=603760"
+  web: ""
+  instagram: "https://www.instagram.com/shaggy072/"
+  twitter: ""
+  wiki: ""
+notes: |
+  https://robmaso.podbean.com/e/interview-with-stephen-redfern/
