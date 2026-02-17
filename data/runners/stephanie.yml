@@ -1,0 +1,24 @@
+profile:
+  first_name: "Stephanie"
+  last_name: "Waskönig"
+  year: 1980
+  nationality: :de
+years:
+  2026:
+    state: :confirmed
+    reason: "https://bsky.app/profile/ferenk.bsky.social/post/3mez4dfchwc2y"
+    finished: false
+# duv, web, instagram, twitter, wiki
+# https://statistik.d-u-v.org
+the_inter_webs:
+  duv: "https://statistik.d-u-v.org/getresultperson.php?runner=1724825"
+  web: ""
+  instagram: ""
+  twitter: ""
+  wiki: ""
+notes: |
+  As a comment on a pic of Harvey Lewis of Jasmin resting against the yellow gate after completing it.:
+  https://www.facebook.com/harveylewisultrarunner/posts/capturing-the-magic-of-the-2024-barkley-marathons-minutes-after-jasmin-paris-fin/963159598501645/
+  "That’s me in the orange in the background. We were talking with Laz about how inspiring Jasmin is and speculating on how many women will now be dreaming of and working towards the Barkley for themselves."
+
+  https://www.taunus-nachrichten.de/region/extremsportlerin-finished-100-kilometer-lauf-id152207.html
